@@ -7,7 +7,7 @@ date = "2024-01-10"
 
 <!-- Auto-generated from JSON by GDScript docs maker. Do not edit this document directly. -->
 
-**Extends:** [Node2D](../Node2D)
+
 
 ## Opis
 Skrypt odpowiada za usuniecie boostera z mapy po użyciu go przez gracza.
