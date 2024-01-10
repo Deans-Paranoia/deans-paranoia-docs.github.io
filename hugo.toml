@@ -4,7 +4,7 @@ relativeURLs = true
 languageCode = 'pl'
 title = 'Deans Paranois Documentation'
 # Change the default theme
-theme = "hugo-theme-learn"
+theme = "hugo-theme-relearn"
 # For search functionality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]

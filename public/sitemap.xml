@@ -1,117 +1,153 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>/index.html</loc>
     <lastmod>2024-01-10T10:26:02+01:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs.html</loc>
     <lastmod>2024-01-10T10:23:58+01:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/installation.html</loc>
     <lastmod>2024-01-10T10:25:05+01:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/areanotifiers.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/booster.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/chat.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/collectorgd4.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/deaninput.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/deans_tablet.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/elevatorsetup.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/endgame.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/firealarm.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/firealarmsetup.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/global.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/kickscript.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/lecture_hall.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/main_menu.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/main.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/map.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/movementinput.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/npc_animation_tree.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/npcmovementinput.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/pause_menu.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/playerinfo.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/referencecollector.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/server.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/serverbrowser.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/serverinfo.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/single_ip_info.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/start_menu.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/student_animation_tree.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/studentinput.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/tablet_single_student.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/task.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/terminal.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/docs/waiting_room.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>/categories.html</loc>
-  </url><url>
+  </url>
+  <url>
     <loc>/tags.html</loc>
   </url>
 </urlset>
