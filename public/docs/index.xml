@@ -9,17 +9,6 @@
     <lastBuildDate>Wed, 10 Jan 2024 10:23:58 +0100</lastBuildDate>
     <atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Installation</title>
-      <link>/docs/installation.html</link>
-      <pubDate>Wed, 10 Jan 2024 10:25:05 +0100</pubDate>
-      <guid>/docs/installation.html</guid>
-      <description>The following steps are here to help you initialize your new website. If you don&amp;rsquo;t know Hugo at all, we strongly suggest you learn more about it by following this great documentation for beginners.
-Create your project Hugo provides a new command to create a new website.
-hugo new site &amp;lt;new_project&amp;gt;Install the theme Install the Hugo-theme-learn theme by following this documentation
-This theme&amp;rsquo;s repository is: https://github.com/matcornic/hugo-theme-learn.git
-Alternatively, you can download the theme as .</description>
-    </item>
-    <item>
       <title>areaNotifiers.gd</title>
       <link>/docs/areanotifiers.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
