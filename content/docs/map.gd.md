@@ -9,9 +9,9 @@ date = "2024-01-10"
 
 **Extends:** [Node2D](../Node2D)
 
-## Description
+## Opis
 
-## Property Descriptions
+## Opis Właściwości
 
 ### studentScene
 
@@ -73,7 +73,7 @@ var rand
 
 Inicjalizacja generatora liczb losowych
 
-## Method Descriptions
+## Opis Metod
 
 ### restart\_tasks
 
@@ -155,6 +155,6 @@ func npcs_walking(isVisible)
 func npcs_computer(isVisible)
 ```
 
-## Signals
+## Sygnały
 
 - signal taskType(taskType): Sygnał 'taskType' emitowany z argumentem 'taskType'

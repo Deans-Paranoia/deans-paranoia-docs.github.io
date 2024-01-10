@@ -9,5 +9,5 @@ date = "2024-01-10"
 
 **Extends:** [CanvasLayer](../CanvasLayer)
 
-## Description
+## Opis
 

@@ -9,9 +9,9 @@ date = "2024-01-10"
 
 **Extends:** [Control](../Control)
 
-## Description
+## Opis
 
-## Method Descriptions
+## Opis Metod
 
 ### tweening\_up
 

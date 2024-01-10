@@ -9,9 +9,9 @@ date = "2024-01-10"
 
 **Extends:** [SceneTree](../SceneTree)
 
-## Description
+## Opis
 
-## Property Descriptions
+## Opis Właściwości
 
 ### warnings\_regex
 
@@ -19,7 +19,7 @@ date = "2024-01-10"
 var warnings_regex: RegEx
 ```
 
-## Method Descriptions
+## Opis Metod
 
 ### find\_files
 

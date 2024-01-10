@@ -9,9 +9,9 @@ date = "2024-01-10"
 
 **Extends:** [Control](../Control)
 
-## Description
+## Opis
 
-## Property Descriptions
+## Opis Właściwości
 
 ### serverInfo
 
@@ -37,7 +37,7 @@ var dean: int
 var isServer = false
 ```
 
-## Method Descriptions
+## Opis Metod
 
 ### enable\_dean\_change
 
@@ -79,7 +79,7 @@ func on_current_player(id)
 
 funkcja wysyłająca informajce o graczu, który obecnie jest wpisywany do tabeli
 
-## Signals
+## Sygnały
 
 - signal button_pressed(node): 
 - signal dean_picked(deanId): 

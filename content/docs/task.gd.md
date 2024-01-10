@@ -9,9 +9,9 @@ date = "2024-01-10"
 
 **Extends:** [Node2D](../Node2D)
 
-## Description
+## Opis
 
-## Method Descriptions
+## Opis Metod
 
 ### on\_npc\_task\_type\_emitted
 
@@ -61,7 +61,7 @@ func vending_machine()
 
 Funkcja emitująca sygnał o task_type = vendingMachine
 
-## Signals
+## Sygnały
 
 - signal npc_walking_task(): 
 - signal npc_sprite_task(task_type): 

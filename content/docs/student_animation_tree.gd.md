@@ -9,9 +9,9 @@ date = "2024-01-10"
 
 **Extends:** [AnimationTree](../AnimationTree)
 
-## Description
+## Opis
 
-## Method Descriptions
+## Opis Metod
 
 ### run\_animation
 

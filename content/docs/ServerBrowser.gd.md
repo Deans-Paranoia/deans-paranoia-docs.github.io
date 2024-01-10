@@ -9,9 +9,9 @@ date = "2024-01-10"
 
 **Extends:** [Control](../Control)
 
-## Description
+## Opis
 
-## Property Descriptions
+## Opis Właściwości
 
 ### listenPort
 
@@ -73,7 +73,7 @@ var listener: PacketPeerUDP
 var is_host = false
 ```
 
-## Method Descriptions
+## Opis Metod
 
 ### setBroadcastAddress
 
@@ -123,6 +123,6 @@ func joinByIp(ip)
 
 funckja wysyłająca sygnał w momencie dołąćzenia do gry
 
-## Signals
+## Sygnały
 
 - signal joinGame(ip): 

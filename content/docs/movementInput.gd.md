@@ -9,9 +9,9 @@ date = "2024-01-10"
 
 **Extends:** [CharacterBody2D](../CharacterBody2D)
 
-## Description
+## Opis
 
-## Property Descriptions
+## Opis Właściwości
 
 ### player\_name
 
@@ -61,7 +61,7 @@ var canMove = true
 
 Flaga określająca, czy gracz może się poruszać.
 
-## Method Descriptions
+## Opis Metod
 
 ### apply\_physics
 
@@ -119,6 +119,6 @@ func stop_walking_animation()
 
 Metoda zdalna obsługująca zatrzymanie animacji chodzenia gracza.
 
-## Signals
+## Sygnały
 
 - signal direction(direction_vector): Sygnał informujący o kierunku ruchu postaci.

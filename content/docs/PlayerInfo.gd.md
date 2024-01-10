@@ -9,8 +9,8 @@ date = "2024-01-10"
 
 **Extends:** [HBoxContainer](../HBoxContainer)
 
-## Description
+## Opis
 
-## Signals
+## Sygnały
 
 - signal makeAsDean(playerId): 

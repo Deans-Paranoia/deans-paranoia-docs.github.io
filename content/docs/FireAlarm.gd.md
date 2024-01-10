@@ -9,9 +9,9 @@ date = "2024-01-10"
 
 **Extends:** [Sprite2D](../Sprite2D)
 
-## Description
+## Opis
 
-## Property Descriptions
+## Opis Właściwości
 
 ### textureAfterUsage
 
@@ -19,7 +19,7 @@ date = "2024-01-10"
 var textureAfterUsage = "<CompressedTexture2D#-9223367935513261906>"
 ```
 
-## Method Descriptions
+## Opis Metod
 
 ### change\_texture
 

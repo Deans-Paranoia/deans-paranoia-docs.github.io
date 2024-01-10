@@ -9,9 +9,9 @@ date = "2024-01-10"
 
 **Extends:** [AnimationTree](../AnimationTree)
 
-## Description
+## Opis
 
-## Property Descriptions
+## Opis Właściwości
 
 ### taskVector
 
@@ -29,7 +29,7 @@ var sprite_to_back_to: Sprite2D
 
 Sprite, do którego zostanie przywrócony animowany sprite po zakończeniu zadania.
 
-## Method Descriptions
+## Opis Metod
 
 ### taking\_notes\_loop
 

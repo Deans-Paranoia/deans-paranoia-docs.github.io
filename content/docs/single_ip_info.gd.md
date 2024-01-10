@@ -9,8 +9,8 @@ date = "2024-01-10"
 
 **Extends:** [HBoxContainer](../HBoxContainer)
 
-## Description
+## Opis
 
-## Signals
+## Sygnały
 
 - signal host_down(ip): Sygnał informujący o wyłączeniu hosta z podanym adresem IP

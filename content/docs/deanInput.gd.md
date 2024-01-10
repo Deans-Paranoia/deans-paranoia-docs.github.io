@@ -9,9 +9,9 @@ date = "2024-01-10"
 
 **Extends:** [Node2D](../Node2D)
 
-## Description
+## Opis
 
-## Property Descriptions
+## Opis Właściwości
 
 ### catch\_info\_instance
 
@@ -69,7 +69,7 @@ var can_use_alarm: bool = false
 
 Flaga określająca, czy Dean może aktywować alarm przeciwpożarowy.
 
-## Method Descriptions
+## Opis Metod
 
 ### change\_alarm\_state
 
@@ -103,7 +103,7 @@ func kick_student()
 
 Funkcja placeholder do obsługi kopnięcia studenta.
 
-## Signals
+## Sygnały
 
 - signal student_picked(): Sygnał informujący o wybraniu studenta.
 - signal student_catched(name): Sygnał informujący o złapaniu studenta. Przekazuje nazwę złapanego studenta.

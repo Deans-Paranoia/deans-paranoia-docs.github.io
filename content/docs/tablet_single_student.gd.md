@@ -9,9 +9,9 @@ date = "2024-01-10"
 
 **Extends:** [HBoxContainer](../HBoxContainer)
 
-## Description
+## Opis
 
-## Property Descriptions
+## Opis Właściwości
 
 ### isChecked
 

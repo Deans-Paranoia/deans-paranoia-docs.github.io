@@ -9,9 +9,9 @@ date = "2024-01-10"
 
 **Extends:** [Control](../Control)
 
-## Description
+## Opis
 
-## Property Descriptions
+## Opis Właściwości
 
 ### Address
 
@@ -37,7 +37,7 @@ var single_ip_info
 var peer
 ```
 
-## Method Descriptions
+## Opis Metod
 
 ### peer\_connected
 
@@ -135,7 +135,7 @@ func signName(name_number, i)
 
 funkcja przypisująca graczowi imię z pośród wszystkich dostępnych imion studentów
 
-## Signals
+## Sygnały
 
 - signal current_player(id): 
 - signal isServer(): 

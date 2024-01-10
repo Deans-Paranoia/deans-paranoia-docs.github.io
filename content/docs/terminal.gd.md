@@ -9,9 +9,9 @@ date = "2024-01-10"
 
 **Extends:** [Node2D](../Node2D)
 
-## Description
+## Opis
 
-## Property Descriptions
+## Opis Właściwości
 
 ### actual\_value
 
@@ -31,7 +31,7 @@ var textures
 var can_update_value: bool = false
 ```
 
-## Method Descriptions
+## Opis Metod
 
 ### load\_textures
 
@@ -61,6 +61,6 @@ func use_terminal()
 func show_terminal(name)
 ```
 
-## Signals
+## Sygnały
 
 - signal change_number(name, value): 

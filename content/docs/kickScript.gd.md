@@ -9,9 +9,9 @@ date = "2024-01-10"
 
 **Extends:** [Node2D](../Node2D)
 
-## Description
+## Opis
 
-## Property Descriptions
+## Opis Właściwości
 
 ### on\_lecture\_hall
 
@@ -21,6 +21,6 @@ var on_lecture_hall = false
 
 Flaga określająca, czy postać studenta znajduje się w sali wykładowej.
 
-## Signals
+## Sygnały
 
 - signal on_student_hovered(name): Sygnał informujący o najechaniu myszką na studenta.

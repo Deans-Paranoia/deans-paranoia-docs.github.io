@@ -9,9 +9,9 @@ date = "2024-01-10"
 
 **Extends:** [Node2D](../Node2D)
 
-## Description
+## Opis
 
-## Property Descriptions
+## Opis Właściwości
 
 ### dig\_info\_instance
 
@@ -189,7 +189,7 @@ var body: CharacterBody2D
 
 Referencja do ciała postaci (CharacterBody2D).
 
-## Method Descriptions
+## Opis Metod
 
 ### change\_alarm\_state
 
@@ -311,7 +311,7 @@ func remove_obstacle(_obstacle_to_destroy)
 
 jesli przekazany obiekt istnieje to funkcja go usuwa
 
-## Signals
+## Sygnały
 
 - signal player_task(task_type): Sygnał emitowany, gdy gracz otrzymuje nowe zadanie. Parametr task_type określa typ zadania.
 - signal disable_player_movement_for_duration(duration): Sygnał emitowany w celu wyłączenia ruchu gracza na określony czas. Parametr duration określa długość wyłączenia.

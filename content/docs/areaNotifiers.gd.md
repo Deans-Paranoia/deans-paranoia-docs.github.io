@@ -9,9 +9,9 @@ date = "2024-01-10"
 
 **Extends:** [Node2D](../Node2D)
 
-## Description
+## Opis
 
-## Property Descriptions
+## Opis Właściwości
 
 ### map
 
@@ -21,7 +21,7 @@ var map
 
 Referencja do obiektu mapy
 
-## Signals
+## Sygnały
 
 - signal noteTask(isVisible): Sygnał informujący o widoczności zadania z notatkami
 - signal computerTask(isVisible): Sygnał informujący o widoczności zadania z komputerem

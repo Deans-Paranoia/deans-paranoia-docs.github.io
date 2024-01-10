@@ -9,13 +9,13 @@ date = "2024-01-10"
 
 **Extends:** [EditorScript](../EditorScript)
 
-## Description
+## Opis
 
 To use this tool:  - Place this script and Collector.gd in your Godot project folder. - Open the script in the script editor. - Modify the properties below to control the tool's behavior. - Go to File -> Run to run the script in the editor.
 
 To use this tool:  - Place this script and Collector.gd in your Godot project folder. - Open the script in the script editor. - Modify the properties below to control the tool's behavior. - Go to File -> Run to run the script in the editor.
 
-## Property Descriptions
+## Opis Właściwości
 
 ### Collector
 

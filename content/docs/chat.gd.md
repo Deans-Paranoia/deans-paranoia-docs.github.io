@@ -9,9 +9,9 @@ date = "2024-01-10"
 
 **Extends:** [CanvasLayer](../CanvasLayer)
 
-## Description
+## Opis
 
-## Property Descriptions
+## Opis Właściwości
 
 ### new\_message
 
@@ -45,7 +45,7 @@ var chat_in_use: bool = false
 
 Flaga określająca, czy czat jest aktualnie używany
 
-## Method Descriptions
+## Opis Metod
 
 ### add\_message\_to\_chat
 
@@ -55,6 +55,6 @@ func add_message_to_chat(message_content, name)
 
 Funkcja dodająca wiadomość do czatu (zdalnie wywoływana)
 
-## Signals
+## Sygnały
 
 - signal chat_opened(is_opened): Sygnał informujący o otwarciu lub zamknięciu czatu

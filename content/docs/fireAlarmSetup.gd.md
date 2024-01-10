@@ -9,9 +9,9 @@ date = "2024-01-10"
 
 **Extends:** [Node2D](../Node2D)
 
-## Description
+## Opis
 
-## Property Descriptions
+## Opis Właściwości
 
 ### useable
 
@@ -19,7 +19,7 @@ date = "2024-01-10"
 var useable: bool = true
 ```
 
-## Method Descriptions
+## Opis Metod
 
 ### use\_alarm
 
@@ -35,6 +35,6 @@ Używa alarm
 func set_lecture_hall()
 ```
 
-## Signals
+## Sygnały
 
 - signal change_texture(): 

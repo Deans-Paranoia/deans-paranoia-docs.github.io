@@ -9,9 +9,9 @@ date = "2024-01-10"
 
 **Extends:** [CharacterBody2D](../CharacterBody2D)
 
-## Description
+## Opis
 
-## Property Descriptions
+## Opis Właściwości
 
 ### speed
 
@@ -77,7 +77,7 @@ var rng
 
 Generator liczb losowych.
 
-## Method Descriptions
+## Opis Metod
 
 ### wait
 
@@ -87,6 +87,6 @@ func wait()
 
 Funkcja zatrzymująca NPC.
 
-## Signals
+## Sygnały
 
 - signal rotate(direction): Sygnał informujący o zmianie kierunku obrotu postaci NPC.

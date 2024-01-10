@@ -9,9 +9,9 @@ date = "2024-01-10"
 
 **Extends:** [Node](../Node)
 
-## Description
+## Opis
 
-## Property Descriptions
+## Opis Właściwości
 
 ### Players
 
@@ -61,7 +61,7 @@ var UsedTasks: Array
 
 Lista użytych zadań
 
-## Method Descriptions
+## Opis Metod
 
 ### remove\_name
 
@@ -107,7 +107,7 @@ Funkcja usuwająca zadanie o określonym numerze z listy dostępnych zadań
 
 ### Task
 
-#### Property Descriptions
+#### Opis Właściwości
 
 ### positionX
 
@@ -127,7 +127,7 @@ var positionY: float
 var taskType: String
 ```
 
-#### Method Descriptions
+#### Opis Metod
 
 ### \_init
 
