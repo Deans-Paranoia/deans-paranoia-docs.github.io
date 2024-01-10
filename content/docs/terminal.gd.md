@@ -10,7 +10,7 @@ date = "2024-01-10"
 **Extends:** [Node2D](../Node2D)
 
 ## Opis
-
+Skrypt odpowiadający za informacje wyświetlane na terminalach.
 ## Opis Właściwości
 
 ### actual\_value

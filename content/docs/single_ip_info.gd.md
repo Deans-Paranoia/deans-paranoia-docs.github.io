@@ -10,7 +10,7 @@ date = "2024-01-10"
 **Extends:** [HBoxContainer](../HBoxContainer)
 
 ## Opis
-
+Skrypt obsługujący interfejs który umożłiwia utworzenie servera na danym systemie sieciowym.
 ## Sygnały
 
 - signal host_down(ip): Sygnał informujący o wyłączeniu hosta z podanym adresem IP

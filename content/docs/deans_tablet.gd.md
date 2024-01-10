@@ -10,7 +10,7 @@ date = "2024-01-10"
 **Extends:** [CanvasLayer](../CanvasLayer)
 
 ## Opis
-
+Skrypt odpowiadający za obsługe tabletu dziekana.
 ## Opis Właściwości
 
 ### single\_scene

@@ -10,7 +10,7 @@ date = "2024-01-10"
 **Extends:** [Node](../Node)
 
 ## Opis
-
+Skrypt zawierający globalne zmienne całej gry, takie jak nazwy graczy lokalizacje i typy zadan.
 ## Opis Właściwości
 
 ### Players

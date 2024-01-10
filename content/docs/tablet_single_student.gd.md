@@ -10,7 +10,7 @@ date = "2024-01-10"
 **Extends:** [HBoxContainer](../HBoxContainer)
 
 ## Opis
-
+Skrypt odpowiadający za informacje o zaznaczeniu studenta w tablecie dziekana. 
 ## Opis Właściwości
 
 ### isChecked

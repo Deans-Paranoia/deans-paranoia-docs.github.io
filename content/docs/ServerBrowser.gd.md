@@ -10,7 +10,7 @@ date = "2024-01-10"
 **Extends:** [Control](../Control)
 
 ## Opis
-
+Skrypt odpowiadający za wyświetlanie serwera z którym obecnie można sie połaczyć oraz informacje o nim.
 ## Opis Właściwości
 
 ### listenPort

@@ -10,7 +10,7 @@ date = "2024-01-10"
 **Extends:** [CharacterBody2D](../CharacterBody2D)
 
 ## Opis
-
+Skrypt odpowiadający za ruch botów przy wykonywanych taskach.
 ## Opis Właściwości
 
 ### speed

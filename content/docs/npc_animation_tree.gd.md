@@ -10,7 +10,7 @@ date = "2024-01-10"
 **Extends:** [AnimationTree](../AnimationTree)
 
 ## Opis
-
+Skrypt odpowiadający za animacje tasków.
 ## Opis Właściwości
 
 ### taskVector

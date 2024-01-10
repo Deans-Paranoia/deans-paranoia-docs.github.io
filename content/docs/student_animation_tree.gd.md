@@ -10,7 +10,7 @@ date = "2024-01-10"
 **Extends:** [AnimationTree](../AnimationTree)
 
 ## Opis
-
+Skrpt, który odpowiada za uruchamianie wszystkich animacji dla studenta.
 ## Opis Metod
 
 ### run\_animation

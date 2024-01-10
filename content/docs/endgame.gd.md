@@ -10,4 +10,4 @@ date = "2024-01-10"
 **Extends:** [CanvasLayer](../CanvasLayer)
 
 ## Opis
-
+Skrypt odfpowiadający za zakończenie gry i wyświetlenie wyników rozgrywki.

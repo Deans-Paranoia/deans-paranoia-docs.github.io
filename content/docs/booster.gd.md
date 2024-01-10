@@ -10,7 +10,7 @@ date = "2024-01-10"
 **Extends:** [Node2D](../Node2D)
 
 ## Opis
-
+Skrypt odpowiada za usuniecie boostera z mapy po użyciu go przez gracza.
 ## Opis Metod
 
 ### on\_boost\_requested

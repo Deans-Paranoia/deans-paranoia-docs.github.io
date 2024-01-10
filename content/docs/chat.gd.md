@@ -10,7 +10,7 @@ date = "2024-01-10"
 **Extends:** [CanvasLayer](../CanvasLayer)
 
 ## Opis
-
+Skrypt odpowiadający za widok i fukcjonalność chatu podczas rozgrywki.
 ## Opis Właściwości
 
 ### new\_message

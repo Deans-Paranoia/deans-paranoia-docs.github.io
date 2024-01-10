@@ -10,7 +10,7 @@ date = "2024-01-10"
 **Extends:** [Node2D](../Node2D)
 
 ## Opis
-
+Skrypt odpowiadający za czynności wykonywane przez dziekana.
 ## Opis Właściwości
 
 ### catch\_info\_instance

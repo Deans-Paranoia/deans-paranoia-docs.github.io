@@ -10,7 +10,7 @@ date = "2024-01-10"
 **Extends:** [Node2D](../Node2D)
 
 ## Opis
-
+Skrypt przekazujacy informacje czy dany obszar znajduje się na ekranie.
 ## Opis Właściwości
 
 ### map
