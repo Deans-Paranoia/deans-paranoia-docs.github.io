@@ -9,12 +9,11 @@
     <lastBuildDate>Wed, 10 Jan 2024 10:26:02 +0100</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Getting Started</title>
+      <title>Dokumentacja skryptów</title>
       <link>/docs.html</link>
       <pubDate>Wed, 10 Jan 2024 10:23:58 +0100</pubDate>
       <guid>/docs.html</guid>
-      <description>Chapter 1 Getting Started Build a documentation website for your service using Hugo and hugo-theme-learn in less than an hour.
-Some Chapter title </description>
+      <description>Dokmentacja plików gd Strony w tym rozdziale zawierają opis plików z logiką Dean&amp;rsquo;s Paranoia Installation areaNotifiers.gd booster.gd chat.gd CollectorGd4.gd deanInput.gd deans_tablet.gd elevatorSetup.gd endgame.gd FireAlarm.gd fireAlarmSetup.gd global.gd kickScript.gd lecture_hall.gd main_menu.gd main.gd map.gd movementInput.gd npc_animation_tree.gd npcMovementInput.gd pause_menu.gd PlayerInfo.gd ReferenceCollector server.gd ServerBrowser.gd ServerInfo.gd single_ip_info.gd start_menu.gd student_animation_tree.gd studentInput.gd tablet_single_student.gd task.gd terminal.gd waiting_room.gd </description>
     </item>
   </channel>
 </rss>

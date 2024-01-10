@@ -1,12 +1,11 @@
 +++
-title = "Getting Started"
+title = "Dokumentacja skryptów"
 date = 2024-01-10T10:23:58+01:00
-weight = 5
+weight = 1
 chapter = true
 pre = "<b>X. </b>"
 +++
 
-### Chapter 1
-# Getting Started
-Build a documentation website for your service using Hugo and hugo-theme-learn in less than an hour.
-# Some Chapter title
+### Dokmentacja plików gd
+Strony w tym rozdziale zawierają opis plików z logiką Dean's Paranoia
+{{% children style="h3" depth="1" description="false" %}}
