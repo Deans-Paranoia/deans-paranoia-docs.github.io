@@ -1,4 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = '/'
+uglyURLs = true
+relativeURLs = true
 languageCode = 'pl'
 title = 'Deans Paranois Documentation'
 # Change the default theme

@@ -2,116 +2,116 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/</loc>
+    <loc>/</loc>
     <lastmod>2024-01-10T10:26:02+01:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/</loc>
+    <loc>/docs.html</loc>
     <lastmod>2024-01-10T10:23:58+01:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/installation/</loc>
+    <loc>/docs/installation.html</loc>
     <lastmod>2024-01-10T10:25:05+01:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/areanotifiers.gd/</loc>
+    <loc>/docs/areanotifiers.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/booster.gd/</loc>
+    <loc>/docs/booster.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/chat.gd/</loc>
+    <loc>/docs/chat.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/collectorgd4.gd/</loc>
+    <loc>/docs/collectorgd4.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/deaninput.gd/</loc>
+    <loc>/docs/deaninput.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/deans_tablet.gd/</loc>
+    <loc>/docs/deans_tablet.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/elevatorsetup.gd/</loc>
+    <loc>/docs/elevatorsetup.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/endgame.gd/</loc>
+    <loc>/docs/endgame.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/firealarm.gd/</loc>
+    <loc>/docs/firealarm.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/firealarmsetup.gd/</loc>
+    <loc>/docs/firealarmsetup.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/global.gd/</loc>
+    <loc>/docs/global.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/kickscript.gd/</loc>
+    <loc>/docs/kickscript.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/lecture_hall.gd/</loc>
+    <loc>/docs/lecture_hall.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/main_menu.gd/</loc>
+    <loc>/docs/main_menu.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/main.gd/</loc>
+    <loc>/docs/main.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/map.gd/</loc>
+    <loc>/docs/map.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/movementinput.gd/</loc>
+    <loc>/docs/movementinput.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/npc_animation_tree.gd/</loc>
+    <loc>/docs/npc_animation_tree.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/npcmovementinput.gd/</loc>
+    <loc>/docs/npcmovementinput.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/pause_menu.gd/</loc>
+    <loc>/docs/pause_menu.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/playerinfo.gd/</loc>
+    <loc>/docs/playerinfo.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/referencecollector/</loc>
+    <loc>/docs/referencecollector.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/server.gd/</loc>
+    <loc>/docs/server.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/serverbrowser.gd/</loc>
+    <loc>/docs/serverbrowser.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/serverinfo.gd/</loc>
+    <loc>/docs/serverinfo.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/single_ip_info.gd/</loc>
+    <loc>/docs/single_ip_info.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/start_menu.gd/</loc>
+    <loc>/docs/start_menu.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/student_animation_tree.gd/</loc>
+    <loc>/docs/student_animation_tree.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/studentinput.gd/</loc>
+    <loc>/docs/studentinput.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/tablet_single_student.gd/</loc>
+    <loc>/docs/tablet_single_student.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/task.gd/</loc>
+    <loc>/docs/task.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/terminal.gd/</loc>
+    <loc>/docs/terminal.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/docs/waiting_room.gd/</loc>
+    <loc>/docs/waiting_room.gd.html</loc>
     <lastmod>2024-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>/categories.html</loc>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>/tags.html</loc>
   </url>
 </urlset>

@@ -1,174 +1,174 @@
 [
 {
-	"uri": "https://example.org/",
+	"uri": "/",
 	"title": "Strona glowna",
 	"tags": [],
 	"description": "",
 	"content": "Documentation This documentation enables you to integrate with our service easily.\nDocumentation Summary Getting Started Chapter 1 Getting Started Build a documentation website for your service using Hugo and hugo-theme-learn in less than an hour. Some Chapter title Installation The following steps are here to help you initialize your new website. If you don\u0026rsquo;t know Hugo at all, we strongly suggest you learn more about it by following this great documentation for beginners. Create your project Hugo provides a new command to create a new website. hugo new site \u0026lt;new_project\u0026gt; Install the theme Install the Hugo-theme-learn theme by following this documentation This theme\u0026rsquo;s repository is: https://github.com/matcornic/hugo-theme-learn.git Alternatively, you can download the theme as .\nareaNotifiers.gd Extends: Node2D Description Property Descriptions map var map Referencja do obiektu mapy Signals signal noteTask(isVisible): Sygnał informujący o widoczności zadania z notatkami signal computerTask(isVisible): Sygnał informujący o widoczności zadania z komputerem signal walkingTask(isVisible): Sygnał informujący o widoczności zadania z chodzeniem booster.gd Extends: Node2D Description Method Descriptions on_boost_requested func on_boost_requested() Funkcja usuwajaca booster po jego zebraniu\nchat.gd Extends: CanvasLayer Description Property Descriptions new_message @export var new_message: PackedScene Zmienna przechowująca scenę dla nowej wiadomości line_edit var line_edit Referencja do kontrolki wprowadzania tekstu message_panel var message_panel Referencja do panelu wiadomości chat_in_use var chat_in_use: bool = false Flaga określająca, czy czat jest aktualnie używany Method Descriptions add_message_to_chat func add_message_to_chat(message_content, name) Funkcja dodająca wiadomość do czatu (zdalnie wywoływana) Signals signal chat_opened(is_opened): Sygnał informujący o otwarciu lub zamknięciu czatu CollectorGd4.gd Extends: SceneTree Description Property Descriptions warnings_regex var warnings_regex: RegEx Method Descriptions find_files func find_files(dirpath: String = \u0026#34;\u0026#34;, patterns: PackedStringArray = null, is_recursive: bool = false, do_skip_hidden: bool = true) -\u0026gt; PackedStringArray Returns a list of file paths found in the directory. Arguments - dirpath: path to the directory from which to search files. - patterns: an array of string match patterns, where \u0026ldquo;\u0026rdquo; matches zero or more arbitrary characters and \u0026ldquo;?\ndeanInput.gd Extends: Node2D Description Property Descriptions catch_info_instance var catch_info_instance Instancja widżetu odpowiadającego za informacje o złapaniu studenta. is_tablet_open var is_tablet_open: bool = false Flaga określająca, czy tablet dziekana jest otwarty. scene var scene Gotowy widget sceny tabletu. tablet_scene var tablet_scene Scena tabletu. is_task_area var is_task_area Zmienna określająca, czy dziekan znajduje się w obszarze zadania. body var body: CharacterBody2D Referencja do ciała postaci. can_use_alarm var can_use_alarm: bool = false Flaga określająca, czy Dean może aktywować alarm przeciwpożarowy.\ndeans_tablet.gd Extends: CanvasLayer Description Property Descriptions single_scene var single_scene Referencja do sceny pojedynczego studenta\nelevatorSetup.gd Extends: Node2D Description endgame.gd Extends: CanvasLayer Description FireAlarm.gd Extends: Sprite2D Description Property Descriptions textureAfterUsage var textureAfterUsage = \u0026#34;\u0026lt;CompressedTexture2D#-9223367935513261906\u0026gt;\u0026#34; Method Descriptions change_texture func change_texture() Zmienia teksture\nfireAlarmSetup.gd Extends: Node2D Description Property Descriptions useable var useable: bool = true Method Descriptions use_alarm func use_alarm(isSabotaged) Używa alarm set_lecture_hall func set_lecture_hall() Signals signal change_texture(): global.gd Extends: Node Description Property Descriptions Players var Players Słownik przechowujący informacje o graczach deanId var deanId: int Identyfikator dziekana studentsNames var studentsNames Lista dostępnych nazw studentów usedNames var usedNames Lista użytych nazw studentów Tasks var Tasks: Array Lista dostępnych zadań UsedTasks var UsedTasks: Array Lista użytych zadań Method Descriptions remove_name func remove_name(nameNumber: int) Funkcja dodająca zwolnioną nazwę studenta do listy dostępnych nazw resetTasks func resetTasks() Funkcja resetująca listę zadań, przenosząca zadania z UsedTasks z powrotem do Tasks\nkickScript.gd Extends: Node2D Description Property Descriptions on_lecture_hall var on_lecture_hall = false Flaga określająca, czy postać studenta znajduje się w sali wykładowej. Signals signal on_student_hovered(name): Sygnał informujący o najechaniu myszką na studenta. lecture_hall.gd Extends: Node2D Description Property Descriptions npcScene var npcScene Ładuje scenę postaci NPC deanScene var deanScene Ładuje scenę postaci Deana rng var rng Tworzy nowy generator liczb losowych available_spots var available_spots Lista dostępnych miejsc clicked var clicked = 0 Licznik kliknięć kicked_player_number var kicked_player_number = 1 Numer gracza do wyrzucenia maximum_ammount_to_kick var maximum_ammount_to_kick = 1 Maksymalna liczba do wyrzucenia hovered_student var hovered_student Zmienna przechowująca informację o najechanym studencie students_to_kick var students_to_kick Lista studentów do wyrzucenia\nmain_menu.gd Extends: Control Description Method Descriptions tweening_up func tweening_up(node) Parametry: node - element GUI Return: None Funkcja animująca wznoszenie elementu GUI. tweening_down func tweening_down(node) Parametry: node - element GUI Return: None Funkcja animująca opadanie elementu GUI.\nmain.gd Extends: Control Description Property Descriptions Address @export var Address = \u0026#34;\u0026#34; Port @export var Port = 8909 single_ip_info var single_ip_info peer var peer Method Descriptions peer_connected func peer_connected(id: int) Parametry: id - unikalny numer generowany losowo podczas nawiązywania połączenia z seweren Return: None Funkcja informująca o nowym graczu, który dołączył do jako peer, wywołuje się gdy jest emitowany sygnał wbudowany \u0026lsquo;peer_connected\u0026rsquo; peer_disconnected func peer_disconnected(id: int) Parametry: id - unikalny numer generowany losowo podczas nawiązywania połączenia z seweren Return: None Funkcja informująca o graczu, który rozłączył się jako peer, wywołuje się gdy jest emitowany sygnał wbudowany \u0026lsquo;peer_connected\u0026rsquo;\nmap.gd Extends: Node2D Description Property Descriptions studentScene @export var studentScene: PackedScene Deklaracja zmiennych przechowujących trzy sceny: studentScene, deanScene, npcScene deanScene @export var deanScene: PackedScene npcScene @export var npcScene: PackedScene textures var textures Inicjalizacja pustej listy \u0026rsquo;textures' timeUi var timeUi Ładowanie sceny \u0026rsquo;time.tscn\u0026rsquo; z katalogu \u0026lsquo;ui\u0026rsquo; i tworzenie instancji tej sceny isVotingProcess var isVotingProcess = false Inicjalizacja zmiennej \u0026lsquo;isVotingProcess\u0026rsquo; jako logicznej wartości \u0026lsquo;False\u0026rsquo; day var day = 1 Inicjalizacja zmiennej \u0026lsquo;day\u0026rsquo; jako liczby całkowitej równą 1\nmovementInput.gd Extends: CharacterBody2D Description Property Descriptions player_name var player_name: String Nazwa gracza. can_move var can_move: bool = true Flaga określająca możliwość ruchu postaci. last_direction var last_direction = \u0026#34;(0, 0)\u0026#34; Zmienna określająca ostatni kierunek ruchu gracza przed zatrzymaniem. temp_speed var temp_speed Tymczasowa prędkość, używana do zatrzymywania i przywracania ruchu. speed var speed: int = 250 Prędkość ruchu gracza. canMove var canMove = true Flaga określająca, czy gracz może się poruszać. Method Descriptions apply_physics func apply_physics() Metoda aplikująca fizykę ruchu gracza.\nnpc_animation_tree.gd Extends: AnimationTree Description Property Descriptions taskVector var taskVector = \u0026#34;(0, 0)\u0026#34; Wektor związany z bieżącym zadaniem postaci NPC. sprite_to_back_to var sprite_to_back_to: Sprite2D Sprite, do którego zostanie przywrócony animowany sprite po zakończeniu zadania. Method Descriptions taking_notes_loop func taking_notes_loop() Metoda obsługująca animacje zadania \u0026ldquo;takingNotes\u0026rdquo;. computer_loop func computer_loop() Metoda obsługująca animacje zadania \u0026ldquo;computer\u0026rdquo;. vending_machine_loop func vending_machine_loop() Metoda obsługująca animacje zadania \u0026ldquo;vendingMachine\u0026rdquo;. rotate_npc func rotate_npc(direction) Parametry: direction Metoda zdalna obsługująca obrót postaci NPC.\nnpcMovementInput.gd Extends: CharacterBody2D Description Property Descriptions speed var speed = 400 Prędkość ruchu postaci NPC. destination var destination = \u0026#34;(0, 0)\u0026#34; Wektor docelowy dla ruchu postaci NPC. point_A var point_A: Vector2 Punkt A na trasie ruchu postaci NPC. point_B var point_B: Vector2 Punkt B na trasie ruchu postaci NPC. move_direction var move_direction = \u0026#34;(1, 0)\u0026#34; Wektor kierunku ruchu postaci NPC. can_move var can_move: bool Flaga określająca możliwość ruchu postaci NPC.\npause_menu.gd Extends: Control Description PlayerInfo.gd Extends: HBoxContainer Description Signals signal makeAsDean(playerId): ReferenceCollector To use this tool: - Place this script and Collector.gd in your Godot project folder. - Open the script in the script editor. - Modify the properties below to control the tool\u0026#39;s behavior. - Go to File -\u0026gt; Run to run the script in the editor. To use this tool: - Place this script and Collector.gd in your Godot project folder. - Open the script in the script editor. - Modify the properties below to control the tool\u0026#39;s behavior. - Go to File -\u0026gt; Run to run the script in the editor.\nserver.gd Extends: Node2D Description Property Descriptions endgame var endgame rng var rng green_terminal var green_terminal violet_terminal var violet_terminal yellow_terminal var yellow_terminal terminal1 var terminal1 terminal2 var terminal2 terminal3 var terminal3 serverValue var serverValue digits_sprites var digits_sprites Method Descriptions set_server_value func set_server_value(value) calculate_value func calculate_value() Funkcja sprawdzająca poprawność wprowadzonych wartości terminali run_server_error func run_server_error() set_terminals_position_for_host func set_terminals_position_for_host() Funkcja ustawiająca pozycję terminali dla hosta set_terminals_position func set_terminals_position(position1, position2, position3) show_end_screen func show_end_screen() on_number_changed func on_number_changed(name, value) Parametry: name - nazwa terminala, value - cyfra Funkcja zmieniająca teksturę cyfr na ekranie w zależności od wartości wprowadzonej do terminali\nServerBrowser.gd Extends: Control Description Property Descriptions listenPort @export var listenPort: int = 8911 broadcastPort @export var broadcastPort: int = 8912 broadcastAddress @export var broadcastAddress: String = \u0026#34;\u0026#34; serverInfo @export var serverInfo: PackedScene broadcastTimer var broadcastTimer: Timer RoomInfo var RoomInfo playerCount var playerCount = 0 broadcaster var broadcaster: PacketPeerUDP listener var listener: PacketPeerUDP is_host var is_host = false Method Descriptions setBroadcastAddress func setBroadcastAddress(address: String) Parametry: address - ciąg znaków z adresem IP hostującego Return: bool Funckja ustawiająca adres strumieniowanie informacji związanych z aktualnym serwerem gry\nServerInfo.gd Extends: HBoxContainer Description Signals signal joinGame(ip): single_ip_info.gd Extends: HBoxContainer Description Signals signal host_down(ip): Sygnał informujący o wyłączeniu hosta z podanym adresem IP start_menu.gd Extends: Node2D Description student_animation_tree.gd Extends: AnimationTree Description Method Descriptions run_animation func run_animation(velocity) task_animation func task_animation(task_type) studentInput.gd Extends: Node2D Description Property Descriptions dig_info_instance var dig_info_instance Gotowa zmienna przechowująca instancję sceny dig_and_dean_catch_info, która będzie używana do wyświetlania informacji o kopaniu i złapaniu przez dziekana. current_task_area var current_task_area = \u0026#34;\u0026#34; Zmienna przechowująca aktualną strefę zadania gracza. Pusty string, jeśli gracz nie wykonuje zadania. fourthFloor var fourthFloor Gotowa zmienna przechowująca scenę czwartego piętra. thirdFloor var thirdFloor Gotowa zmienna przechowująca scenę trzeciego piętra. dangerScene var dangerScene = \u0026#34;\u0026lt;PackedScene#-9223367941569842968\u0026gt;\u0026#34; Gotowa zmienna przechowująca scenę informującą o wyjściu z zadania.\ntablet_single_student.gd Extends: HBoxContainer Description Property Descriptions isChecked var isChecked Zmienna przechowująca stan zaznaczenia checkmark var checkmark Referencja do ikony checkmark cross var cross Referencja do ikony krzyżyka\ntask.gd Extends: Node2D Description Method Descriptions on_npc_task_type_emitted func on_npc_task_type_emitted(task_type) Parametry: task_type - typ tasku Funkcja do odtwarzania konkretnego zadania przez gracza run_task func run_task(task_type) Parametry: task_type - typ tasku Funkcja dobiera odpowiednią funkcje zależnie od zmiennej task_type task_computer func task_computer() Funkcja emitująca sygnał o task_type = computer task_taking_notes func task_taking_notes() Funkcja emitująca sygnał o task_type = takingNotes task_walking func task_walking() Funkcja emitująca sygnał o task_type = walking vending_machine func vending_machine() Funkcja emitująca sygnał o task_type = vendingMachine\nterminal.gd Extends: Node2D Description Property Descriptions actual_value var actual_value = 0 textures var textures can_update_value var can_update_value: bool = false Method Descriptions load_textures func load_textures() Funkcja ładowania tekstur update_texture func update_texture() Funkcja aktualizująca teksturę terminala use_terminal func use_terminal() show_terminal func show_terminal(name) Signals signal change_number(name, value): waiting_room.gd Extends: Control Description Property Descriptions serverInfo @export var serverInfo: PackedScene current var current: int dean var dean: int isServer var isServer = false Method Descriptions enable_dean_change func enable_dean_change() funkcja która przekazuje pozwolenie na zmianę gracza, który otrzyma rolę dziekana makeAsDean func makeAsDean(id) funkcja przysłająca informacje o wybranym dziekanie findDeanId func findDeanId() -\u0026gt; int Return: int funkcja która szuka osoby, która ma ustawioną rolę dziekan refresh_table func refresh_table() funckcja odświeża tabelę z graczami - ich nazwą i ich rolą w grze\nContribute to this documentation Feel free to update this content, just click the Edit this page link displayed on top right of each page, and pullrequest it Your modification will be deployed automatically when merged.\n"
 },
 {
-	"uri": "https://example.org/docs/",
+	"uri": "/docs.html",
 	"title": "Getting Started",
 	"tags": [],
 	"description": "",
 	"content": "Chapter 1 Getting Started Build a documentation website for your service using Hugo and hugo-theme-learn in less than an hour.\nSome Chapter title "
 },
 {
-	"uri": "https://example.org/docs/installation/",
+	"uri": "/docs/installation.html",
 	"title": "Installation",
 	"tags": [],
 	"description": "",
 	"content": "The following steps are here to help you initialize your new website. If you don\u0026rsquo;t know Hugo at all, we strongly suggest you learn more about it by following this great documentation for beginners.\nCreate your project Hugo provides a new command to create a new website.\nhugo new site \u0026lt;new_project\u0026gt; Install the theme Install the Hugo-theme-learn theme by following this documentation\nThis theme\u0026rsquo;s repository is: https://github.com/matcornic/hugo-theme-learn.git\nAlternatively, you can download the theme as .zip file and extract it in the themes directory\nBasic configuration When building the website, you can set a theme by using --theme option. However, we suggest you modify the configuration file (config.toml) and set the theme as the default. You can also add the [outputs] section to enable the search functionality.\n# Change the default theme to be use when building the site with Hugo theme = \u0026#34;hugo-theme-learn\u0026#34; # For search functionality [outputs] home = [ \u0026#34;HTML\u0026#34;, \u0026#34;RSS\u0026#34;, \u0026#34;JSON\u0026#34;] Create your first chapter page Chapters are pages that contain other child pages. It has a special layout style and usually just contains a chapter name, the title and a brief abstract of the section.\n### Chapter 1 # Basics Discover what this Hugo theme is all about and the core concepts behind it. renders as\nHugo-theme-learn provides archetypes to create skeletons for your website. Begin by creating your first chapter page with the following command\nhugo new --kind chapter basics/_index.md By opening the given file, you should see the property chapter=true on top, meaning this page is a chapter.\nBy default all chapters and pages are created as a draft. If you want to render these pages, remove the property draft: true from the metadata.\nCreate your first content pages Then, create content pages inside the previously created chapter. Here are two ways to create content in the chapter:\nhugo new basics/first-content.md hugo new basics/second-content/_index.md Feel free to edit thoses files by adding some sample content and replacing the title value in the beginning of the files.\nLaunching the website locally Launch by using the following command:\nhugo serve Go to http://localhost:1313\nYou should notice three things:\nYou have a left-side Basics menu, containing two submenus with names equal to the title properties in the previously created files. The home page explains how to customize it by following the instructions. When you run hugo serve, when the contents of the files change, the page automatically refreshes with the changes. Neat! Build the website When your site is ready to deploy, run the following command:\nhugo A public folder will be generated, containing all static content and assets for your website. It can now be deployed on any web server.\nThis website can be automatically published and hosted with Netlify (Read more about Automated HUGO deployments with Netlify). Alternatively, you can use Github pages\n"
 },
 {
-	"uri": "https://example.org/docs/areanotifiers.gd/",
+	"uri": "/docs/areanotifiers.gd.html",
 	"title": "areaNotifiers.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: Node2D\nDescription Property Descriptions map var map Referencja do obiektu mapy\nSignals signal noteTask(isVisible): Sygnał informujący o widoczności zadania z notatkami signal computerTask(isVisible): Sygnał informujący o widoczności zadania z komputerem signal walkingTask(isVisible): Sygnał informujący o widoczności zadania z chodzeniem "
 },
 {
-	"uri": "https://example.org/docs/booster.gd/",
+	"uri": "/docs/booster.gd.html",
 	"title": "booster.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: Node2D\nDescription Method Descriptions on_boost_requested func on_boost_requested() Funkcja usuwajaca booster po jego zebraniu\n"
 },
 {
-	"uri": "https://example.org/docs/chat.gd/",
+	"uri": "/docs/chat.gd.html",
 	"title": "chat.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: CanvasLayer\nDescription Property Descriptions new_message @export var new_message: PackedScene Zmienna przechowująca scenę dla nowej wiadomości\nline_edit var line_edit Referencja do kontrolki wprowadzania tekstu\nmessage_panel var message_panel Referencja do panelu wiadomości\nchat_in_use var chat_in_use: bool = false Flaga określająca, czy czat jest aktualnie używany\nMethod Descriptions add_message_to_chat func add_message_to_chat(message_content, name) Funkcja dodająca wiadomość do czatu (zdalnie wywoływana)\nSignals signal chat_opened(is_opened): Sygnał informujący o otwarciu lub zamknięciu czatu "
 },
 {
-	"uri": "https://example.org/docs/collectorgd4.gd/",
+	"uri": "/docs/collectorgd4.gd.html",
 	"title": "CollectorGd4.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: SceneTree\nDescription Property Descriptions warnings_regex var warnings_regex: RegEx Method Descriptions find_files func find_files(dirpath: String = \u0026#34;\u0026#34;, patterns: PackedStringArray = null, is_recursive: bool = false, do_skip_hidden: bool = true) -\u0026gt; PackedStringArray Returns a list of file paths found in the directory. Arguments - dirpath: path to the directory from which to search files. - patterns: an array of string match patterns, where \u0026ldquo;\u0026rdquo; matches zero or more arbitrary characters and \u0026ldquo;?\u0026rdquo; matches any single character except a period (\u0026quot;.\u0026quot;). You can use it to find files by extensions. To find only GDScript files, [\u0026quot;.gd\u0026quot;] - is_recursive: if true, walks over subdirectories recursively, returning all files in the tree.\nsave_text func save_text(path: String = \u0026#34;\u0026#34;, content: String = \u0026#34;\u0026#34;) -\u0026gt; void Saves text to a file.\nget_reference func get_reference(files: PackedStringArray = null, refresh_cache: bool = false) -\u0026gt; Dictionary Parses a list of GDScript files and returns a list of dictionaries with the code reference data. If refresh_cache is true, will refresh Godot\u0026rsquo;s cache and get fresh symbols.\nremove_warning_comments func remove_warning_comments(symbols: Dictionary) -\u0026gt; void Directly removes \u0026lsquo;warning-ignore\u0026rsquo;, \u0026lsquo;warning-ignore-all\u0026rsquo;, and \u0026lsquo;warning-disable\u0026rsquo; comments from all symbols in the symbols dictionary passed to the function.\nremove_warnings_from_description func remove_warnings_from_description(description: String) -\u0026gt; String print_pretty_json func print_pretty_json(reference: Dictionary) -\u0026gt; String "
 },
 {
-	"uri": "https://example.org/docs/deaninput.gd/",
+	"uri": "/docs/deaninput.gd.html",
 	"title": "deanInput.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: Node2D\nDescription Property Descriptions catch_info_instance var catch_info_instance Instancja widżetu odpowiadającego za informacje o złapaniu studenta.\nis_tablet_open var is_tablet_open: bool = false Flaga określająca, czy tablet dziekana jest otwarty.\nscene var scene Gotowy widget sceny tabletu.\ntablet_scene var tablet_scene Scena tabletu.\nis_task_area var is_task_area Zmienna określająca, czy dziekan znajduje się w obszarze zadania.\nbody var body: CharacterBody2D Referencja do ciała postaci.\ncan_use_alarm var can_use_alarm: bool = false Flaga określająca, czy Dean może aktywować alarm przeciwpożarowy.\nMethod Descriptions change_alarm_state func change_alarm_state() Funkcja zdalna obsługująca zmianę stanu alarmu przeciwpożarowego.\nmanage_deans_tablet func manage_deans_tablet() Funkcja zarządzająca widżetem tabletu dziekana.\ncatch_student func catch_student() Funkcja placeholder do obsługi złapanego studenta.\nkick_student func kick_student() Funkcja placeholder do obsługi kopnięcia studenta.\nSignals signal student_picked(): Sygnał informujący o wybraniu studenta. signal student_catched(name): Sygnał informujący o złapaniu studenta. Przekazuje nazwę złapanego studenta. "
 },
 {
-	"uri": "https://example.org/docs/deans_tablet.gd/",
+	"uri": "/docs/deans_tablet.gd.html",
 	"title": "deans_tablet.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: CanvasLayer\nDescription Property Descriptions single_scene var single_scene Referencja do sceny pojedynczego studenta\n"
 },
 {
-	"uri": "https://example.org/docs/elevatorsetup.gd/",
+	"uri": "/docs/elevatorsetup.gd.html",
 	"title": "elevatorSetup.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: Node2D\nDescription "
 },
 {
-	"uri": "https://example.org/docs/endgame.gd/",
+	"uri": "/docs/endgame.gd.html",
 	"title": "endgame.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: CanvasLayer\nDescription "
 },
 {
-	"uri": "https://example.org/docs/firealarm.gd/",
+	"uri": "/docs/firealarm.gd.html",
 	"title": "FireAlarm.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: Sprite2D\nDescription Property Descriptions textureAfterUsage var textureAfterUsage = \u0026#34;\u0026lt;CompressedTexture2D#-9223367935513261906\u0026gt;\u0026#34; Method Descriptions change_texture func change_texture() Zmienia teksture\n"
 },
 {
-	"uri": "https://example.org/docs/firealarmsetup.gd/",
+	"uri": "/docs/firealarmsetup.gd.html",
 	"title": "fireAlarmSetup.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: Node2D\nDescription Property Descriptions useable var useable: bool = true Method Descriptions use_alarm func use_alarm(isSabotaged) Używa alarm\nset_lecture_hall func set_lecture_hall() Signals signal change_texture(): "
 },
 {
-	"uri": "https://example.org/docs/global.gd/",
+	"uri": "/docs/global.gd.html",
 	"title": "global.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: Node\nDescription Property Descriptions Players var Players Słownik przechowujący informacje o graczach\ndeanId var deanId: int Identyfikator dziekana\nstudentsNames var studentsNames Lista dostępnych nazw studentów\nusedNames var usedNames Lista użytych nazw studentów\nTasks var Tasks: Array Lista dostępnych zadań\nUsedTasks var UsedTasks: Array Lista użytych zadań\nMethod Descriptions remove_name func remove_name(nameNumber: int) Funkcja dodająca zwolnioną nazwę studenta do listy dostępnych nazw\nresetTasks func resetTasks() Funkcja resetująca listę zadań, przenosząca zadania z UsedTasks z powrotem do Tasks\nget_task_data func get_task_data(task_number: int) -\u0026gt; Task Funkcja zwracająca dane o zadaniu o określonym numerze\nmanage_task func manage_task(task_number: int) Funkcja zarządzająca zadaniem o określonym numerze\nremove_task func remove_task(task_number: int) Funkcja usuwająca zadanie o określonym numerze z listy dostępnych zadań\nSub-classes Task Property Descriptions positionX var positionX: float positionY var positionY: float taskType var taskType: String Method Descriptions _init func _init(positionX, positionY, taskType) -\u0026gt; Task Inicjalizator klasy Task\n"
 },
 {
-	"uri": "https://example.org/docs/kickscript.gd/",
+	"uri": "/docs/kickscript.gd.html",
 	"title": "kickScript.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: Node2D\nDescription Property Descriptions on_lecture_hall var on_lecture_hall = false Flaga określająca, czy postać studenta znajduje się w sali wykładowej.\nSignals signal on_student_hovered(name): Sygnał informujący o najechaniu myszką na studenta. "
 },
 {
-	"uri": "https://example.org/docs/lecture_hall.gd/",
+	"uri": "/docs/lecture_hall.gd.html",
 	"title": "lecture_hall.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: Node2D\nDescription Property Descriptions npcScene var npcScene Ładuje scenę postaci NPC\ndeanScene var deanScene Ładuje scenę postaci Deana\nrng var rng Tworzy nowy generator liczb losowych\navailable_spots var available_spots Lista dostępnych miejsc\nclicked var clicked = 0 Licznik kliknięć\nkicked_player_number var kicked_player_number = 1 Numer gracza do wyrzucenia\nmaximum_ammount_to_kick var maximum_ammount_to_kick = 1 Maksymalna liczba do wyrzucenia\nhovered_student var hovered_student Zmienna przechowująca informację o najechanym studencie\nstudents_to_kick var students_to_kick Lista studentów do wyrzucenia\nplayersCount var playersCount = 0 Licznik graczy\nendgame var endgame Ładuje scenę zakończenia gry\nkicked_notification var kicked_notification Ładuje scenę powiadomienia o wyrzuceniu\nMethod Descriptions on_npc_spawn func on_npc_spawn() Funkcja wykonująca się przy spawnowaniu npc\nset_student func set_student(name, spot) set_dean func set_dean() on_student_moved func on_student_moved() Funkcja wykonuje się kiedy dziekan przeniesie studenta, żeby go wyrzucić\non_student_catched func on_student_catched(name) Funkcja wywołuje się przy złapaniu studenta\nquit_game func quit_game() change_players_count func change_players_count() show_end_screen func show_end_screen() send_restart_task_call func send_restart_task_call() remove_student_from_hall func remove_student_from_hall(i) back_to_game func back_to_game(to_kick) restart_map func restart_map() move_student func move_student(name) set_hovered_student func set_hovered_student(name) ustawanie wybranego studenta\ncheck_if_was_player func check_if_was_player(name) Sprawdzanie czy student był graczem czy też botem\n"
 },
 {
-	"uri": "https://example.org/docs/main_menu.gd/",
+	"uri": "/docs/main_menu.gd.html",
 	"title": "main_menu.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: Control\nDescription Method Descriptions tweening_up func tweening_up(node) Parametry: node - element GUI Return: None Funkcja animująca wznoszenie elementu GUI.\ntweening_down func tweening_down(node) Parametry: node - element GUI Return: None Funkcja animująca opadanie elementu GUI.\n"
 },
 {
-	"uri": "https://example.org/docs/main.gd/",
+	"uri": "/docs/main.gd.html",
 	"title": "main.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: Control\nDescription Property Descriptions Address @export var Address = \u0026#34;\u0026#34; Port @export var Port = 8909 single_ip_info var single_ip_info peer var peer Method Descriptions peer_connected func peer_connected(id: int) Parametry: id - unikalny numer generowany losowo podczas nawiązywania połączenia z seweren Return: None Funkcja informująca o nowym graczu, który dołączył do jako peer, wywołuje się gdy jest emitowany sygnał wbudowany \u0026lsquo;peer_connected\u0026rsquo;\npeer_disconnected func peer_disconnected(id: int) Parametry: id - unikalny numer generowany losowo podczas nawiązywania połączenia z seweren Return: None Funkcja informująca o graczu, który rozłączył się jako peer, wywołuje się gdy jest emitowany sygnał wbudowany \u0026lsquo;peer_connected\u0026rsquo;\nconnected_to_server func connected_to_server() Funkcja informująca o graczu, który połączył się do serwera klikając przycisk dołączenia do gry, wywołuje się gdy jest emitowany sygnał wbudowany \u0026lsquo;connected_to_server\u0026rsquo;\nconnection_failed func connection_failed() Funkcja informująca o graczu, któremu nie udało się dołączyć do gry. Wywołuje się gdy jest emitowany sygnał wbudowany \u0026lsquo;connection_failed\nSendPlayerInformation func SendPlayerInformation(name, id) Parametry: name - nazwa gracza który dołączył do gry, id - unikalny numer generowany losowo podczas nawiązywania połączenia z seweren Return: None Funkcja wysyłająca informacje o graczu, który połączył się do serwera. Funkcja zapisuje informacje o graczu w skrypcie globalnym\nStartGame func StartGame() funkcja wywoływana w momencie rozpoczęcia gry, wyświetla mapę na ekranach graczy\nhostGame func hostGame() -\u0026gt; bool Return: bool funkcja wywołująca wbudowane metody multiplayer API, funkcja ta sprawia, że inni użytkownicy mogą zobaczyć serwer\nupdate_dean_id func update_dean_id(id) funkcja zapisuje informacje o nowo wybranym dziekanie do skryptu globalnego\non_update_id func on_update_id(id) funkcja wywoływana w momencie wybrania innej osoby, która ma mieć rolę dziekana\njoinByIp func joinByIp(ip) funkcja sprawdzająca czy można dołąćzyć do serwera, jeśli można, to dołącza\non_start_game func on_start_game() funkcja wywoływana po kliknięciu przycisku rozpoczęcia gry\nsignName func signName(name_number, i) funkcja przypisująca graczowi imię z pośród wszystkich dostępnych imion studentów\nSignals signal current_player(id): signal isServer(): signal gameStart(): "
 },
 {
-	"uri": "https://example.org/docs/map.gd/",
+	"uri": "/docs/map.gd.html",
 	"title": "map.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: Node2D\nDescription Property Descriptions studentScene @export var studentScene: PackedScene Deklaracja zmiennych przechowujących trzy sceny: studentScene, deanScene, npcScene\ndeanScene @export var deanScene: PackedScene npcScene @export var npcScene: PackedScene textures var textures Inicjalizacja pustej listy \u0026rsquo;textures'\ntimeUi var timeUi Ładowanie sceny \u0026rsquo;time.tscn\u0026rsquo; z katalogu \u0026lsquo;ui\u0026rsquo; i tworzenie instancji tej sceny\nisVotingProcess var isVotingProcess = false Inicjalizacja zmiennej \u0026lsquo;isVotingProcess\u0026rsquo; jako logicznej wartości \u0026lsquo;False\u0026rsquo;\nday var day = 1 Inicjalizacja zmiennej \u0026lsquo;day\u0026rsquo; jako liczby całkowitej równą 1\nrand var rand Inicjalizacja generatora liczb losowych\nMethod Descriptions restart_tasks func restart_tasks() set_dean_position func set_dean_position(deanId, vector) restart_npc func restart_npc(name, task_number) set_time_ui func set_time_ui(time) setNpc func setNpc(name, task_number, has_name) setPlayer func setPlayer(i, task_number) set_code_number func set_code_number(random, day) change_code func change_code() set_npc_for_host func set_npc_for_host(name, task_number, has_name) Parametry: name - imię studenta, task_number - numer taska, które robi student has_name - zmienna bool, mówiąca czy npc już posiada imię Ustawia npc dla hosta.\nchange_view func change_view() npcs_notes func npcs_notes(isVisible) npcs_walking func npcs_walking(isVisible) npcs_computer func npcs_computer(isVisible) Signals signal taskType(taskType): Sygnał \u0026rsquo;taskType\u0026rsquo; emitowany z argumentem \u0026rsquo;taskType\u0026rsquo; "
 },
 {
-	"uri": "https://example.org/docs/movementinput.gd/",
+	"uri": "/docs/movementinput.gd.html",
 	"title": "movementInput.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: CharacterBody2D\nDescription Property Descriptions player_name var player_name: String Nazwa gracza.\ncan_move var can_move: bool = true Flaga określająca możliwość ruchu postaci.\nlast_direction var last_direction = \u0026#34;(0, 0)\u0026#34; Zmienna określająca ostatni kierunek ruchu gracza przed zatrzymaniem.\ntemp_speed var temp_speed Tymczasowa prędkość, używana do zatrzymywania i przywracania ruchu.\nspeed var speed: int = 250 Prędkość ruchu gracza.\ncanMove var canMove = true Flaga określająca, czy gracz może się poruszać.\nMethod Descriptions apply_physics func apply_physics() Metoda aplikująca fizykę ruchu gracza.\ncalculate_velocity func calculate_velocity() Parametry: None Return: Wektor prędkości gracza Metoda obliczająca wektor prędkości gracza na podstawie kierunku z wejścia.\ntake_current_speed_value func take_current_speed_value() -\u0026gt; int Return: Prędkość gracza Metoda zwracająca aktualną wartość prędkości gracza.\nstop_player_movement func stop_player_movement() Metoda zatrzymująca ruch gracza.\nrestore_player_movement func restore_player_movement(tempspeed) Parametry: tempspeed Metoda przywracająca ruch gracza.\nemit_direction_signal func emit_direction_signal(velocity) Parametry: velocity - wektor prędkości Funkcja emitująca sygnał informujący o kierunku ruchu.\nstop_walking_animation func stop_walking_animation() Metoda zdalna obsługująca zatrzymanie animacji chodzenia gracza.\nSignals signal direction(direction_vector): Sygnał informujący o kierunku ruchu postaci. "
 },
 {
-	"uri": "https://example.org/docs/npc_animation_tree.gd/",
+	"uri": "/docs/npc_animation_tree.gd.html",
 	"title": "npc_animation_tree.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: AnimationTree\nDescription Property Descriptions taskVector var taskVector = \u0026#34;(0, 0)\u0026#34; Wektor związany z bieżącym zadaniem postaci NPC.\nsprite_to_back_to var sprite_to_back_to: Sprite2D Sprite, do którego zostanie przywrócony animowany sprite po zakończeniu zadania.\nMethod Descriptions taking_notes_loop func taking_notes_loop() Metoda obsługująca animacje zadania \u0026ldquo;takingNotes\u0026rdquo;.\ncomputer_loop func computer_loop() Metoda obsługująca animacje zadania \u0026ldquo;computer\u0026rdquo;.\nvending_machine_loop func vending_machine_loop() Metoda obsługująca animacje zadania \u0026ldquo;vendingMachine\u0026rdquo;.\nrotate_npc func rotate_npc(direction) Parametry: direction Metoda zdalna obsługująca obrót postaci NPC.\nset_vector_and_sprite func set_vector_and_sprite(sprite, vector) Parametry: sprite, vector Metoda zdalna ustawiająca wektor i sprite postaci NPC.\nrun_animation func run_animation(taskVector) Parametry: taskVector Metoda zdalna uruchamiająca odpowiednią animację postaci NPC.\n"
 },
 {
-	"uri": "https://example.org/docs/npcmovementinput.gd/",
+	"uri": "/docs/npcmovementinput.gd.html",
 	"title": "npcMovementInput.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: CharacterBody2D\nDescription Property Descriptions speed var speed = 400 Prędkość ruchu postaci NPC.\ndestination var destination = \u0026#34;(0, 0)\u0026#34; Wektor docelowy dla ruchu postaci NPC.\npoint_A var point_A: Vector2 Punkt A na trasie ruchu postaci NPC.\npoint_B var point_B: Vector2 Punkt B na trasie ruchu postaci NPC.\nmove_direction var move_direction = \u0026#34;(1, 0)\u0026#34; Wektor kierunku ruchu postaci NPC.\ncan_move var can_move: bool Flaga określająca możliwość ruchu postaci NPC.\nwalking_task var walking_task = false Flaga określająca, czy postać NPC jest w trakcie zadania poruszania się.\nrng var rng Generator liczb losowych.\nMethod Descriptions wait func wait() Funkcja zatrzymująca NPC.\nSignals signal rotate(direction): Sygnał informujący o zmianie kierunku obrotu postaci NPC. "
 },
 {
-	"uri": "https://example.org/docs/pause_menu.gd/",
+	"uri": "/docs/pause_menu.gd.html",
 	"title": "pause_menu.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: Control\nDescription "
 },
 {
-	"uri": "https://example.org/docs/playerinfo.gd/",
+	"uri": "/docs/playerinfo.gd.html",
 	"title": "PlayerInfo.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: HBoxContainer\nDescription Signals signal makeAsDean(playerId): "
 },
 {
-	"uri": "https://example.org/docs/referencecollector/",
+	"uri": "/docs/referencecollector.html",
 	"title": "ReferenceCollector",
 	"tags": [],
 	"description": "To use this tool:  - Place this script and Collector.gd in your Godot project folder. - Open the script in the script editor. - Modify the properties below to control the tool&#39;s behavior. - Go to File -&gt; Run to run the script in the editor.
@@ -177,91 +177,91 @@ To use this tool:  - Place this script and Collector.gd in your Godot project fo
 	"content": " Extends: EditorScript\nDescription To use this tool: - Place this script and Collector.gd in your Godot project folder. - Open the script in the script editor. - Modify the properties below to control the tool\u0026rsquo;s behavior. - Go to File -\u0026gt; Run to run the script in the editor.\nTo use this tool: - Place this script and Collector.gd in your Godot project folder. - Open the script in the script editor. - Modify the properties below to control the tool\u0026rsquo;s behavior. - Go to File -\u0026gt; Run to run the script in the editor.\nProperty Descriptions Collector var Collector: SceneTree directories var directories: Array A list of directories to collect files from.\nis_recursive var is_recursive: bool = true If true, explore each directory recursively\npatterns var patterns: Array A list of patterns to filter files.\nsave_path var save_path: String = \u0026#34;res://reference.json\u0026#34; Output path to save the class reference.\n"
 },
 {
-	"uri": "https://example.org/docs/server.gd/",
+	"uri": "/docs/server.gd.html",
 	"title": "server.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: Node2D\nDescription Property Descriptions endgame var endgame rng var rng green_terminal var green_terminal violet_terminal var violet_terminal yellow_terminal var yellow_terminal terminal1 var terminal1 terminal2 var terminal2 terminal3 var terminal3 serverValue var serverValue digits_sprites var digits_sprites Method Descriptions set_server_value func set_server_value(value) calculate_value func calculate_value() Funkcja sprawdzająca poprawność wprowadzonych wartości terminali\nrun_server_error func run_server_error() set_terminals_position_for_host func set_terminals_position_for_host() Funkcja ustawiająca pozycję terminali dla hosta\nset_terminals_position func set_terminals_position(position1, position2, position3) show_end_screen func show_end_screen() on_number_changed func on_number_changed(name, value) Parametry: name - nazwa terminala, value - cyfra Funkcja zmieniająca teksturę cyfr na ekranie w zależności od wartości wprowadzonej do terminali\n"
 },
 {
-	"uri": "https://example.org/docs/serverbrowser.gd/",
+	"uri": "/docs/serverbrowser.gd.html",
 	"title": "ServerBrowser.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: Control\nDescription Property Descriptions listenPort @export var listenPort: int = 8911 broadcastPort @export var broadcastPort: int = 8912 broadcastAddress @export var broadcastAddress: String = \u0026#34;\u0026#34; serverInfo @export var serverInfo: PackedScene broadcastTimer var broadcastTimer: Timer RoomInfo var RoomInfo playerCount var playerCount = 0 broadcaster var broadcaster: PacketPeerUDP listener var listener: PacketPeerUDP is_host var is_host = false Method Descriptions setBroadcastAddress func setBroadcastAddress(address: String) Parametry: address - ciąg znaków z adresem IP hostującego Return: bool Funckja ustawiająca adres strumieniowanie informacji związanych z aktualnym serwerem gry\nsetUp func setUp() funkcja ustawiająca port dla użytkownika, który planuje dołączyć do gry\nsetupBroadcast func setupBroadcast(name) funkcja ustawiająca strumieniowanie informacji z serwera do graczy\nexit_tree func exit_tree() funkcja wywoływana w momencie zamknięcia serwera\ncleanUp func cleanUp() funkcja czyszcząca informacje związane z serwerem\njoinByIp func joinByIp(ip) funckja wysyłająca sygnał w momencie dołąćzenia do gry\nSignals signal joinGame(ip): "
 },
 {
-	"uri": "https://example.org/docs/serverinfo.gd/",
+	"uri": "/docs/serverinfo.gd.html",
 	"title": "ServerInfo.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: HBoxContainer\nDescription Signals signal joinGame(ip): "
 },
 {
-	"uri": "https://example.org/docs/single_ip_info.gd/",
+	"uri": "/docs/single_ip_info.gd.html",
 	"title": "single_ip_info.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: HBoxContainer\nDescription Signals signal host_down(ip): Sygnał informujący o wyłączeniu hosta z podanym adresem IP "
 },
 {
-	"uri": "https://example.org/docs/start_menu.gd/",
+	"uri": "/docs/start_menu.gd.html",
 	"title": "start_menu.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: Node2D\nDescription "
 },
 {
-	"uri": "https://example.org/docs/student_animation_tree.gd/",
+	"uri": "/docs/student_animation_tree.gd.html",
 	"title": "student_animation_tree.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: AnimationTree\nDescription Method Descriptions run_animation func run_animation(velocity) task_animation func task_animation(task_type) "
 },
 {
-	"uri": "https://example.org/docs/studentinput.gd/",
+	"uri": "/docs/studentinput.gd.html",
 	"title": "studentInput.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: Node2D\nDescription Property Descriptions dig_info_instance var dig_info_instance Gotowa zmienna przechowująca instancję sceny dig_and_dean_catch_info, która będzie używana do wyświetlania informacji o kopaniu i złapaniu przez dziekana.\ncurrent_task_area var current_task_area = \u0026#34;\u0026#34; Zmienna przechowująca aktualną strefę zadania gracza. Pusty string, jeśli gracz nie wykonuje zadania.\nfourthFloor var fourthFloor Gotowa zmienna przechowująca scenę czwartego piętra.\nthirdFloor var thirdFloor Gotowa zmienna przechowująca scenę trzeciego piętra.\ndangerScene var dangerScene = \u0026#34;\u0026lt;PackedScene#-9223367941569842968\u0026gt;\u0026#34; Gotowa zmienna przechowująca scenę informującą o wyjściu z zadania.\ndanger_instance var danger_instance Zmienna do przypisania instancji sceny dangerScene.\ntask_finished var task_finished = true Flaga określająca, czy zadanie gracza zostało zakończone.\ncatchable var catchable: bool = false Flaga określająca, czy student może zostać złapany przez dziekana.\nis_catched var is_catched: bool = false Flaga określająca, czy student został już złapany.\ncan_use_alarm var can_use_alarm: bool = false Flaga określająca, czy gracz znajduje się w strefie, gdzie można aktywować alarm.\nmultiplayerId var multiplayerId Identyfikator wieloosobowy gracza.\ncan_use_server var can_use_server: bool = false Flaga określająca, czy gracz znajduje się w strefie, gdzie można użyć serwera.\ncan_use_server_again var can_use_server_again: bool = true Flaga określająca, czy gracz może ponownie użyć serwera.\nlevel var level: int = 3 Zmienna przechowująca poziom gracza.\ncan_use_elevator var can_use_elevator: bool = false Flaga określająca, czy gracz znajduje się w strefie, gdzie można użyć windy.\ncan_use_booster var can_use_booster: bool = false Flaga określająca, czy gracz znajduje się w strefie, gdzie można użyć boostera.\nhas_booster var has_booster: bool = false Flaga określająca, czy student posiada boostera.\ncan_use_terminal var can_use_terminal: bool = false Flaga określająca, czy gracz znajduje się w strefie, gdzie można użyć terminalu.\nterminal_address var terminal_address Adres terminalu, który gracz może użyć.\nfire_alarm_reference var fire_alarm_reference Referencja do obiektu obsługującego alarm przeciwpożarowy.\ntemp_speed var temp_speed Zmienna przechowująca tymczasową prędkość.\nbody var body: CharacterBody2D Referencja do ciała postaci (CharacterBody2D).\nMethod Descriptions change_alarm_state func change_alarm_state() Ta funkcja obsługuje włączanie alarmu przeciwpożarowego.\nremoveBooster func removeBooster() Ta funkcja usuwa boostera z gry, jeśli istnieje.\nsabotage_alarm func sabotage_alarm() funkcja do sabotowania alarmu przez studenta, zatrzymuje na chwile ruch gracza\ntask_execution func task_execution() Funkcja do wykonywania taska przez studenta, wysyła sygnał w jakiej area znajduje sie gracz.\ncatch_student func catch_student() Fukcja służąca do łapania studenta, jeśli da się złapać studenta łapie go i zatrzymuje mu ruch.\nuse_server func use_server() Funkcja do uzywania serwera przez studenta, sprawdza czy wpisany kod jest poprawny.\nuse_elevator func use_elevator(side) Funkcja do używania windy, przenosi gracza na odpowiednie piętro, bierze pod uwagę z której strony gracz wsiada do windy.\nacquire_booster func acquire_booster() Funkcja nadajaca booster dla studenta.\nteleport func teleport(ammount) Teleportuje gracza o wybrane położenie w zmiennej ammount\ndig func dig() Wyszukuje przeszkody w pobliżu i uruchamia kopanie, jeśli gracz jest skierowany w stronę przeszkody i nie naciśnięto przycisku spacji.\nstop_dig func stop_dig() Zatrzymuje proces kopania i wyłącza związany z nim timer.\nchange_catchable func change_catchable(boolean) funkcja zdalna zmieniająca stan zmiennej catchable.\nchange_is_catched func change_is_catched() funkcja zdalna zmieniająca stan zmiennej is_catched na true.\nstop_player_movement func stop_player_movement() funkcja do zatrzymania movementu studenta, zbiera aktualna predkosc i przechowuje ja w temp_speed\nremove_obstacle func remove_obstacle(_obstacle_to_destroy) jesli przekazany obiekt istnieje to funkcja go usuwa\nSignals signal player_task(task_type): Sygnał emitowany, gdy gracz otrzymuje nowe zadanie. Parametr task_type określa typ zadania. signal disable_player_movement_for_duration(duration): Sygnał emitowany w celu wyłączenia ruchu gracza na określony czas. Parametr duration określa długość wyłączenia. signal use_chat(name): Sygnał używany do uruchomienia czatu. Parametr name określa nazwę czatu. signal exit_chat(name): Sygnał używany do wyjścia z czatu. Parametr name określa nazwę czatu. "
 },
 {
-	"uri": "https://example.org/docs/tablet_single_student.gd/",
+	"uri": "/docs/tablet_single_student.gd.html",
 	"title": "tablet_single_student.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: HBoxContainer\nDescription Property Descriptions isChecked var isChecked Zmienna przechowująca stan zaznaczenia\ncheckmark var checkmark Referencja do ikony checkmark\ncross var cross Referencja do ikony krzyżyka\n"
 },
 {
-	"uri": "https://example.org/docs/task.gd/",
+	"uri": "/docs/task.gd.html",
 	"title": "task.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: Node2D\nDescription Method Descriptions on_npc_task_type_emitted func on_npc_task_type_emitted(task_type) Parametry: task_type - typ tasku Funkcja do odtwarzania konkretnego zadania przez gracza\nrun_task func run_task(task_type) Parametry: task_type - typ tasku Funkcja dobiera odpowiednią funkcje zależnie od zmiennej task_type\ntask_computer func task_computer() Funkcja emitująca sygnał o task_type = computer\ntask_taking_notes func task_taking_notes() Funkcja emitująca sygnał o task_type = takingNotes\ntask_walking func task_walking() Funkcja emitująca sygnał o task_type = walking\nvending_machine func vending_machine() Funkcja emitująca sygnał o task_type = vendingMachine\nSignals signal npc_walking_task(): signal npc_sprite_task(task_type): "
 },
 {
-	"uri": "https://example.org/docs/terminal.gd/",
+	"uri": "/docs/terminal.gd.html",
 	"title": "terminal.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: Node2D\nDescription Property Descriptions actual_value var actual_value = 0 textures var textures can_update_value var can_update_value: bool = false Method Descriptions load_textures func load_textures() Funkcja ładowania tekstur\nupdate_texture func update_texture() Funkcja aktualizująca teksturę terminala\nuse_terminal func use_terminal() show_terminal func show_terminal(name) Signals signal change_number(name, value): "
 },
 {
-	"uri": "https://example.org/docs/waiting_room.gd/",
+	"uri": "/docs/waiting_room.gd.html",
 	"title": "waiting_room.gd",
 	"tags": [],
 	"description": "",
 	"content": " Extends: Control\nDescription Property Descriptions serverInfo @export var serverInfo: PackedScene current var current: int dean var dean: int isServer var isServer = false Method Descriptions enable_dean_change func enable_dean_change() funkcja która przekazuje pozwolenie na zmianę gracza, który otrzyma rolę dziekana\nmakeAsDean func makeAsDean(id) funkcja przysłająca informacje o wybranym dziekanie\nfindDeanId func findDeanId() -\u0026gt; int Return: int funkcja która szuka osoby, która ma ustawioną rolę dziekan\nrefresh_table func refresh_table() funckcja odświeża tabelę z graczami - ich nazwą i ich rolą w grze\non_current_player func on_current_player(id) funkcja wysyłająca informajce o graczu, który obecnie jest wpisywany do tabeli\nSignals signal button_pressed(node): signal dean_picked(deanId): "
 },
 {
-	"uri": "https://example.org/categories/",
+	"uri": "/categories.html",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://example.org/tags/",
+	"uri": "/tags.html",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

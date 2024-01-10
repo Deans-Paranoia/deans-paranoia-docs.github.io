@@ -2,248 +2,248 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Getting Started on Deans Paranois Documentation</title>
-    <link>https://example.org/docs/</link>
+    <link>/docs.html</link>
     <description>Recent content in Getting Started on Deans Paranois Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pl</language>
     <lastBuildDate>Wed, 10 Jan 2024 10:23:58 +0100</lastBuildDate>
-    <atom:link href="https://example.org/docs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installation</title>
-      <link>https://example.org/docs/installation/</link>
+      <link>/docs/installation.html</link>
       <pubDate>Wed, 10 Jan 2024 10:25:05 +0100</pubDate>
-      <guid>https://example.org/docs/installation/</guid>
+      <guid>/docs/installation.html</guid>
       <description>The following steps are here to help you initialize your new website. If you don&amp;rsquo;t know Hugo at all, we strongly suggest you learn more about it by following this great documentation for beginners.&#xA;Create your project Hugo provides a new command to create a new website.&#xA;hugo new site &amp;lt;new_project&amp;gt; Install the theme Install the Hugo-theme-learn theme by following this documentation&#xA;This theme&amp;rsquo;s repository is: https://github.com/matcornic/hugo-theme-learn.git&#xA;Alternatively, you can download the theme as .</description>
     </item>
     <item>
       <title>areaNotifiers.gd</title>
-      <link>https://example.org/docs/areanotifiers.gd/</link>
+      <link>/docs/areanotifiers.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/areanotifiers.gd/</guid>
+      <guid>/docs/areanotifiers.gd.html</guid>
       <description> Extends: Node2D&#xA;Description Property Descriptions map var map Referencja do obiektu mapy&#xA;Signals signal noteTask(isVisible): Sygnał informujący o widoczności zadania z notatkami signal computerTask(isVisible): Sygnał informujący o widoczności zadania z komputerem signal walkingTask(isVisible): Sygnał informujący o widoczności zadania z chodzeniem </description>
     </item>
     <item>
       <title>booster.gd</title>
-      <link>https://example.org/docs/booster.gd/</link>
+      <link>/docs/booster.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/booster.gd/</guid>
+      <guid>/docs/booster.gd.html</guid>
       <description>Extends: Node2D&#xA;Description Method Descriptions on_boost_requested func on_boost_requested() Funkcja usuwajaca booster po jego zebraniu</description>
     </item>
     <item>
       <title>chat.gd</title>
-      <link>https://example.org/docs/chat.gd/</link>
+      <link>/docs/chat.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/chat.gd/</guid>
+      <guid>/docs/chat.gd.html</guid>
       <description> Extends: CanvasLayer&#xA;Description Property Descriptions new_message @export var new_message: PackedScene Zmienna przechowująca scenę dla nowej wiadomości&#xA;line_edit var line_edit Referencja do kontrolki wprowadzania tekstu&#xA;message_panel var message_panel Referencja do panelu wiadomości&#xA;chat_in_use var chat_in_use: bool = false Flaga określająca, czy czat jest aktualnie używany&#xA;Method Descriptions add_message_to_chat func add_message_to_chat(message_content, name) Funkcja dodająca wiadomość do czatu (zdalnie wywoływana)&#xA;Signals signal chat_opened(is_opened): Sygnał informujący o otwarciu lub zamknięciu czatu </description>
     </item>
     <item>
       <title>CollectorGd4.gd</title>
-      <link>https://example.org/docs/collectorgd4.gd/</link>
+      <link>/docs/collectorgd4.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/collectorgd4.gd/</guid>
+      <guid>/docs/collectorgd4.gd.html</guid>
       <description>Extends: SceneTree&#xA;Description Property Descriptions warnings_regex var warnings_regex: RegEx Method Descriptions find_files func find_files(dirpath: String = &amp;#34;&amp;#34;, patterns: PackedStringArray = null, is_recursive: bool = false, do_skip_hidden: bool = true) -&amp;gt; PackedStringArray Returns a list of file paths found in the directory. Arguments - dirpath: path to the directory from which to search files. - patterns: an array of string match patterns, where &amp;ldquo;&amp;rdquo; matches zero or more arbitrary characters and &amp;ldquo;?</description>
     </item>
     <item>
       <title>deanInput.gd</title>
-      <link>https://example.org/docs/deaninput.gd/</link>
+      <link>/docs/deaninput.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/deaninput.gd/</guid>
+      <guid>/docs/deaninput.gd.html</guid>
       <description>Extends: Node2D&#xA;Description Property Descriptions catch_info_instance var catch_info_instance Instancja widżetu odpowiadającego za informacje o złapaniu studenta.&#xA;is_tablet_open var is_tablet_open: bool = false Flaga określająca, czy tablet dziekana jest otwarty.&#xA;scene var scene Gotowy widget sceny tabletu.&#xA;tablet_scene var tablet_scene Scena tabletu.&#xA;is_task_area var is_task_area Zmienna określająca, czy dziekan znajduje się w obszarze zadania.&#xA;body var body: CharacterBody2D Referencja do ciała postaci.&#xA;can_use_alarm var can_use_alarm: bool = false Flaga określająca, czy Dean może aktywować alarm przeciwpożarowy.</description>
     </item>
     <item>
       <title>deans_tablet.gd</title>
-      <link>https://example.org/docs/deans_tablet.gd/</link>
+      <link>/docs/deans_tablet.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/deans_tablet.gd/</guid>
+      <guid>/docs/deans_tablet.gd.html</guid>
       <description>Extends: CanvasLayer&#xA;Description Property Descriptions single_scene var single_scene Referencja do sceny pojedynczego studenta</description>
     </item>
     <item>
       <title>elevatorSetup.gd</title>
-      <link>https://example.org/docs/elevatorsetup.gd/</link>
+      <link>/docs/elevatorsetup.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/elevatorsetup.gd/</guid>
+      <guid>/docs/elevatorsetup.gd.html</guid>
       <description> Extends: Node2D&#xA;Description </description>
     </item>
     <item>
       <title>endgame.gd</title>
-      <link>https://example.org/docs/endgame.gd/</link>
+      <link>/docs/endgame.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/endgame.gd/</guid>
+      <guid>/docs/endgame.gd.html</guid>
       <description> Extends: CanvasLayer&#xA;Description </description>
     </item>
     <item>
       <title>FireAlarm.gd</title>
-      <link>https://example.org/docs/firealarm.gd/</link>
+      <link>/docs/firealarm.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/firealarm.gd/</guid>
+      <guid>/docs/firealarm.gd.html</guid>
       <description>Extends: Sprite2D&#xA;Description Property Descriptions textureAfterUsage var textureAfterUsage = &amp;#34;&amp;lt;CompressedTexture2D#-9223367935513261906&amp;gt;&amp;#34; Method Descriptions change_texture func change_texture() Zmienia teksture</description>
     </item>
     <item>
       <title>fireAlarmSetup.gd</title>
-      <link>https://example.org/docs/firealarmsetup.gd/</link>
+      <link>/docs/firealarmsetup.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/firealarmsetup.gd/</guid>
+      <guid>/docs/firealarmsetup.gd.html</guid>
       <description> Extends: Node2D&#xA;Description Property Descriptions useable var useable: bool = true Method Descriptions use_alarm func use_alarm(isSabotaged) Używa alarm&#xA;set_lecture_hall func set_lecture_hall() Signals signal change_texture(): </description>
     </item>
     <item>
       <title>global.gd</title>
-      <link>https://example.org/docs/global.gd/</link>
+      <link>/docs/global.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/global.gd/</guid>
+      <guid>/docs/global.gd.html</guid>
       <description>Extends: Node&#xA;Description Property Descriptions Players var Players Słownik przechowujący informacje o graczach&#xA;deanId var deanId: int Identyfikator dziekana&#xA;studentsNames var studentsNames Lista dostępnych nazw studentów&#xA;usedNames var usedNames Lista użytych nazw studentów&#xA;Tasks var Tasks: Array Lista dostępnych zadań&#xA;UsedTasks var UsedTasks: Array Lista użytych zadań&#xA;Method Descriptions remove_name func remove_name(nameNumber: int) Funkcja dodająca zwolnioną nazwę studenta do listy dostępnych nazw&#xA;resetTasks func resetTasks() Funkcja resetująca listę zadań, przenosząca zadania z UsedTasks z powrotem do Tasks</description>
     </item>
     <item>
       <title>kickScript.gd</title>
-      <link>https://example.org/docs/kickscript.gd/</link>
+      <link>/docs/kickscript.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/kickscript.gd/</guid>
+      <guid>/docs/kickscript.gd.html</guid>
       <description> Extends: Node2D&#xA;Description Property Descriptions on_lecture_hall var on_lecture_hall = false Flaga określająca, czy postać studenta znajduje się w sali wykładowej.&#xA;Signals signal on_student_hovered(name): Sygnał informujący o najechaniu myszką na studenta. </description>
     </item>
     <item>
       <title>lecture_hall.gd</title>
-      <link>https://example.org/docs/lecture_hall.gd/</link>
+      <link>/docs/lecture_hall.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/lecture_hall.gd/</guid>
+      <guid>/docs/lecture_hall.gd.html</guid>
       <description>Extends: Node2D&#xA;Description Property Descriptions npcScene var npcScene Ładuje scenę postaci NPC&#xA;deanScene var deanScene Ładuje scenę postaci Deana&#xA;rng var rng Tworzy nowy generator liczb losowych&#xA;available_spots var available_spots Lista dostępnych miejsc&#xA;clicked var clicked = 0 Licznik kliknięć&#xA;kicked_player_number var kicked_player_number = 1 Numer gracza do wyrzucenia&#xA;maximum_ammount_to_kick var maximum_ammount_to_kick = 1 Maksymalna liczba do wyrzucenia&#xA;hovered_student var hovered_student Zmienna przechowująca informację o najechanym studencie&#xA;students_to_kick var students_to_kick Lista studentów do wyrzucenia</description>
     </item>
     <item>
       <title>main_menu.gd</title>
-      <link>https://example.org/docs/main_menu.gd/</link>
+      <link>/docs/main_menu.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/main_menu.gd/</guid>
+      <guid>/docs/main_menu.gd.html</guid>
       <description>Extends: Control&#xA;Description Method Descriptions tweening_up func tweening_up(node) Parametry: node - element GUI Return: None Funkcja animująca wznoszenie elementu GUI.&#xA;tweening_down func tweening_down(node) Parametry: node - element GUI Return: None Funkcja animująca opadanie elementu GUI.</description>
     </item>
     <item>
       <title>main.gd</title>
-      <link>https://example.org/docs/main.gd/</link>
+      <link>/docs/main.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/main.gd/</guid>
+      <guid>/docs/main.gd.html</guid>
       <description>Extends: Control&#xA;Description Property Descriptions Address @export var Address = &amp;#34;&amp;#34; Port @export var Port = 8909 single_ip_info var single_ip_info peer var peer Method Descriptions peer_connected func peer_connected(id: int) Parametry: id - unikalny numer generowany losowo podczas nawiązywania połączenia z seweren Return: None Funkcja informująca o nowym graczu, który dołączył do jako peer, wywołuje się gdy jest emitowany sygnał wbudowany &amp;lsquo;peer_connected&amp;rsquo;&#xA;peer_disconnected func peer_disconnected(id: int) Parametry: id - unikalny numer generowany losowo podczas nawiązywania połączenia z seweren Return: None Funkcja informująca o graczu, który rozłączył się jako peer, wywołuje się gdy jest emitowany sygnał wbudowany &amp;lsquo;peer_connected&amp;rsquo;</description>
     </item>
     <item>
       <title>map.gd</title>
-      <link>https://example.org/docs/map.gd/</link>
+      <link>/docs/map.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/map.gd/</guid>
+      <guid>/docs/map.gd.html</guid>
       <description>Extends: Node2D&#xA;Description Property Descriptions studentScene @export var studentScene: PackedScene Deklaracja zmiennych przechowujących trzy sceny: studentScene, deanScene, npcScene&#xA;deanScene @export var deanScene: PackedScene npcScene @export var npcScene: PackedScene textures var textures Inicjalizacja pustej listy &amp;rsquo;textures&#39;&#xA;timeUi var timeUi Ładowanie sceny &amp;rsquo;time.tscn&amp;rsquo; z katalogu &amp;lsquo;ui&amp;rsquo; i tworzenie instancji tej sceny&#xA;isVotingProcess var isVotingProcess = false Inicjalizacja zmiennej &amp;lsquo;isVotingProcess&amp;rsquo; jako logicznej wartości &amp;lsquo;False&amp;rsquo;&#xA;day var day = 1 Inicjalizacja zmiennej &amp;lsquo;day&amp;rsquo; jako liczby całkowitej równą 1</description>
     </item>
     <item>
       <title>movementInput.gd</title>
-      <link>https://example.org/docs/movementinput.gd/</link>
+      <link>/docs/movementinput.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/movementinput.gd/</guid>
+      <guid>/docs/movementinput.gd.html</guid>
       <description>Extends: CharacterBody2D&#xA;Description Property Descriptions player_name var player_name: String Nazwa gracza.&#xA;can_move var can_move: bool = true Flaga określająca możliwość ruchu postaci.&#xA;last_direction var last_direction = &amp;#34;(0, 0)&amp;#34; Zmienna określająca ostatni kierunek ruchu gracza przed zatrzymaniem.&#xA;temp_speed var temp_speed Tymczasowa prędkość, używana do zatrzymywania i przywracania ruchu.&#xA;speed var speed: int = 250 Prędkość ruchu gracza.&#xA;canMove var canMove = true Flaga określająca, czy gracz może się poruszać.&#xA;Method Descriptions apply_physics func apply_physics() Metoda aplikująca fizykę ruchu gracza.</description>
     </item>
     <item>
       <title>npc_animation_tree.gd</title>
-      <link>https://example.org/docs/npc_animation_tree.gd/</link>
+      <link>/docs/npc_animation_tree.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/npc_animation_tree.gd/</guid>
+      <guid>/docs/npc_animation_tree.gd.html</guid>
       <description>Extends: AnimationTree&#xA;Description Property Descriptions taskVector var taskVector = &amp;#34;(0, 0)&amp;#34; Wektor związany z bieżącym zadaniem postaci NPC.&#xA;sprite_to_back_to var sprite_to_back_to: Sprite2D Sprite, do którego zostanie przywrócony animowany sprite po zakończeniu zadania.&#xA;Method Descriptions taking_notes_loop func taking_notes_loop() Metoda obsługująca animacje zadania &amp;ldquo;takingNotes&amp;rdquo;.&#xA;computer_loop func computer_loop() Metoda obsługująca animacje zadania &amp;ldquo;computer&amp;rdquo;.&#xA;vending_machine_loop func vending_machine_loop() Metoda obsługująca animacje zadania &amp;ldquo;vendingMachine&amp;rdquo;.&#xA;rotate_npc func rotate_npc(direction) Parametry: direction Metoda zdalna obsługująca obrót postaci NPC.</description>
     </item>
     <item>
       <title>npcMovementInput.gd</title>
-      <link>https://example.org/docs/npcmovementinput.gd/</link>
+      <link>/docs/npcmovementinput.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/npcmovementinput.gd/</guid>
+      <guid>/docs/npcmovementinput.gd.html</guid>
       <description>Extends: CharacterBody2D&#xA;Description Property Descriptions speed var speed = 400 Prędkość ruchu postaci NPC.&#xA;destination var destination = &amp;#34;(0, 0)&amp;#34; Wektor docelowy dla ruchu postaci NPC.&#xA;point_A var point_A: Vector2 Punkt A na trasie ruchu postaci NPC.&#xA;point_B var point_B: Vector2 Punkt B na trasie ruchu postaci NPC.&#xA;move_direction var move_direction = &amp;#34;(1, 0)&amp;#34; Wektor kierunku ruchu postaci NPC.&#xA;can_move var can_move: bool Flaga określająca możliwość ruchu postaci NPC.</description>
     </item>
     <item>
       <title>pause_menu.gd</title>
-      <link>https://example.org/docs/pause_menu.gd/</link>
+      <link>/docs/pause_menu.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/pause_menu.gd/</guid>
+      <guid>/docs/pause_menu.gd.html</guid>
       <description> Extends: Control&#xA;Description </description>
     </item>
     <item>
       <title>PlayerInfo.gd</title>
-      <link>https://example.org/docs/playerinfo.gd/</link>
+      <link>/docs/playerinfo.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/playerinfo.gd/</guid>
+      <guid>/docs/playerinfo.gd.html</guid>
       <description> Extends: HBoxContainer&#xA;Description Signals signal makeAsDean(playerId): </description>
     </item>
     <item>
       <title>ReferenceCollector</title>
-      <link>https://example.org/docs/referencecollector/</link>
+      <link>/docs/referencecollector.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/referencecollector/</guid>
+      <guid>/docs/referencecollector.html</guid>
       <description>Extends: EditorScript&#xA;Description To use this tool: - Place this script and Collector.gd in your Godot project folder. - Open the script in the script editor. - Modify the properties below to control the tool&amp;rsquo;s behavior. - Go to File -&amp;gt; Run to run the script in the editor.&#xA;To use this tool: - Place this script and Collector.gd in your Godot project folder. - Open the script in the script editor.</description>
     </item>
     <item>
       <title>server.gd</title>
-      <link>https://example.org/docs/server.gd/</link>
+      <link>/docs/server.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/server.gd/</guid>
+      <guid>/docs/server.gd.html</guid>
       <description>Extends: Node2D&#xA;Description Property Descriptions endgame var endgame rng var rng green_terminal var green_terminal violet_terminal var violet_terminal yellow_terminal var yellow_terminal terminal1 var terminal1 terminal2 var terminal2 terminal3 var terminal3 serverValue var serverValue digits_sprites var digits_sprites Method Descriptions set_server_value func set_server_value(value) calculate_value func calculate_value() Funkcja sprawdzająca poprawność wprowadzonych wartości terminali&#xA;run_server_error func run_server_error() set_terminals_position_for_host func set_terminals_position_for_host() Funkcja ustawiająca pozycję terminali dla hosta&#xA;set_terminals_position func set_terminals_position(position1, position2, position3) show_end_screen func show_end_screen() on_number_changed func on_number_changed(name, value) Parametry: name - nazwa terminala, value - cyfra Funkcja zmieniająca teksturę cyfr na ekranie w zależności od wartości wprowadzonej do terminali</description>
     </item>
     <item>
       <title>ServerBrowser.gd</title>
-      <link>https://example.org/docs/serverbrowser.gd/</link>
+      <link>/docs/serverbrowser.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/serverbrowser.gd/</guid>
+      <guid>/docs/serverbrowser.gd.html</guid>
       <description>Extends: Control&#xA;Description Property Descriptions listenPort @export var listenPort: int = 8911 broadcastPort @export var broadcastPort: int = 8912 broadcastAddress @export var broadcastAddress: String = &amp;#34;&amp;#34; serverInfo @export var serverInfo: PackedScene broadcastTimer var broadcastTimer: Timer RoomInfo var RoomInfo playerCount var playerCount = 0 broadcaster var broadcaster: PacketPeerUDP listener var listener: PacketPeerUDP is_host var is_host = false Method Descriptions setBroadcastAddress func setBroadcastAddress(address: String) Parametry: address - ciąg znaków z adresem IP hostującego Return: bool Funckja ustawiająca adres strumieniowanie informacji związanych z aktualnym serwerem gry</description>
     </item>
     <item>
       <title>ServerInfo.gd</title>
-      <link>https://example.org/docs/serverinfo.gd/</link>
+      <link>/docs/serverinfo.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/serverinfo.gd/</guid>
+      <guid>/docs/serverinfo.gd.html</guid>
       <description> Extends: HBoxContainer&#xA;Description Signals signal joinGame(ip): </description>
     </item>
     <item>
       <title>single_ip_info.gd</title>
-      <link>https://example.org/docs/single_ip_info.gd/</link>
+      <link>/docs/single_ip_info.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/single_ip_info.gd/</guid>
+      <guid>/docs/single_ip_info.gd.html</guid>
       <description> Extends: HBoxContainer&#xA;Description Signals signal host_down(ip): Sygnał informujący o wyłączeniu hosta z podanym adresem IP </description>
     </item>
     <item>
       <title>start_menu.gd</title>
-      <link>https://example.org/docs/start_menu.gd/</link>
+      <link>/docs/start_menu.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/start_menu.gd/</guid>
+      <guid>/docs/start_menu.gd.html</guid>
       <description> Extends: Node2D&#xA;Description </description>
     </item>
     <item>
       <title>student_animation_tree.gd</title>
-      <link>https://example.org/docs/student_animation_tree.gd/</link>
+      <link>/docs/student_animation_tree.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/student_animation_tree.gd/</guid>
+      <guid>/docs/student_animation_tree.gd.html</guid>
       <description> Extends: AnimationTree&#xA;Description Method Descriptions run_animation func run_animation(velocity) task_animation func task_animation(task_type) </description>
     </item>
     <item>
       <title>studentInput.gd</title>
-      <link>https://example.org/docs/studentinput.gd/</link>
+      <link>/docs/studentinput.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/studentinput.gd/</guid>
+      <guid>/docs/studentinput.gd.html</guid>
       <description>Extends: Node2D&#xA;Description Property Descriptions dig_info_instance var dig_info_instance Gotowa zmienna przechowująca instancję sceny dig_and_dean_catch_info, która będzie używana do wyświetlania informacji o kopaniu i złapaniu przez dziekana.&#xA;current_task_area var current_task_area = &amp;#34;&amp;#34; Zmienna przechowująca aktualną strefę zadania gracza. Pusty string, jeśli gracz nie wykonuje zadania.&#xA;fourthFloor var fourthFloor Gotowa zmienna przechowująca scenę czwartego piętra.&#xA;thirdFloor var thirdFloor Gotowa zmienna przechowująca scenę trzeciego piętra.&#xA;dangerScene var dangerScene = &amp;#34;&amp;lt;PackedScene#-9223367941569842968&amp;gt;&amp;#34; Gotowa zmienna przechowująca scenę informującą o wyjściu z zadania.</description>
     </item>
     <item>
       <title>tablet_single_student.gd</title>
-      <link>https://example.org/docs/tablet_single_student.gd/</link>
+      <link>/docs/tablet_single_student.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/tablet_single_student.gd/</guid>
+      <guid>/docs/tablet_single_student.gd.html</guid>
       <description>Extends: HBoxContainer&#xA;Description Property Descriptions isChecked var isChecked Zmienna przechowująca stan zaznaczenia&#xA;checkmark var checkmark Referencja do ikony checkmark&#xA;cross var cross Referencja do ikony krzyżyka</description>
     </item>
     <item>
       <title>task.gd</title>
-      <link>https://example.org/docs/task.gd/</link>
+      <link>/docs/task.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/task.gd/</guid>
+      <guid>/docs/task.gd.html</guid>
       <description>Extends: Node2D&#xA;Description Method Descriptions on_npc_task_type_emitted func on_npc_task_type_emitted(task_type) Parametry: task_type - typ tasku Funkcja do odtwarzania konkretnego zadania przez gracza&#xA;run_task func run_task(task_type) Parametry: task_type - typ tasku Funkcja dobiera odpowiednią funkcje zależnie od zmiennej task_type&#xA;task_computer func task_computer() Funkcja emitująca sygnał o task_type = computer&#xA;task_taking_notes func task_taking_notes() Funkcja emitująca sygnał o task_type = takingNotes&#xA;task_walking func task_walking() Funkcja emitująca sygnał o task_type = walking&#xA;vending_machine func vending_machine() Funkcja emitująca sygnał o task_type = vendingMachine</description>
     </item>
     <item>
       <title>terminal.gd</title>
-      <link>https://example.org/docs/terminal.gd/</link>
+      <link>/docs/terminal.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/terminal.gd/</guid>
+      <guid>/docs/terminal.gd.html</guid>
       <description> Extends: Node2D&#xA;Description Property Descriptions actual_value var actual_value = 0 textures var textures can_update_value var can_update_value: bool = false Method Descriptions load_textures func load_textures() Funkcja ładowania tekstur&#xA;update_texture func update_texture() Funkcja aktualizująca teksturę terminala&#xA;use_terminal func use_terminal() show_terminal func show_terminal(name) Signals signal change_number(name, value): </description>
     </item>
     <item>
       <title>waiting_room.gd</title>
-      <link>https://example.org/docs/waiting_room.gd/</link>
+      <link>/docs/waiting_room.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/waiting_room.gd/</guid>
+      <guid>/docs/waiting_room.gd.html</guid>
       <description>Extends: Control&#xA;Description Property Descriptions serverInfo @export var serverInfo: PackedScene current var current: int dean var dean: int isServer var isServer = false Method Descriptions enable_dean_change func enable_dean_change() funkcja która przekazuje pozwolenie na zmianę gracza, który otrzyma rolę dziekana&#xA;makeAsDean func makeAsDean(id) funkcja przysłająca informacje o wybranym dziekanie&#xA;findDeanId func findDeanId() -&amp;gt; int Return: int funkcja która szuka osoby, która ma ustawioną rolę dziekan&#xA;refresh_table func refresh_table() funckcja odświeża tabelę z graczami - ich nazwą i ich rolą w grze</description>
     </item>
   </channel>
