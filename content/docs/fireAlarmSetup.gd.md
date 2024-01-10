@@ -10,7 +10,7 @@ date = "2024-01-10"
 **Extends:** [Node2D](../Node2D)
 
 ## Opis
-Odpowiada za rozpoczęcie spotkanie kryzysopwego i wywołąnie sceny FireAlarm.
+Odpowiada za rozpoczęcie spotkanie kryzysowego i wywoływanie sceny FireAlarm.
 ## Opis Właściwości
 
 ### useable

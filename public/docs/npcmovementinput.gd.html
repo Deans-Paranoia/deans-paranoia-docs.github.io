@@ -10,22 +10,22 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="npcMovementInput.gd :: Deans Paranois Documentation">
     <meta name="twitter:description" content="Extends: CharacterBody2D
-Opis Opis Właściwości speed var speed = 400Prędkość ruchu postaci NPC.
+Opis Skrypt odpowiadający za ruch botów przy wykonywanych taskach.
+Opis Właściwości speed var speed = 400Prędkość ruchu postaci NPC.
 destination var destination = &#34;(0, 0)&#34;Wektor docelowy dla ruchu postaci NPC.
 point_A var point_A: Vector2Punkt A na trasie ruchu postaci NPC.
 point_B var point_B: Vector2Punkt B na trasie ruchu postaci NPC.
 move_direction var move_direction = &#34;(1, 0)&#34;Wektor kierunku ruchu postaci NPC.
-can_move var can_move: boolFlaga określająca możliwość ruchu postaci NPC.
-walking_task var walking_task = falseFlaga określająca, czy postać NPC jest w trakcie zadania poruszania się.">
+can_move var can_move: boolFlaga określająca możliwość ruchu postaci NPC.">
     <meta property="og:title" content="npcMovementInput.gd :: Deans Paranois Documentation">
     <meta property="og:description" content="Extends: CharacterBody2D
-Opis Opis Właściwości speed var speed = 400Prędkość ruchu postaci NPC.
+Opis Skrypt odpowiadający za ruch botów przy wykonywanych taskach.
+Opis Właściwości speed var speed = 400Prędkość ruchu postaci NPC.
 destination var destination = &#34;(0, 0)&#34;Wektor docelowy dla ruchu postaci NPC.
 point_A var point_A: Vector2Punkt A na trasie ruchu postaci NPC.
 point_B var point_B: Vector2Punkt B na trasie ruchu postaci NPC.
 move_direction var move_direction = &#34;(1, 0)&#34;Wektor kierunku ruchu postaci NPC.
-can_move var can_move: boolFlaga określająca możliwość ruchu postaci NPC.
-walking_task var walking_task = falseFlaga określająca, czy postać NPC jest w trakcie zadania poruszania się.">
+can_move var can_move: boolFlaga określająca możliwość ruchu postaci NPC.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="/docs/npcmovementinput.gd.html">
     <meta property="article:section" content="Dokumentacja skryptów :: Deans Paranois Documentation">
@@ -34,19 +34,19 @@ walking_task var walking_task = falseFlaga określająca, czy postać NPC jest w
     <meta property="og:site_name" content="Deans Paranois Documentation">
     <title>npcMovementInput.gd :: Deans Paranois Documentation</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="../css/fontawesome-all.min.css?1704915942" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fontawesome-all.min.css?1704915942" rel="stylesheet"></noscript>
-    <link href="../css/nucleus.css?1704915942" rel="stylesheet">
-    <link href="../css/auto-complete.css?1704915942" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/auto-complete.css?1704915942" rel="stylesheet"></noscript>
-    <link href="../css/perfect-scrollbar.min.css?1704915942" rel="stylesheet">
-    <link href="../css/fonts.css?1704915942" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fonts.css?1704915942" rel="stylesheet"></noscript>
-    <link href="../css/theme.css?1704915942" rel="stylesheet">
-    <link href="../css/theme-auto.css?1704915942" rel="stylesheet" id="R-variant-style">
-    <link href="../css/chroma-auto.css?1704915942" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="../css/variant.css?1704915942" rel="stylesheet">
-    <link href="../css/print.css?1704915942" rel="stylesheet" media="print">
-    <link href="../css/ie.css?1704915942" rel="stylesheet">
-    <script src="../js/url.js?1704915942"></script>
-    <script src="../js/variant.js?1704915942"></script>
+    <link href="../css/fontawesome-all.min.css?1704926383" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fontawesome-all.min.css?1704926383" rel="stylesheet"></noscript>
+    <link href="../css/nucleus.css?1704926383" rel="stylesheet">
+    <link href="../css/auto-complete.css?1704926383" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/auto-complete.css?1704926383" rel="stylesheet"></noscript>
+    <link href="../css/perfect-scrollbar.min.css?1704926383" rel="stylesheet">
+    <link href="../css/fonts.css?1704926383" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fonts.css?1704926383" rel="stylesheet"></noscript>
+    <link href="../css/theme.css?1704926383" rel="stylesheet">
+    <link href="../css/theme-auto.css?1704926383" rel="stylesheet" id="R-variant-style">
+    <link href="../css/chroma-auto.css?1704926383" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../css/variant.css?1704926383" rel="stylesheet">
+    <link href="../css/print.css?1704926383" rel="stylesheet" media="print">
+    <link href="../css/ie.css?1704926383" rel="stylesheet">
+    <script src="../js/url.js?1704926383"></script>
+    <script src="../js/variant.js?1704926383"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72""
@@ -115,7 +115,7 @@ walking_task var walking_task = falseFlaga określająca, czy postać NPC jest w
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../docs/npc_animation_tree.gd.html" title="npc_animation_tree.gd (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../docs/pause_menu.gd.html" title="pause_menu.gd (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../docs/playerinfo.gd.html" title="PlayerInfo.gd (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -139,6 +139,7 @@ walking_task var walking_task = falseFlaga określająca, czy postać NPC jest w
 <!-- raw HTML omitted -->
 <p><strong>Extends:</strong> <a href="../CharacterBody2D">CharacterBody2D</a></p>
 <h2 id="opis">Opis</h2>
+<p>Skrypt odpowiadający za ruch botów przy wykonywanych taskach.</p>
 <h2 id="opis-właściwości">Opis Właściwości</h2>
 <h3 id="speed">speed</h3>
 <div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> speed <span style="color:#f92672">=</span> <span style="color:#ae81ff">400</span></span></span></code></pre></div><p>Prędkość ruchu postaci NPC.</p>
@@ -252,11 +253,11 @@ walking_task var walking_task = falseFlaga określająca, czy postać NPC jest w
         <script>
           var contentLangs=[];
         </script>
-        <script src="../js/auto-complete.js?1704915942" defer></script>
-        <script src="../js/lunr/lunr.min.js?1704915942" defer></script>
-        <script src="../js/lunr/lunr.stemmer.support.min.js?1704915942" defer></script>
-        <script src="../js/lunr/lunr.multi.min.js?1704915942" defer></script>
-        <script src="../js/search.js?1704915942" defer></script>
+        <script src="../js/auto-complete.js?1704926383" defer></script>
+        <script src="../js/lunr/lunr.min.js?1704926383" defer></script>
+        <script src="../js/lunr/lunr.stemmer.support.min.js?1704926383" defer></script>
+        <script src="../js/lunr/lunr.multi.min.js?1704926383" defer></script>
+        <script src="../js/search.js?1704926383" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -271,7 +272,6 @@ walking_task var walking_task = falseFlaga określająca, czy postać NPC jest w
           <li data-nav-id="/docs/areanotifiers.gd.html" class=""><a class="padding" href="../docs/areanotifiers.gd.html">areaNotifiers.gd</a></li>
           <li data-nav-id="/docs/booster.gd.html" class=""><a class="padding" href="../docs/booster.gd.html">booster.gd</a></li>
           <li data-nav-id="/docs/chat.gd.html" class=""><a class="padding" href="../docs/chat.gd.html">chat.gd</a></li>
-          <li data-nav-id="/docs/collectorgd4.gd.html" class=""><a class="padding" href="../docs/collectorgd4.gd.html">CollectorGd4.gd</a></li>
           <li data-nav-id="/docs/deaninput.gd.html" class=""><a class="padding" href="../docs/deaninput.gd.html">deanInput.gd</a></li>
           <li data-nav-id="/docs/deans_tablet.gd.html" class=""><a class="padding" href="../docs/deans_tablet.gd.html">deans_tablet.gd</a></li>
           <li data-nav-id="/docs/elevatorsetup.gd.html" class=""><a class="padding" href="../docs/elevatorsetup.gd.html">elevatorSetup.gd</a></li>
@@ -287,9 +287,7 @@ walking_task var walking_task = falseFlaga określająca, czy postać NPC jest w
           <li data-nav-id="/docs/movementinput.gd.html" class=""><a class="padding" href="../docs/movementinput.gd.html">movementInput.gd</a></li>
           <li data-nav-id="/docs/npc_animation_tree.gd.html" class=""><a class="padding" href="../docs/npc_animation_tree.gd.html">npc_animation_tree.gd</a></li>
           <li data-nav-id="/docs/npcmovementinput.gd.html" class="active"><a class="padding" href="../docs/npcmovementinput.gd.html">npcMovementInput.gd</a></li>
-          <li data-nav-id="/docs/pause_menu.gd.html" class=""><a class="padding" href="../docs/pause_menu.gd.html">pause_menu.gd</a></li>
           <li data-nav-id="/docs/playerinfo.gd.html" class=""><a class="padding" href="../docs/playerinfo.gd.html">PlayerInfo.gd</a></li>
-          <li data-nav-id="/docs/referencecollector.html" class=""><a class="padding" href="../docs/referencecollector.html">ReferenceCollector</a></li>
           <li data-nav-id="/docs/server.gd.html" class=""><a class="padding" href="../docs/server.gd.html">server.gd</a></li>
           <li data-nav-id="/docs/serverbrowser.gd.html" class=""><a class="padding" href="../docs/serverbrowser.gd.html">ServerBrowser.gd</a></li>
           <li data-nav-id="/docs/serverinfo.gd.html" class=""><a class="padding" href="../docs/serverinfo.gd.html">ServerInfo.gd</a></li>
@@ -352,8 +350,8 @@ walking_task var walking_task = falseFlaga określająca, czy postać NPC jest w
         </div>
       </div>
     </aside>
-    <script src="../js/clipboard.min.js?1704915942" defer></script>
-    <script src="../js/perfect-scrollbar.min.js?1704915942" defer></script>
-    <script src="../js/theme.js?1704915942" defer></script>
+    <script src="../js/clipboard.min.js?1704926383" defer></script>
+    <script src="../js/perfect-scrollbar.min.js?1704926383" defer></script>
+    <script src="../js/theme.js?1704926383" defer></script>
   </body>
 </html>

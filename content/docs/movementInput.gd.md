@@ -10,7 +10,7 @@ date = "2024-01-10"
 **Extends:** [CharacterBody2D](../CharacterBody2D)
 
 ## Opis
-Skrypt odpowiuadający za możliwość i kierunek poruszania sie gracza.
+Skrypt odpowiadający za możliwość i kierunek poruszania sie gracza.
 ## Opis Właściwości
 
 ### player\_name

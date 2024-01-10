@@ -10,7 +10,7 @@ date = "2024-01-10"
 **Extends:** [Node2D](../Node2D)
 
 ## Opis
-Skrypt odpowiadający za odbycie spotaknia specjalnego, podczas którego Dziekan może dokonać wykreślkenia gracza z listy studentów.
+Skrypt odpowiadający za odbycie spotaknia porządkowego, podczas którego Dziekan może dokonać wykreślkenia gracza z listy studentów.
 ## Opis Właściwości
 
 ### npcScene

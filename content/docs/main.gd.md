@@ -10,7 +10,7 @@ date = "2024-01-10"
 **Extends:** [Control](../Control)
 
 ## Opis
-Główny skrypt odpowiedzialny za funkconalności sieciowe.
+Główny skrypt odpowiedzialny za funkcjonalności sieciowe.
 ## Opis Właściwości
 
 ### Address

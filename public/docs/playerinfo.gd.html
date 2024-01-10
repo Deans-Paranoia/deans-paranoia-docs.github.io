@@ -10,10 +10,12 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="PlayerInfo.gd :: Deans Paranois Documentation">
     <meta name="twitter:description" content=" Extends: HBoxContainer
-Opis Sygnały signal makeAsDean(playerId): ">
+Opis Skrypt odpowiadający za informacje o graczu.
+Sygnały signal makeAsDean(playerId): ">
     <meta property="og:title" content="PlayerInfo.gd :: Deans Paranois Documentation">
     <meta property="og:description" content=" Extends: HBoxContainer
-Opis Sygnały signal makeAsDean(playerId): ">
+Opis Skrypt odpowiadający za informacje o graczu.
+Sygnały signal makeAsDean(playerId): ">
     <meta property="og:type" content="article">
     <meta property="og:url" content="/docs/playerinfo.gd.html">
     <meta property="article:section" content="Dokumentacja skryptów :: Deans Paranois Documentation">
@@ -22,19 +24,19 @@ Opis Sygnały signal makeAsDean(playerId): ">
     <meta property="og:site_name" content="Deans Paranois Documentation">
     <title>PlayerInfo.gd :: Deans Paranois Documentation</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="../css/fontawesome-all.min.css?1704915942" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fontawesome-all.min.css?1704915942" rel="stylesheet"></noscript>
-    <link href="../css/nucleus.css?1704915942" rel="stylesheet">
-    <link href="../css/auto-complete.css?1704915942" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/auto-complete.css?1704915942" rel="stylesheet"></noscript>
-    <link href="../css/perfect-scrollbar.min.css?1704915942" rel="stylesheet">
-    <link href="../css/fonts.css?1704915942" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fonts.css?1704915942" rel="stylesheet"></noscript>
-    <link href="../css/theme.css?1704915942" rel="stylesheet">
-    <link href="../css/theme-auto.css?1704915942" rel="stylesheet" id="R-variant-style">
-    <link href="../css/chroma-auto.css?1704915942" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="../css/variant.css?1704915942" rel="stylesheet">
-    <link href="../css/print.css?1704915942" rel="stylesheet" media="print">
-    <link href="../css/ie.css?1704915942" rel="stylesheet">
-    <script src="../js/url.js?1704915942"></script>
-    <script src="../js/variant.js?1704915942"></script>
+    <link href="../css/fontawesome-all.min.css?1704926383" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fontawesome-all.min.css?1704926383" rel="stylesheet"></noscript>
+    <link href="../css/nucleus.css?1704926383" rel="stylesheet">
+    <link href="../css/auto-complete.css?1704926383" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/auto-complete.css?1704926383" rel="stylesheet"></noscript>
+    <link href="../css/perfect-scrollbar.min.css?1704926383" rel="stylesheet">
+    <link href="../css/fonts.css?1704926383" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fonts.css?1704926383" rel="stylesheet"></noscript>
+    <link href="../css/theme.css?1704926383" rel="stylesheet">
+    <link href="../css/theme-auto.css?1704926383" rel="stylesheet" id="R-variant-style">
+    <link href="../css/chroma-auto.css?1704926383" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../css/variant.css?1704926383" rel="stylesheet">
+    <link href="../css/print.css?1704926383" rel="stylesheet" media="print">
+    <link href="../css/ie.css?1704926383" rel="stylesheet">
+    <script src="../js/url.js?1704926383"></script>
+    <script src="../js/variant.js?1704926383"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72""
@@ -84,9 +86,9 @@ Opis Sygnały signal makeAsDean(playerId): ">
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">PlayerInfo.gd</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../docs/pause_menu.gd.html" title="pause_menu.gd (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../docs/npcmovementinput.gd.html" title="npcMovementInput.gd (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../docs/referencecollector.html" title="ReferenceCollector (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../docs/server.gd.html" title="server.gd (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -110,6 +112,7 @@ Opis Sygnały signal makeAsDean(playerId): ">
 <!-- raw HTML omitted -->
 <p><strong>Extends:</strong> <a href="../HBoxContainer">HBoxContainer</a></p>
 <h2 id="opis">Opis</h2>
+<p>Skrypt odpowiadający za informacje o graczu.</p>
 <h2 id="sygnały">Sygnały</h2>
 <ul>
 <li>signal makeAsDean(playerId):</li>
@@ -203,11 +206,11 @@ Opis Sygnały signal makeAsDean(playerId): ">
         <script>
           var contentLangs=[];
         </script>
-        <script src="../js/auto-complete.js?1704915942" defer></script>
-        <script src="../js/lunr/lunr.min.js?1704915942" defer></script>
-        <script src="../js/lunr/lunr.stemmer.support.min.js?1704915942" defer></script>
-        <script src="../js/lunr/lunr.multi.min.js?1704915942" defer></script>
-        <script src="../js/search.js?1704915942" defer></script>
+        <script src="../js/auto-complete.js?1704926383" defer></script>
+        <script src="../js/lunr/lunr.min.js?1704926383" defer></script>
+        <script src="../js/lunr/lunr.stemmer.support.min.js?1704926383" defer></script>
+        <script src="../js/lunr/lunr.multi.min.js?1704926383" defer></script>
+        <script src="../js/search.js?1704926383" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -222,7 +225,6 @@ Opis Sygnały signal makeAsDean(playerId): ">
           <li data-nav-id="/docs/areanotifiers.gd.html" class=""><a class="padding" href="../docs/areanotifiers.gd.html">areaNotifiers.gd</a></li>
           <li data-nav-id="/docs/booster.gd.html" class=""><a class="padding" href="../docs/booster.gd.html">booster.gd</a></li>
           <li data-nav-id="/docs/chat.gd.html" class=""><a class="padding" href="../docs/chat.gd.html">chat.gd</a></li>
-          <li data-nav-id="/docs/collectorgd4.gd.html" class=""><a class="padding" href="../docs/collectorgd4.gd.html">CollectorGd4.gd</a></li>
           <li data-nav-id="/docs/deaninput.gd.html" class=""><a class="padding" href="../docs/deaninput.gd.html">deanInput.gd</a></li>
           <li data-nav-id="/docs/deans_tablet.gd.html" class=""><a class="padding" href="../docs/deans_tablet.gd.html">deans_tablet.gd</a></li>
           <li data-nav-id="/docs/elevatorsetup.gd.html" class=""><a class="padding" href="../docs/elevatorsetup.gd.html">elevatorSetup.gd</a></li>
@@ -238,9 +240,7 @@ Opis Sygnały signal makeAsDean(playerId): ">
           <li data-nav-id="/docs/movementinput.gd.html" class=""><a class="padding" href="../docs/movementinput.gd.html">movementInput.gd</a></li>
           <li data-nav-id="/docs/npc_animation_tree.gd.html" class=""><a class="padding" href="../docs/npc_animation_tree.gd.html">npc_animation_tree.gd</a></li>
           <li data-nav-id="/docs/npcmovementinput.gd.html" class=""><a class="padding" href="../docs/npcmovementinput.gd.html">npcMovementInput.gd</a></li>
-          <li data-nav-id="/docs/pause_menu.gd.html" class=""><a class="padding" href="../docs/pause_menu.gd.html">pause_menu.gd</a></li>
           <li data-nav-id="/docs/playerinfo.gd.html" class="active"><a class="padding" href="../docs/playerinfo.gd.html">PlayerInfo.gd</a></li>
-          <li data-nav-id="/docs/referencecollector.html" class=""><a class="padding" href="../docs/referencecollector.html">ReferenceCollector</a></li>
           <li data-nav-id="/docs/server.gd.html" class=""><a class="padding" href="../docs/server.gd.html">server.gd</a></li>
           <li data-nav-id="/docs/serverbrowser.gd.html" class=""><a class="padding" href="../docs/serverbrowser.gd.html">ServerBrowser.gd</a></li>
           <li data-nav-id="/docs/serverinfo.gd.html" class=""><a class="padding" href="../docs/serverinfo.gd.html">ServerInfo.gd</a></li>
@@ -303,8 +303,8 @@ Opis Sygnały signal makeAsDean(playerId): ">
         </div>
       </div>
     </aside>
-    <script src="../js/clipboard.min.js?1704915942" defer></script>
-    <script src="../js/perfect-scrollbar.min.js?1704915942" defer></script>
-    <script src="../js/theme.js?1704915942" defer></script>
+    <script src="../js/clipboard.min.js?1704926383" defer></script>
+    <script src="../js/perfect-scrollbar.min.js?1704926383" defer></script>
+    <script src="../js/theme.js?1704926383" defer></script>
   </body>
 </html>

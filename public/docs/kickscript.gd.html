@@ -10,11 +10,13 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="kickScript.gd :: Deans Paranois Documentation">
     <meta name="twitter:description" content=" Extends: Node2D
-Opis Opis Właściwości on_lecture_hall var on_lecture_hall = falseFlaga określająca, czy postać studenta znajduje się w sali wykładowej.
+Opis Skrypt odpowiadający za wykreślenie z listy studentów wybranego przez dziakana studenta.
+Opis Właściwości on_lecture_hall var on_lecture_hall = falseFlaga określająca, czy postać studenta znajduje się w sali wykładowej.
 Sygnały signal on_student_hovered(name): Sygnał informujący o najechaniu myszką na studenta. ">
     <meta property="og:title" content="kickScript.gd :: Deans Paranois Documentation">
     <meta property="og:description" content=" Extends: Node2D
-Opis Opis Właściwości on_lecture_hall var on_lecture_hall = falseFlaga określająca, czy postać studenta znajduje się w sali wykładowej.
+Opis Skrypt odpowiadający za wykreślenie z listy studentów wybranego przez dziakana studenta.
+Opis Właściwości on_lecture_hall var on_lecture_hall = falseFlaga określająca, czy postać studenta znajduje się w sali wykładowej.
 Sygnały signal on_student_hovered(name): Sygnał informujący o najechaniu myszką na studenta. ">
     <meta property="og:type" content="article">
     <meta property="og:url" content="/docs/kickscript.gd.html">
@@ -24,19 +26,19 @@ Sygnały signal on_student_hovered(name): Sygnał informujący o najechaniu mysz
     <meta property="og:site_name" content="Deans Paranois Documentation">
     <title>kickScript.gd :: Deans Paranois Documentation</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="../css/fontawesome-all.min.css?1704915942" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fontawesome-all.min.css?1704915942" rel="stylesheet"></noscript>
-    <link href="../css/nucleus.css?1704915942" rel="stylesheet">
-    <link href="../css/auto-complete.css?1704915942" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/auto-complete.css?1704915942" rel="stylesheet"></noscript>
-    <link href="../css/perfect-scrollbar.min.css?1704915942" rel="stylesheet">
-    <link href="../css/fonts.css?1704915942" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fonts.css?1704915942" rel="stylesheet"></noscript>
-    <link href="../css/theme.css?1704915942" rel="stylesheet">
-    <link href="../css/theme-auto.css?1704915942" rel="stylesheet" id="R-variant-style">
-    <link href="../css/chroma-auto.css?1704915942" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="../css/variant.css?1704915942" rel="stylesheet">
-    <link href="../css/print.css?1704915942" rel="stylesheet" media="print">
-    <link href="../css/ie.css?1704915942" rel="stylesheet">
-    <script src="../js/url.js?1704915942"></script>
-    <script src="../js/variant.js?1704915942"></script>
+    <link href="../css/fontawesome-all.min.css?1704926383" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fontawesome-all.min.css?1704926383" rel="stylesheet"></noscript>
+    <link href="../css/nucleus.css?1704926383" rel="stylesheet">
+    <link href="../css/auto-complete.css?1704926383" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/auto-complete.css?1704926383" rel="stylesheet"></noscript>
+    <link href="../css/perfect-scrollbar.min.css?1704926383" rel="stylesheet">
+    <link href="../css/fonts.css?1704926383" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fonts.css?1704926383" rel="stylesheet"></noscript>
+    <link href="../css/theme.css?1704926383" rel="stylesheet">
+    <link href="../css/theme-auto.css?1704926383" rel="stylesheet" id="R-variant-style">
+    <link href="../css/chroma-auto.css?1704926383" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../css/variant.css?1704926383" rel="stylesheet">
+    <link href="../css/print.css?1704926383" rel="stylesheet" media="print">
+    <link href="../css/ie.css?1704926383" rel="stylesheet">
+    <script src="../js/url.js?1704926383"></script>
+    <script src="../js/variant.js?1704926383"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72""
@@ -117,6 +119,7 @@ Sygnały signal on_student_hovered(name): Sygnał informujący o najechaniu mysz
 <!-- raw HTML omitted -->
 <p><strong>Extends:</strong> <a href="../Node2D">Node2D</a></p>
 <h2 id="opis">Opis</h2>
+<p>Skrypt odpowiadający za wykreślenie z listy studentów wybranego przez dziakana studenta.</p>
 <h2 id="opis-właściwości">Opis Właściwości</h2>
 <h3 id="on_lecture_hall">on_lecture_hall</h3>
 <div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> on_lecture_hall <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span></span></span></code></pre></div><p>Flaga określająca, czy postać studenta znajduje się w sali wykładowej.</p>
@@ -213,11 +216,11 @@ Sygnały signal on_student_hovered(name): Sygnał informujący o najechaniu mysz
         <script>
           var contentLangs=[];
         </script>
-        <script src="../js/auto-complete.js?1704915942" defer></script>
-        <script src="../js/lunr/lunr.min.js?1704915942" defer></script>
-        <script src="../js/lunr/lunr.stemmer.support.min.js?1704915942" defer></script>
-        <script src="../js/lunr/lunr.multi.min.js?1704915942" defer></script>
-        <script src="../js/search.js?1704915942" defer></script>
+        <script src="../js/auto-complete.js?1704926383" defer></script>
+        <script src="../js/lunr/lunr.min.js?1704926383" defer></script>
+        <script src="../js/lunr/lunr.stemmer.support.min.js?1704926383" defer></script>
+        <script src="../js/lunr/lunr.multi.min.js?1704926383" defer></script>
+        <script src="../js/search.js?1704926383" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -232,7 +235,6 @@ Sygnały signal on_student_hovered(name): Sygnał informujący o najechaniu mysz
           <li data-nav-id="/docs/areanotifiers.gd.html" class=""><a class="padding" href="../docs/areanotifiers.gd.html">areaNotifiers.gd</a></li>
           <li data-nav-id="/docs/booster.gd.html" class=""><a class="padding" href="../docs/booster.gd.html">booster.gd</a></li>
           <li data-nav-id="/docs/chat.gd.html" class=""><a class="padding" href="../docs/chat.gd.html">chat.gd</a></li>
-          <li data-nav-id="/docs/collectorgd4.gd.html" class=""><a class="padding" href="../docs/collectorgd4.gd.html">CollectorGd4.gd</a></li>
           <li data-nav-id="/docs/deaninput.gd.html" class=""><a class="padding" href="../docs/deaninput.gd.html">deanInput.gd</a></li>
           <li data-nav-id="/docs/deans_tablet.gd.html" class=""><a class="padding" href="../docs/deans_tablet.gd.html">deans_tablet.gd</a></li>
           <li data-nav-id="/docs/elevatorsetup.gd.html" class=""><a class="padding" href="../docs/elevatorsetup.gd.html">elevatorSetup.gd</a></li>
@@ -248,9 +250,7 @@ Sygnały signal on_student_hovered(name): Sygnał informujący o najechaniu mysz
           <li data-nav-id="/docs/movementinput.gd.html" class=""><a class="padding" href="../docs/movementinput.gd.html">movementInput.gd</a></li>
           <li data-nav-id="/docs/npc_animation_tree.gd.html" class=""><a class="padding" href="../docs/npc_animation_tree.gd.html">npc_animation_tree.gd</a></li>
           <li data-nav-id="/docs/npcmovementinput.gd.html" class=""><a class="padding" href="../docs/npcmovementinput.gd.html">npcMovementInput.gd</a></li>
-          <li data-nav-id="/docs/pause_menu.gd.html" class=""><a class="padding" href="../docs/pause_menu.gd.html">pause_menu.gd</a></li>
           <li data-nav-id="/docs/playerinfo.gd.html" class=""><a class="padding" href="../docs/playerinfo.gd.html">PlayerInfo.gd</a></li>
-          <li data-nav-id="/docs/referencecollector.html" class=""><a class="padding" href="../docs/referencecollector.html">ReferenceCollector</a></li>
           <li data-nav-id="/docs/server.gd.html" class=""><a class="padding" href="../docs/server.gd.html">server.gd</a></li>
           <li data-nav-id="/docs/serverbrowser.gd.html" class=""><a class="padding" href="../docs/serverbrowser.gd.html">ServerBrowser.gd</a></li>
           <li data-nav-id="/docs/serverinfo.gd.html" class=""><a class="padding" href="../docs/serverinfo.gd.html">ServerInfo.gd</a></li>
@@ -313,8 +313,8 @@ Sygnały signal on_student_hovered(name): Sygnał informujący o najechaniu mysz
         </div>
       </div>
     </aside>
-    <script src="../js/clipboard.min.js?1704915942" defer></script>
-    <script src="../js/perfect-scrollbar.min.js?1704915942" defer></script>
-    <script src="../js/theme.js?1704915942" defer></script>
+    <script src="../js/clipboard.min.js?1704926383" defer></script>
+    <script src="../js/perfect-scrollbar.min.js?1704926383" defer></script>
+    <script src="../js/theme.js?1704926383" defer></script>
   </body>
 </html>

@@ -10,20 +10,20 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="map.gd :: Deans Paranois Documentation">
     <meta name="twitter:description" content="Extends: Node2D
-Opis Opis Właściwości studentScene @export var studentScene: PackedSceneDeklaracja zmiennych przechowujących trzy sceny: studentScene, deanScene, npcScene
+Opis Skrypt odpowiadający za wygląd oraz fukcjonalność mapy.
+Opis Właściwości studentScene @export var studentScene: PackedSceneDeklaracja zmiennych przechowujących trzy sceny: studentScene, deanScene, npcScene
 deanScene @export var deanScene: PackedScenenpcScene @export var npcScene: PackedScenetextures var texturesInicjalizacja pustej listy &rsquo;textures&#39;
 timeUi var timeUiŁadowanie sceny &rsquo;time.tscn&rsquo; z katalogu &lsquo;ui&rsquo; i tworzenie instancji tej sceny
 isVotingProcess var isVotingProcess = falseInicjalizacja zmiennej &lsquo;isVotingProcess&rsquo; jako logicznej wartości &lsquo;False&rsquo;
-day var day = 1Inicjalizacja zmiennej &lsquo;day&rsquo; jako liczby całkowitej równą 1
-rand var randInicjalizacja generatora liczb losowych">
+day var day = 1Inicjalizacja zmiennej &lsquo;day&rsquo; jako liczby całkowitej równą 1">
     <meta property="og:title" content="map.gd :: Deans Paranois Documentation">
     <meta property="og:description" content="Extends: Node2D
-Opis Opis Właściwości studentScene @export var studentScene: PackedSceneDeklaracja zmiennych przechowujących trzy sceny: studentScene, deanScene, npcScene
+Opis Skrypt odpowiadający za wygląd oraz fukcjonalność mapy.
+Opis Właściwości studentScene @export var studentScene: PackedSceneDeklaracja zmiennych przechowujących trzy sceny: studentScene, deanScene, npcScene
 deanScene @export var deanScene: PackedScenenpcScene @export var npcScene: PackedScenetextures var texturesInicjalizacja pustej listy &rsquo;textures&#39;
 timeUi var timeUiŁadowanie sceny &rsquo;time.tscn&rsquo; z katalogu &lsquo;ui&rsquo; i tworzenie instancji tej sceny
 isVotingProcess var isVotingProcess = falseInicjalizacja zmiennej &lsquo;isVotingProcess&rsquo; jako logicznej wartości &lsquo;False&rsquo;
-day var day = 1Inicjalizacja zmiennej &lsquo;day&rsquo; jako liczby całkowitej równą 1
-rand var randInicjalizacja generatora liczb losowych">
+day var day = 1Inicjalizacja zmiennej &lsquo;day&rsquo; jako liczby całkowitej równą 1">
     <meta property="og:type" content="article">
     <meta property="og:url" content="/docs/map.gd.html">
     <meta property="article:section" content="Dokumentacja skryptów :: Deans Paranois Documentation">
@@ -32,19 +32,19 @@ rand var randInicjalizacja generatora liczb losowych">
     <meta property="og:site_name" content="Deans Paranois Documentation">
     <title>map.gd :: Deans Paranois Documentation</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="../css/fontawesome-all.min.css?1704915942" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fontawesome-all.min.css?1704915942" rel="stylesheet"></noscript>
-    <link href="../css/nucleus.css?1704915942" rel="stylesheet">
-    <link href="../css/auto-complete.css?1704915942" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/auto-complete.css?1704915942" rel="stylesheet"></noscript>
-    <link href="../css/perfect-scrollbar.min.css?1704915942" rel="stylesheet">
-    <link href="../css/fonts.css?1704915942" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fonts.css?1704915942" rel="stylesheet"></noscript>
-    <link href="../css/theme.css?1704915942" rel="stylesheet">
-    <link href="../css/theme-auto.css?1704915942" rel="stylesheet" id="R-variant-style">
-    <link href="../css/chroma-auto.css?1704915942" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="../css/variant.css?1704915942" rel="stylesheet">
-    <link href="../css/print.css?1704915942" rel="stylesheet" media="print">
-    <link href="../css/ie.css?1704915942" rel="stylesheet">
-    <script src="../js/url.js?1704915942"></script>
-    <script src="../js/variant.js?1704915942"></script>
+    <link href="../css/fontawesome-all.min.css?1704926383" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fontawesome-all.min.css?1704926383" rel="stylesheet"></noscript>
+    <link href="../css/nucleus.css?1704926383" rel="stylesheet">
+    <link href="../css/auto-complete.css?1704926383" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/auto-complete.css?1704926383" rel="stylesheet"></noscript>
+    <link href="../css/perfect-scrollbar.min.css?1704926383" rel="stylesheet">
+    <link href="../css/fonts.css?1704926383" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fonts.css?1704926383" rel="stylesheet"></noscript>
+    <link href="../css/theme.css?1704926383" rel="stylesheet">
+    <link href="../css/theme-auto.css?1704926383" rel="stylesheet" id="R-variant-style">
+    <link href="../css/chroma-auto.css?1704926383" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../css/variant.css?1704926383" rel="stylesheet">
+    <link href="../css/print.css?1704926383" rel="stylesheet" media="print">
+    <link href="../css/ie.css?1704926383" rel="stylesheet">
+    <script src="../js/url.js?1704926383"></script>
+    <script src="../js/variant.js?1704926383"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72""
@@ -149,6 +149,7 @@ rand var randInicjalizacja generatora liczb losowych">
 <!-- raw HTML omitted -->
 <p><strong>Extends:</strong> <a href="../Node2D">Node2D</a></p>
 <h2 id="opis">Opis</h2>
+<p>Skrypt odpowiadający za wygląd oraz fukcjonalność mapy.</p>
 <h2 id="opis-właściwości">Opis Właściwości</h2>
 <h3 id="studentscene">studentScene</h3>
 <div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#a6e22e">@export</span> <span style="color:#66d9ef">var</span> studentScene: <span style="color:#a6e22e">PackedScene</span></span></span></code></pre></div><p>Deklaracja zmiennych przechowujących trzy sceny: studentScene, deanScene, npcScene</p>
@@ -272,11 +273,11 @@ rand var randInicjalizacja generatora liczb losowych">
         <script>
           var contentLangs=[];
         </script>
-        <script src="../js/auto-complete.js?1704915942" defer></script>
-        <script src="../js/lunr/lunr.min.js?1704915942" defer></script>
-        <script src="../js/lunr/lunr.stemmer.support.min.js?1704915942" defer></script>
-        <script src="../js/lunr/lunr.multi.min.js?1704915942" defer></script>
-        <script src="../js/search.js?1704915942" defer></script>
+        <script src="../js/auto-complete.js?1704926383" defer></script>
+        <script src="../js/lunr/lunr.min.js?1704926383" defer></script>
+        <script src="../js/lunr/lunr.stemmer.support.min.js?1704926383" defer></script>
+        <script src="../js/lunr/lunr.multi.min.js?1704926383" defer></script>
+        <script src="../js/search.js?1704926383" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -291,7 +292,6 @@ rand var randInicjalizacja generatora liczb losowych">
           <li data-nav-id="/docs/areanotifiers.gd.html" class=""><a class="padding" href="../docs/areanotifiers.gd.html">areaNotifiers.gd</a></li>
           <li data-nav-id="/docs/booster.gd.html" class=""><a class="padding" href="../docs/booster.gd.html">booster.gd</a></li>
           <li data-nav-id="/docs/chat.gd.html" class=""><a class="padding" href="../docs/chat.gd.html">chat.gd</a></li>
-          <li data-nav-id="/docs/collectorgd4.gd.html" class=""><a class="padding" href="../docs/collectorgd4.gd.html">CollectorGd4.gd</a></li>
           <li data-nav-id="/docs/deaninput.gd.html" class=""><a class="padding" href="../docs/deaninput.gd.html">deanInput.gd</a></li>
           <li data-nav-id="/docs/deans_tablet.gd.html" class=""><a class="padding" href="../docs/deans_tablet.gd.html">deans_tablet.gd</a></li>
           <li data-nav-id="/docs/elevatorsetup.gd.html" class=""><a class="padding" href="../docs/elevatorsetup.gd.html">elevatorSetup.gd</a></li>
@@ -307,9 +307,7 @@ rand var randInicjalizacja generatora liczb losowych">
           <li data-nav-id="/docs/movementinput.gd.html" class=""><a class="padding" href="../docs/movementinput.gd.html">movementInput.gd</a></li>
           <li data-nav-id="/docs/npc_animation_tree.gd.html" class=""><a class="padding" href="../docs/npc_animation_tree.gd.html">npc_animation_tree.gd</a></li>
           <li data-nav-id="/docs/npcmovementinput.gd.html" class=""><a class="padding" href="../docs/npcmovementinput.gd.html">npcMovementInput.gd</a></li>
-          <li data-nav-id="/docs/pause_menu.gd.html" class=""><a class="padding" href="../docs/pause_menu.gd.html">pause_menu.gd</a></li>
           <li data-nav-id="/docs/playerinfo.gd.html" class=""><a class="padding" href="../docs/playerinfo.gd.html">PlayerInfo.gd</a></li>
-          <li data-nav-id="/docs/referencecollector.html" class=""><a class="padding" href="../docs/referencecollector.html">ReferenceCollector</a></li>
           <li data-nav-id="/docs/server.gd.html" class=""><a class="padding" href="../docs/server.gd.html">server.gd</a></li>
           <li data-nav-id="/docs/serverbrowser.gd.html" class=""><a class="padding" href="../docs/serverbrowser.gd.html">ServerBrowser.gd</a></li>
           <li data-nav-id="/docs/serverinfo.gd.html" class=""><a class="padding" href="../docs/serverinfo.gd.html">ServerInfo.gd</a></li>
@@ -372,8 +370,8 @@ rand var randInicjalizacja generatora liczb losowych">
         </div>
       </div>
     </aside>
-    <script src="../js/clipboard.min.js?1704915942" defer></script>
-    <script src="../js/perfect-scrollbar.min.js?1704915942" defer></script>
-    <script src="../js/theme.js?1704915942" defer></script>
+    <script src="../js/clipboard.min.js?1704926383" defer></script>
+    <script src="../js/perfect-scrollbar.min.js?1704926383" defer></script>
+    <script src="../js/theme.js?1704926383" defer></script>
   </body>
 </html>

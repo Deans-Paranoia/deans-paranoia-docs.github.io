@@ -10,7 +10,7 @@ date = "2024-01-10"
 **Extends:** [Control](../Control)
 
 ## Opis
-Skrypt odpowiadający za główne menu, wyświetlające się po odpaleniu aplikacji.
+Skrypt odpowiadający za główne menu, wyświetlające się po uruchomieniu gry.
 ## Opis Metod
 
 ### tweening\_up

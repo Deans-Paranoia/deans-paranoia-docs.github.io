@@ -10,4 +10,4 @@ date = "2024-01-10"
 **Extends:** [Node2D](../Node2D)
 
 ## Opis
-Skrypt odpowiadający za menu startowe gry oraz wybór formy dołaczenia do rozgrywki.
+Skrypt odpowiadający za menu startowe gry oraz wybór formy dołączenia do rozgrywki.

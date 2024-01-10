@@ -10,7 +10,7 @@ date = "2024-01-10"
 **Extends:** [Control](../Control)
 
 ## Opis
-Skrypt odpowiadający za wyświetlanie i edycje informacji o rolach jakie otrzymuje każdy z poszczególnych graczy.
+Skrypt odpowiadający za wyświetlanie i edycje informacji o rolach jakie otrzymuje każdy z graczy.
 ## Opis Właściwości
 
 ### serverInfo

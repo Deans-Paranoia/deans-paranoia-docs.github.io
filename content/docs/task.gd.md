@@ -10,7 +10,7 @@ date = "2024-01-10"
 **Extends:** [Node2D](../Node2D)
 
 ## Opis
-Skrypt odpowiadający, za uruchamianie animacji do wykonywania zadania przez daną postać.
+Skrypt odpowiadający, za uruchamianie animacji wykonywania zadania przez daną postać.
 ## Opis Metod
 
 ### on\_npc\_task\_type\_emitted

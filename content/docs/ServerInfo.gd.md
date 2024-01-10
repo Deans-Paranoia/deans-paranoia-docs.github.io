@@ -10,7 +10,7 @@ date = "2024-01-10"
 **Extends:** [HBoxContainer](../HBoxContainer)
 
 ## Opis
-Skrypt odpowiadający z ainformacje o dostepnych do wyboru serwerach.
+Skrypt odpowiadający za informacje o dostepnych do wyboru serwerach.
 ## Sygnały
 
 - signal joinGame(ip): 

@@ -14,7 +14,8 @@
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/areanotifiers.gd.html</guid>
       <description> Extends: Node2D
-Opis Opis Właściwości map var mapReferencja do obiektu mapy
+Opis Skrypt przekazujacy informacje czy dany obszar znajduje się na ekranie.
+Opis Właściwości map var mapReferencja do obiektu mapy
 Sygnały signal noteTask(isVisible): Sygnał informujący o widoczności zadania z notatkami signal computerTask(isVisible): Sygnał informujący o widoczności zadania z komputerem signal walkingTask(isVisible): Sygnał informujący o widoczności zadania z chodzeniem </description>
     </item>
     <item>
@@ -23,7 +24,8 @@ Sygnały signal noteTask(isVisible): Sygnał informujący o widoczności zadania
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/booster.gd.html</guid>
       <description>Extends: Node2D
-Opis Opis Metod on_boost_requested func on_boost_requested()Funkcja usuwajaca booster po jego zebraniu</description>
+Opis Skrypt odpowiada za usuniecie boostera z mapy po użyciu go przez gracza.
+Opis Metod on_boost_requested func on_boost_requested()Funkcja usuwajaca booster po jego zebraniu</description>
     </item>
     <item>
       <title>chat.gd</title>
@@ -31,7 +33,8 @@ Opis Opis Metod on_boost_requested func on_boost_requested()Funkcja usuwajaca bo
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/chat.gd.html</guid>
       <description> Extends: CanvasLayer
-Opis Opis Właściwości new_message @export var new_message: PackedSceneZmienna przechowująca scenę dla nowej wiadomości
+Opis Skrypt odpowiadający za widok i fukcjonalność chatu podczas rozgrywki.
+Opis Właściwości new_message @export var new_message: PackedSceneZmienna przechowująca scenę dla nowej wiadomości
 line_edit var line_editReferencja do kontrolki wprowadzania tekstu
 message_panel var message_panelReferencja do panelu wiadomości
 chat_in_use var chat_in_use: bool = falseFlaga określająca, czy czat jest aktualnie używany
@@ -39,27 +42,19 @@ Opis Metod add_message_to_chat func add_message_to_chat(message_content, name)Fu
 Sygnały signal chat_opened(is_opened): Sygnał informujący o otwarciu lub zamknięciu czatu </description>
     </item>
     <item>
-      <title>CollectorGd4.gd</title>
-      <link>/docs/collectorgd4.gd.html</link>
-      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>/docs/collectorgd4.gd.html</guid>
-      <description>Extends: SceneTree
-Opis Opis Właściwości warnings_regex var warnings_regex: RegExOpis Metod find_files func find_files(dirpath: String = &amp;#34;&amp;#34;, patterns: PackedStringArray = null, is_recursive: bool = false, do_skip_hidden: bool = true) -&amp;gt; PackedStringArrayReturns a list of file paths found in the directory. Arguments - dirpath: path to the directory from which to search files. - patterns: an array of string match patterns, where &amp;ldquo;&amp;rdquo; matches zero or more arbitrary characters and &amp;ldquo;?&amp;rdquo; matches any single character except a period (&amp;quot;.</description>
-    </item>
-    <item>
       <title>deanInput.gd</title>
       <link>/docs/deaninput.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/deaninput.gd.html</guid>
       <description>Extends: Node2D
-Opis Opis Właściwości catch_info_instance var catch_info_instanceInstancja widżetu odpowiadającego za informacje o złapaniu studenta.
+Opis Skrypt odpowiadający za czynności wykonywane przez dziekana.
+Opis Właściwości catch_info_instance var catch_info_instanceInstancja widżetu odpowiadającego za informacje o złapaniu studenta.
 is_tablet_open var is_tablet_open: bool = falseFlaga określająca, czy tablet dziekana jest otwarty.
 scene var sceneGotowy widget sceny tabletu.
 tablet_scene var tablet_sceneScena tabletu.
 is_task_area var is_task_areaZmienna określająca, czy dziekan znajduje się w obszarze zadania.
 body var body: CharacterBody2DReferencja do ciała postaci.
-can_use_alarm var can_use_alarm: bool = falseFlaga określająca, czy Dean może aktywować alarm przeciwpożarowy.
-Opis Metod change_alarm_state func change_alarm_state()Funkcja zdalna obsługująca zmianę stanu alarmu przeciwpożarowego.</description>
+can_use_alarm var can_use_alarm: bool = falseFlaga określająca, czy Dean może aktywować alarm przeciwpożarowy.</description>
     </item>
     <item>
       <title>deans_tablet.gd</title>
@@ -67,23 +62,24 @@ Opis Metod change_alarm_state func change_alarm_state()Funkcja zdalna obsługuj�
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/deans_tablet.gd.html</guid>
       <description>Extends: CanvasLayer
-Opis Opis Właściwości single_scene var single_sceneReferencja do sceny pojedynczego studenta</description>
+Opis Skrypt odpowiadający za obsługe tabletu dziekana.
+Opis Właściwości single_scene var single_sceneReferencja do sceny pojedynczego studenta</description>
     </item>
     <item>
       <title>elevatorSetup.gd</title>
       <link>/docs/elevatorsetup.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/elevatorsetup.gd.html</guid>
-      <description> Extends: Node2D
-Opis </description>
+      <description>Extends: Node2D
+Opis Skrypt odpowiadający za funkcjonalność windy.</description>
     </item>
     <item>
       <title>endgame.gd</title>
       <link>/docs/endgame.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/endgame.gd.html</guid>
-      <description> Extends: CanvasLayer
-Opis </description>
+      <description>Extends: CanvasLayer
+Opis Skrypt odpowiadający za zakończenie gry i wyświetlenie wyników rozgrywki.</description>
     </item>
     <item>
       <title>FireAlarm.gd</title>
@@ -91,7 +87,8 @@ Opis </description>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/firealarm.gd.html</guid>
       <description>Extends: Sprite2D
-Opis Opis Właściwości textureAfterUsage var textureAfterUsage = &amp;#34;&amp;lt;CompressedTexture2D#-9223367935513261906&amp;gt;&amp;#34;Opis Metod change_texture func change_texture()Zmienia teksture</description>
+Opis Opis Właściwości textureAfterUsage var textureAfterUsage = &amp;#34;&amp;lt;CompressedTexture2D#-9223367935513261906&amp;gt;&amp;#34;Opis Metod Skrypt odpowiadający za zmiane tekstury alarmu gdy zostanie on sabotowany.
+change_texture func change_texture()Zmienia teksture</description>
     </item>
     <item>
       <title>fireAlarmSetup.gd</title>
@@ -99,7 +96,8 @@ Opis Opis Właściwości textureAfterUsage var textureAfterUsage = &amp;#34;&amp
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/firealarmsetup.gd.html</guid>
       <description> Extends: Node2D
-Opis Opis Właściwości useable var useable: bool = trueOpis Metod use_alarm func use_alarm(isSabotaged)Używa alarm
+Opis Odpowiada za rozpoczęcie spotkanie kryzysowego i wywoływanie sceny FireAlarm.
+Opis Właściwości useable var useable: bool = trueOpis Metod use_alarm func use_alarm(isSabotaged)Używa alarm
 set_lecture_hall func set_lecture_hall()Sygnały signal change_texture(): </description>
     </item>
     <item>
@@ -108,14 +106,14 @@ set_lecture_hall func set_lecture_hall()Sygnały signal change_texture(): </desc
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/global.gd.html</guid>
       <description>Extends: Node
-Opis Opis Właściwości Players var PlayersSłownik przechowujący informacje o graczach
+Opis Skrypt zawierający globalne zmienne całej gry, takie jak nazwy graczy lokalizacje i typy zadan.
+Opis Właściwości Players var PlayersSłownik przechowujący informacje o graczach
 deanId var deanId: intIdentyfikator dziekana
 studentsNames var studentsNamesLista dostępnych nazw studentów
 usedNames var usedNamesLista użytych nazw studentów
 Tasks var Tasks: ArrayLista dostępnych zadań
 UsedTasks var UsedTasks: ArrayLista użytych zadań
-Opis Metod remove_name func remove_name(nameNumber: int)Funkcja dodająca zwolnioną nazwę studenta do listy dostępnych nazw
-resetTasks func resetTasks()Funkcja resetująca listę zadań, przenosząca zadania z UsedTasks z powrotem do Tasks</description>
+Opis Metod remove_name func remove_name(nameNumber: int)Funkcja dodająca zwolnioną nazwę studenta do listy dostępnych nazw</description>
     </item>
     <item>
       <title>kickScript.gd</title>
@@ -123,7 +121,8 @@ resetTasks func resetTasks()Funkcja resetująca listę zadań, przenosząca zada
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/kickscript.gd.html</guid>
       <description> Extends: Node2D
-Opis Opis Właściwości on_lecture_hall var on_lecture_hall = falseFlaga określająca, czy postać studenta znajduje się w sali wykładowej.
+Opis Skrypt odpowiadający za wykreślenie z listy studentów wybranego przez dziakana studenta.
+Opis Właściwości on_lecture_hall var on_lecture_hall = falseFlaga określająca, czy postać studenta znajduje się w sali wykładowej.
 Sygnały signal on_student_hovered(name): Sygnał informujący o najechaniu myszką na studenta. </description>
     </item>
     <item>
@@ -132,16 +131,15 @@ Sygnały signal on_student_hovered(name): Sygnał informujący o najechaniu mysz
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/lecture_hall.gd.html</guid>
       <description>Extends: Node2D
-Opis Opis Właściwości npcScene var npcSceneŁaduje scenę postaci NPC
+Opis Skrypt odpowiadający za odbycie spotaknia porządkowego, podczas którego Dziekan może dokonać wykreślkenia gracza z listy studentów.
+Opis Właściwości npcScene var npcSceneŁaduje scenę postaci NPC
 deanScene var deanSceneŁaduje scenę postaci Deana
 rng var rngTworzy nowy generator liczb losowych
 available_spots var available_spotsLista dostępnych miejsc
 clicked var clicked = 0Licznik kliknięć
 kicked_player_number var kicked_player_number = 1Numer gracza do wyrzucenia
 maximum_ammount_to_kick var maximum_ammount_to_kick = 1Maksymalna liczba do wyrzucenia
-hovered_student var hovered_studentZmienna przechowująca informację o najechanym studencie
-students_to_kick var students_to_kickLista studentów do wyrzucenia
-playersCount var playersCount = 0Licznik graczy</description>
+hovered_student var hovered_studentZmienna przechowująca informację o najechanym studencie</description>
     </item>
     <item>
       <title>main_menu.gd</title>
@@ -149,7 +147,8 @@ playersCount var playersCount = 0Licznik graczy</description>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/main_menu.gd.html</guid>
       <description>Extends: Control
-Opis Opis Metod tweening_up func tweening_up(node)Parametry: node - element GUI Return: None Funkcja animująca wznoszenie elementu GUI.
+Opis Skrypt odpowiadający za główne menu, wyświetlające się po uruchomieniu gry.
+Opis Metod tweening_up func tweening_up(node)Parametry: node - element GUI Return: None Funkcja animująca wznoszenie elementu GUI.
 tweening_down func tweening_down(node)Parametry: node - element GUI Return: None Funkcja animująca opadanie elementu GUI.</description>
     </item>
     <item>
@@ -158,7 +157,8 @@ tweening_down func tweening_down(node)Parametry: node - element GUI Return: None
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/main.gd.html</guid>
       <description>Extends: Control
-Opis Opis Właściwości Address @export var Address = &amp;#34;&amp;#34;Port @export var Port = 8909single_ip_info var single_ip_infopeer var peerOpis Metod peer_connected func peer_connected(id: int)Parametry: id - unikalny numer generowany losowo podczas nawiązywania połączenia z seweren Return: None Funkcja informująca o nowym graczu, który dołączył do jako peer, wywołuje się gdy jest emitowany sygnał wbudowany &amp;lsquo;peer_connected&amp;rsquo;
+Opis Główny skrypt odpowiedzialny za funkcjonalności sieciowe.
+Opis Właściwości Address @export var Address = &amp;#34;&amp;#34;Port @export var Port = 8909single_ip_info var single_ip_infopeer var peerOpis Metod peer_connected func peer_connected(id: int)Parametry: id - unikalny numer generowany losowo podczas nawiązywania połączenia z seweren Return: None Funkcja informująca o nowym graczu, który dołączył do jako peer, wywołuje się gdy jest emitowany sygnał wbudowany &amp;lsquo;peer_connected&amp;rsquo;
 peer_disconnected func peer_disconnected(id: int)Parametry: id - unikalny numer generowany losowo podczas nawiązywania połączenia z seweren Return: None Funkcja informująca o graczu, który rozłączył się jako peer, wywołuje się gdy jest emitowany sygnał wbudowany &amp;lsquo;peer_connected&amp;rsquo;</description>
     </item>
     <item>
@@ -167,12 +167,12 @@ peer_disconnected func peer_disconnected(id: int)Parametry: id - unikalny numer 
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/map.gd.html</guid>
       <description>Extends: Node2D
-Opis Opis Właściwości studentScene @export var studentScene: PackedSceneDeklaracja zmiennych przechowujących trzy sceny: studentScene, deanScene, npcScene
+Opis Skrypt odpowiadający za wygląd oraz fukcjonalność mapy.
+Opis Właściwości studentScene @export var studentScene: PackedSceneDeklaracja zmiennych przechowujących trzy sceny: studentScene, deanScene, npcScene
 deanScene @export var deanScene: PackedScenenpcScene @export var npcScene: PackedScenetextures var texturesInicjalizacja pustej listy &amp;rsquo;textures&#39;
 timeUi var timeUiŁadowanie sceny &amp;rsquo;time.tscn&amp;rsquo; z katalogu &amp;lsquo;ui&amp;rsquo; i tworzenie instancji tej sceny
 isVotingProcess var isVotingProcess = falseInicjalizacja zmiennej &amp;lsquo;isVotingProcess&amp;rsquo; jako logicznej wartości &amp;lsquo;False&amp;rsquo;
-day var day = 1Inicjalizacja zmiennej &amp;lsquo;day&amp;rsquo; jako liczby całkowitej równą 1
-rand var randInicjalizacja generatora liczb losowych</description>
+day var day = 1Inicjalizacja zmiennej &amp;lsquo;day&amp;rsquo; jako liczby całkowitej równą 1</description>
     </item>
     <item>
       <title>movementInput.gd</title>
@@ -180,13 +180,13 @@ rand var randInicjalizacja generatora liczb losowych</description>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/movementinput.gd.html</guid>
       <description>Extends: CharacterBody2D
-Opis Opis Właściwości player_name var player_name: StringNazwa gracza.
+Opis Skrypt odpowiadający za możliwość i kierunek poruszania sie gracza.
+Opis Właściwości player_name var player_name: StringNazwa gracza.
 can_move var can_move: bool = trueFlaga określająca możliwość ruchu postaci.
 last_direction var last_direction = &amp;#34;(0, 0)&amp;#34;Zmienna określająca ostatni kierunek ruchu gracza przed zatrzymaniem.
 temp_speed var temp_speedTymczasowa prędkość, używana do zatrzymywania i przywracania ruchu.
 speed var speed: int = 250Prędkość ruchu gracza.
-canMove var canMove = trueFlaga określająca, czy gracz może się poruszać.
-Opis Metod apply_physics func apply_physics()Metoda aplikująca fizykę ruchu gracza.</description>
+canMove var canMove = trueFlaga określająca, czy gracz może się poruszać.</description>
     </item>
     <item>
       <title>npc_animation_tree.gd</title>
@@ -194,7 +194,8 @@ Opis Metod apply_physics func apply_physics()Metoda aplikująca fizykę ruchu gr
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/npc_animation_tree.gd.html</guid>
       <description>Extends: AnimationTree
-Opis Opis Właściwości taskVector var taskVector = &amp;#34;(0, 0)&amp;#34;Wektor związany z bieżącym zadaniem postaci NPC.
+Opis Skrypt odpowiadający za animacje tasków.
+Opis Właściwości taskVector var taskVector = &amp;#34;(0, 0)&amp;#34;Wektor związany z bieżącym zadaniem postaci NPC.
 sprite_to_back_to var sprite_to_back_to: Sprite2DSprite, do którego zostanie przywrócony animowany sprite po zakończeniu zadania.
 Opis Metod taking_notes_loop func taking_notes_loop()Metoda obsługująca animacje zadania &amp;ldquo;takingNotes&amp;rdquo;.
 computer_loop func computer_loop()Metoda obsługująca animacje zadania &amp;ldquo;computer&amp;rdquo;.
@@ -208,21 +209,13 @@ set_vector_and_sprite func set_vector_and_sprite(sprite, vector)Parametry: sprit
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/npcmovementinput.gd.html</guid>
       <description>Extends: CharacterBody2D
-Opis Opis Właściwości speed var speed = 400Prędkość ruchu postaci NPC.
+Opis Skrypt odpowiadający za ruch botów przy wykonywanych taskach.
+Opis Właściwości speed var speed = 400Prędkość ruchu postaci NPC.
 destination var destination = &amp;#34;(0, 0)&amp;#34;Wektor docelowy dla ruchu postaci NPC.
 point_A var point_A: Vector2Punkt A na trasie ruchu postaci NPC.
 point_B var point_B: Vector2Punkt B na trasie ruchu postaci NPC.
 move_direction var move_direction = &amp;#34;(1, 0)&amp;#34;Wektor kierunku ruchu postaci NPC.
-can_move var can_move: boolFlaga określająca możliwość ruchu postaci NPC.
-walking_task var walking_task = falseFlaga określająca, czy postać NPC jest w trakcie zadania poruszania się.</description>
-    </item>
-    <item>
-      <title>pause_menu.gd</title>
-      <link>/docs/pause_menu.gd.html</link>
-      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>/docs/pause_menu.gd.html</guid>
-      <description> Extends: Control
-Opis </description>
+can_move var can_move: boolFlaga określająca możliwość ruchu postaci NPC.</description>
     </item>
     <item>
       <title>PlayerInfo.gd</title>
@@ -230,16 +223,8 @@ Opis </description>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/playerinfo.gd.html</guid>
       <description> Extends: HBoxContainer
-Opis Sygnały signal makeAsDean(playerId): </description>
-    </item>
-    <item>
-      <title>ReferenceCollector</title>
-      <link>/docs/referencecollector.html</link>
-      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>/docs/referencecollector.html</guid>
-      <description>Extends: EditorScript
-Opis To use this tool: - Place this script and Collector.gd in your Godot project folder. - Open the script in the script editor. - Modify the properties below to control the tool&amp;rsquo;s behavior. - Go to File -&amp;gt; Run to run the script in the editor.
-To use this tool: - Place this script and Collector.gd in your Godot project folder. - Open the script in the script editor.</description>
+Opis Skrypt odpowiadający za informacje o graczu.
+Sygnały signal makeAsDean(playerId): </description>
     </item>
     <item>
       <title>server.gd</title>
@@ -247,9 +232,9 @@ To use this tool: - Place this script and Collector.gd in your Godot project fol
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/server.gd.html</guid>
       <description>Extends: Node2D
-Opis Opis Właściwości endgame var endgamerng var rnggreen_terminal var green_terminalviolet_terminal var violet_terminalyellow_terminal var yellow_terminalterminal1 var terminal1terminal2 var terminal2terminal3 var terminal3serverValue var serverValuedigits_sprites var digits_spritesOpis Metod set_server_value func set_server_value(value)calculate_value func calculate_value()Funkcja sprawdzająca poprawność wprowadzonych wartości terminali
-run_server_error func run_server_error()set_terminals_position_for_host func set_terminals_position_for_host()Funkcja ustawiająca pozycję terminali dla hosta
-set_terminals_position func set_terminals_position(position1, position2, position3)show_end_screen func show_end_screen()on_number_changed func on_number_changed(name, value)Parametry: name - nazwa terminala, value - cyfra Funkcja zmieniająca teksturę cyfr na ekranie w zależności od wartości wprowadzonej do terminali</description>
+Opis Skrypt odpowiadający za logike związaną z terminalami oraz kodem do serwera z odpowiedziemi do testów dziekana, ten skrypt ma możliwość zakończenia gry zwycięstwem dla studentów.
+Opis Właściwości endgame var endgamerng var rnggreen_terminal var green_terminalviolet_terminal var violet_terminalyellow_terminal var yellow_terminalterminal1 var terminal1terminal2 var terminal2terminal3 var terminal3serverValue var serverValuedigits_sprites var digits_spritesOpis Metod set_server_value func set_server_value(value)calculate_value func calculate_value()Funkcja sprawdzająca poprawność wprowadzonych wartości terminali
+run_server_error func run_server_error()set_terminals_position_for_host func set_terminals_position_for_host()Funkcja ustawiająca pozycję terminali dla hosta</description>
     </item>
     <item>
       <title>ServerBrowser.gd</title>
@@ -257,7 +242,8 @@ set_terminals_position func set_terminals_position(position1, position2, positio
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/serverbrowser.gd.html</guid>
       <description>Extends: Control
-Opis Opis Właściwości listenPort @export var listenPort: int = 8911broadcastPort @export var broadcastPort: int = 8912broadcastAddress @export var broadcastAddress: String = &amp;#34;&amp;#34;serverInfo @export var serverInfo: PackedScenebroadcastTimer var broadcastTimer: TimerRoomInfo var RoomInfoplayerCount var playerCount = 0broadcaster var broadcaster: PacketPeerUDPlistener var listener: PacketPeerUDPis_host var is_host = falseOpis Metod setBroadcastAddress func setBroadcastAddress(address: String)Parametry: address - ciąg znaków z adresem IP hostującego Return: bool Funckja ustawiająca adres strumieniowanie informacji związanych z aktualnym serwerem gry</description>
+Opis Skrypt odpowiadający za wyświetlanie serwera z którym obecnie można sie połaczyć oraz informacje o nim.
+Opis Właściwości listenPort @export var listenPort: int = 8911broadcastPort @export var broadcastPort: int = 8912broadcastAddress @export var broadcastAddress: String = &amp;#34;&amp;#34;serverInfo @export var serverInfo: PackedScenebroadcastTimer var broadcastTimer: TimerRoomInfo var RoomInfoplayerCount var playerCount = 0broadcaster var broadcaster: PacketPeerUDPlistener var listener: PacketPeerUDPis_host var is_host = falseOpis Metod setBroadcastAddress func setBroadcastAddress(address: String)Parametry: address - ciąg znaków z adresem IP hostującego Return: bool Funckja ustawiająca adres strumieniowanie informacji związanych z aktualnym serwerem gry</description>
     </item>
     <item>
       <title>ServerInfo.gd</title>
@@ -265,7 +251,8 @@ Opis Opis Właściwości listenPort @export var listenPort: int = 8911broadcastP
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/serverinfo.gd.html</guid>
       <description> Extends: HBoxContainer
-Opis Sygnały signal joinGame(ip): </description>
+Opis Skrypt odpowiadający za informacje o dostepnych do wyboru serwerach.
+Sygnały signal joinGame(ip): </description>
     </item>
     <item>
       <title>single_ip_info.gd</title>
@@ -273,15 +260,16 @@ Opis Sygnały signal joinGame(ip): </description>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/single_ip_info.gd.html</guid>
       <description> Extends: HBoxContainer
-Opis Sygnały signal host_down(ip): Sygnał informujący o wyłączeniu hosta z podanym adresem IP </description>
+Opis Skrypt obsługujący interfejs który umożłiwia utworzenie servera na danym systemie sieciowym.
+Sygnały signal host_down(ip): Sygnał informujący o wyłączeniu hosta z podanym adresem IP </description>
     </item>
     <item>
       <title>start_menu.gd</title>
       <link>/docs/start_menu.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/start_menu.gd.html</guid>
-      <description> Extends: Node2D
-Opis </description>
+      <description>Extends: Node2D
+Opis Skrypt odpowiadający za menu startowe gry oraz wybór formy dołączenia do rozgrywki.</description>
     </item>
     <item>
       <title>student_animation_tree.gd</title>
@@ -289,7 +277,8 @@ Opis </description>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/student_animation_tree.gd.html</guid>
       <description> Extends: AnimationTree
-Opis Opis Metod run_animation func run_animation(velocity)task_animation func task_animation(task_type)</description>
+Opis Skrypt, który odpowiada za uruchamianie wszystkich animacji dla studenta.
+Opis Metod run_animation func run_animation(velocity)task_animation func task_animation(task_type)</description>
     </item>
     <item>
       <title>studentInput.gd</title>
@@ -297,7 +286,8 @@ Opis Opis Metod run_animation func run_animation(velocity)task_animation func ta
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/studentinput.gd.html</guid>
       <description>Extends: Node2D
-Opis Opis Właściwości dig_info_instance var dig_info_instanceGotowa zmienna przechowująca instancję sceny dig_and_dean_catch_info, która będzie używana do wyświetlania informacji o kopaniu i złapaniu przez dziekana.
+Opis Skrypt odpowiadający za sterowanie studentem przez gracza.
+Opis Właściwości dig_info_instance var dig_info_instanceGotowa zmienna przechowująca instancję sceny dig_and_dean_catch_info, która będzie używana do wyświetlania informacji o kopaniu i złapaniu przez dziekana.
 current_task_area var current_task_area = &amp;#34;&amp;#34;Zmienna przechowująca aktualną strefę zadania gracza. Pusty string, jeśli gracz nie wykonuje zadania.
 fourthFloor var fourthFloorGotowa zmienna przechowująca scenę czwartego piętra.
 thirdFloor var thirdFloorGotowa zmienna przechowująca scenę trzeciego piętra.
@@ -309,7 +299,8 @@ dangerScene var dangerScene = &amp;#34;&amp;lt;PackedScene#-9223367941569842968&
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/tablet_single_student.gd.html</guid>
       <description>Extends: HBoxContainer
-Opis Opis Właściwości isChecked var isCheckedZmienna przechowująca stan zaznaczenia
+Opis Skrypt odpowiadający za informacje o zaznaczeniu studenta w tablecie dziekana.
+Opis Właściwości isChecked var isCheckedZmienna przechowująca stan zaznaczenia
 checkmark var checkmarkReferencja do ikony checkmark
 cross var crossReferencja do ikony krzyżyka</description>
     </item>
@@ -319,12 +310,12 @@ cross var crossReferencja do ikony krzyżyka</description>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/task.gd.html</guid>
       <description>Extends: Node2D
-Opis Opis Metod on_npc_task_type_emitted func on_npc_task_type_emitted(task_type)Parametry: task_type - typ tasku Funkcja do odtwarzania konkretnego zadania przez gracza
+Opis Skrypt odpowiadający, za uruchamianie animacji wykonywania zadania przez daną postać.
+Opis Metod on_npc_task_type_emitted func on_npc_task_type_emitted(task_type)Parametry: task_type - typ tasku Funkcja do odtwarzania konkretnego zadania przez gracza
 run_task func run_task(task_type)Parametry: task_type - typ tasku Funkcja dobiera odpowiednią funkcje zależnie od zmiennej task_type
 task_computer func task_computer()Funkcja emitująca sygnał o task_type = computer
 task_taking_notes func task_taking_notes()Funkcja emitująca sygnał o task_type = takingNotes
-task_walking func task_walking()Funkcja emitująca sygnał o task_type = walking
-vending_machine func vending_machine()Funkcja emitująca sygnał o task_type = vendingMachine</description>
+task_walking func task_walking()Funkcja emitująca sygnał o task_type = walking</description>
     </item>
     <item>
       <title>terminal.gd</title>
@@ -332,7 +323,8 @@ vending_machine func vending_machine()Funkcja emitująca sygnał o task_type = v
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/terminal.gd.html</guid>
       <description> Extends: Node2D
-Opis Opis Właściwości actual_value var actual_value = 0textures var texturescan_update_value var can_update_value: bool = falseOpis Metod load_textures func load_textures()Funkcja ładowania tekstur
+Opis Skrypt odpowiadający za informacje wyświetlane na terminalach.
+Opis Właściwości actual_value var actual_value = 0textures var texturescan_update_value var can_update_value: bool = falseOpis Metod load_textures func load_textures()Funkcja ładowania tekstur
 update_texture func update_texture()Funkcja aktualizująca teksturę terminala
 use_terminal func use_terminal()show_terminal func show_terminal(name)Sygnały signal change_number(name, value): </description>
     </item>
@@ -342,10 +334,10 @@ use_terminal func use_terminal()show_terminal func show_terminal(name)Sygnały s
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/waiting_room.gd.html</guid>
       <description>Extends: Control
-Opis Opis Właściwości serverInfo @export var serverInfo: PackedScenecurrent var current: intdean var dean: intisServer var isServer = falseOpis Metod enable_dean_change func enable_dean_change()funkcja która przekazuje pozwolenie na zmianę gracza, który otrzyma rolę dziekana
+Opis Skrypt odpowiadający za wyświetlanie i edycje informacji o rolach jakie otrzymuje każdy z graczy.
+Opis Właściwości serverInfo @export var serverInfo: PackedScenecurrent var current: intdean var dean: intisServer var isServer = falseOpis Metod enable_dean_change func enable_dean_change()funkcja która przekazuje pozwolenie na zmianę gracza, który otrzyma rolę dziekana
 makeAsDean func makeAsDean(id)funkcja przysłająca informacje o wybranym dziekanie
-findDeanId func findDeanId() -&amp;gt; intReturn: int funkcja która szuka osoby, która ma ustawioną rolę dziekan
-refresh_table func refresh_table()funckcja odświeża tabelę z graczami - ich nazwą i ich rolą w grze</description>
+findDeanId func findDeanId() -&amp;gt; intReturn: int funkcja która szuka osoby, która ma ustawioną rolę dziekan</description>
     </item>
   </channel>
 </rss>

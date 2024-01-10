@@ -10,7 +10,7 @@ date = "2024-01-10"
 **Extends:** [Node2D](../Node2D)
 
 ## Opis
-Skrypt odpowiadający za logike związana z terrminalami oraz kodem do servera dziekana, ten skrypt ma możliwość zakończenia gry ze zwycieństwem dla studentów.
+Skrypt odpowiadający za logike związaną z terminalami oraz kodem do serwera z odpowiedziemi do testów dziekana, ten skrypt ma możliwość zakończenia gry zwycięstwem dla studentów.
 ## Opis Właściwości
 
 ### endgame
