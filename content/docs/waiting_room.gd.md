@@ -18,25 +18,25 @@ Skrypt odpowiadający za wyświetlanie i edycje informacji o rolach jakie otrzym
 ```gdscript
 @export var serverInfo: PackedScene
 ```
-
+Zmienna przechowująca scenę zawierającą informacje o serwerze.
 ### current
 
 ```gdscript
 var current: int
 ```
-
+Zmienna przechowująca który z graczy pochodzi z tej instancji gry.
 ### dean
 
 ```gdscript
 var dean: int
 ```
-
+Identyfikator gracza będącego dziekanem.
 ### isServer
 
 ```gdscript
 var isServer = false
 ```
-
+Zmienna przechowująca która z instancji gry jest hostem.
 ## Opis Metod
 
 ### enable\_dean\_change
@@ -44,40 +44,35 @@ var isServer = false
 ```gdscript
 func enable_dean_change()
 ```
-
-funkcja która przekazuje pozwolenie na zmianę gracza, który otrzyma rolę dziekana
+Funkcja która przekazuje pozwolenie na zmianę gracza, który ma otrzymać rolę dziekana.
 
 ### makeAsDean
 
 ```gdscript
 func makeAsDean(id)
 ```
-
-funkcja przysłająca informacje o wybranym dziekanie
+Funkcja przysłająca informacje o nowo wybranym dziekanie.
 
 ### findDeanId
 
 ```gdscript
 func findDeanId() -> int
 ```
-
-Return: int funkcja która szuka osoby, która ma ustawioną rolę dziekan
+Funkcja która szuka gracza, która ma ustawioną rolę dziekana.
 
 ### refresh\_table
 
 ```gdscript
 func refresh_table()
 ```
-
-funckcja odświeża tabelę z graczami - ich nazwą i ich rolą w grze
+Funckcja odświeża tabelę z graczami - ich nazwą oraz rolą w grze.
 
 ### on\_current\_player
 
 ```gdscript
 func on_current_player(id)
 ```
-
-funkcja wysyłająca informajce o graczu, który obecnie jest wpisywany do tabeli
+Funkcja wysyłająca informajce o graczu, który obecnie jest wpisywany do tabeli.
 
 ## Sygnały
 

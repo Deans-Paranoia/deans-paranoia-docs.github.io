@@ -10,14 +10,18 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="waiting_room.gd :: Deans Paranois Documentation">
     <meta name="twitter:description" content="Opis Skrypt odpowiadający za wyświetlanie i edycje informacji o rolach jakie otrzymuje każdy z graczy.
-Opis Właściwości serverInfo @export var serverInfo: PackedScenecurrent var current: intdean var dean: intisServer var isServer = falseOpis Metod enable_dean_change func enable_dean_change()funkcja która przekazuje pozwolenie na zmianę gracza, który otrzyma rolę dziekana
-makeAsDean func makeAsDean(id)funkcja przysłająca informacje o wybranym dziekanie
-findDeanId func findDeanId() -&gt; intReturn: int funkcja która szuka osoby, która ma ustawioną rolę dziekan">
+Opis Właściwości serverInfo @export var serverInfo: PackedSceneZmienna przechowująca scenę zawierającą informacje o serwerze.
+current var current: intZmienna przechowująca który z graczy pochodzi z tej instancji gry.
+dean var dean: intIdentyfikator gracza będącego dziekanem.
+isServer var isServer = falseZmienna przechowująca która z instancji gry jest hostem.
+Opis Metod enable_dean_change func enable_dean_change()Funkcja która przekazuje pozwolenie na zmianę gracza, który ma otrzymać rolę dziekana.">
     <meta property="og:title" content="waiting_room.gd :: Deans Paranois Documentation">
     <meta property="og:description" content="Opis Skrypt odpowiadający za wyświetlanie i edycje informacji o rolach jakie otrzymuje każdy z graczy.
-Opis Właściwości serverInfo @export var serverInfo: PackedScenecurrent var current: intdean var dean: intisServer var isServer = falseOpis Metod enable_dean_change func enable_dean_change()funkcja która przekazuje pozwolenie na zmianę gracza, który otrzyma rolę dziekana
-makeAsDean func makeAsDean(id)funkcja przysłająca informacje o wybranym dziekanie
-findDeanId func findDeanId() -&gt; intReturn: int funkcja która szuka osoby, która ma ustawioną rolę dziekan">
+Opis Właściwości serverInfo @export var serverInfo: PackedSceneZmienna przechowująca scenę zawierającą informacje o serwerze.
+current var current: intZmienna przechowująca który z graczy pochodzi z tej instancji gry.
+dean var dean: intIdentyfikator gracza będącego dziekanem.
+isServer var isServer = falseZmienna przechowująca która z instancji gry jest hostem.
+Opis Metod enable_dean_change func enable_dean_change()Funkcja która przekazuje pozwolenie na zmianę gracza, który ma otrzymać rolę dziekana.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="/docs/waiting_room.gd.html">
     <meta property="article:section" content="Dokumentacja skryptów :: Deans Paranois Documentation">
@@ -26,19 +30,19 @@ findDeanId func findDeanId() -&gt; intReturn: int funkcja która szuka osoby, kt
     <meta property="og:site_name" content="Deans Paranois Documentation">
     <title>waiting_room.gd :: Deans Paranois Documentation</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="../css/fontawesome-all.min.css?1704985151" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fontawesome-all.min.css?1704985151" rel="stylesheet"></noscript>
-    <link href="../css/nucleus.css?1704985151" rel="stylesheet">
-    <link href="../css/auto-complete.css?1704985151" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/auto-complete.css?1704985151" rel="stylesheet"></noscript>
-    <link href="../css/perfect-scrollbar.min.css?1704985151" rel="stylesheet">
-    <link href="../css/fonts.css?1704985151" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fonts.css?1704985151" rel="stylesheet"></noscript>
-    <link href="../css/theme.css?1704985151" rel="stylesheet">
-    <link href="../css/theme-neon.css?1704985151" rel="stylesheet" id="R-variant-style">
-    <link href="../css/chroma-neon.css?1704985151" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="../css/variant.css?1704985151" rel="stylesheet">
-    <link href="../css/print.css?1704985151" rel="stylesheet" media="print">
-    <link href="../css/ie.css?1704985151" rel="stylesheet">
-    <script src="../js/url.js?1704985151"></script>
-    <script src="../js/variant.js?1704985151"></script>
+    <link href="../css/fontawesome-all.min.css?1704986426" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fontawesome-all.min.css?1704986426" rel="stylesheet"></noscript>
+    <link href="../css/nucleus.css?1704986426" rel="stylesheet">
+    <link href="../css/auto-complete.css?1704986426" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/auto-complete.css?1704986426" rel="stylesheet"></noscript>
+    <link href="../css/perfect-scrollbar.min.css?1704986426" rel="stylesheet">
+    <link href="../css/fonts.css?1704986426" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fonts.css?1704986426" rel="stylesheet"></noscript>
+    <link href="../css/theme.css?1704986426" rel="stylesheet">
+    <link href="../css/theme-neon.css?1704986426" rel="stylesheet" id="R-variant-style">
+    <link href="../css/chroma-neon.css?1704986426" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../css/variant.css?1704986426" rel="stylesheet">
+    <link href="../css/print.css?1704986426" rel="stylesheet" media="print">
+    <link href="../css/ie.css?1704986426" rel="stylesheet">
+    <script src="../js/url.js?1704986426"></script>
+    <script src="../js/variant.js?1704986426"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72""
@@ -133,20 +137,24 @@ findDeanId func findDeanId() -&gt; intReturn: int funkcja która szuka osoby, kt
 <p>Skrypt odpowiadający za wyświetlanie i edycje informacji o rolach jakie otrzymuje każdy z graczy.</p>
 <h2 id="opis-właściwości">Opis Właściwości</h2>
 <h3 id="serverinfo">serverInfo</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#a6e22e">@export</span> <span style="color:#66d9ef">var</span> serverInfo: <span style="color:#a6e22e">PackedScene</span></span></span></code></pre></div><h3 id="current">current</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> current: <span style="color:#66d9ef">int</span></span></span></code></pre></div><h3 id="dean">dean</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> dean: <span style="color:#66d9ef">int</span></span></span></code></pre></div><h3 id="isserver">isServer</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> isServer <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span></span></span></code></pre></div><h2 id="opis-metod">Opis Metod</h2>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#a6e22e">@export</span> <span style="color:#66d9ef">var</span> serverInfo: <span style="color:#a6e22e">PackedScene</span></span></span></code></pre></div><p>Zmienna przechowująca scenę zawierającą informacje o serwerze.</p>
+<h3 id="current">current</h3>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> current: <span style="color:#66d9ef">int</span></span></span></code></pre></div><p>Zmienna przechowująca który z graczy pochodzi z tej instancji gry.</p>
+<h3 id="dean">dean</h3>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> dean: <span style="color:#66d9ef">int</span></span></span></code></pre></div><p>Identyfikator gracza będącego dziekanem.</p>
+<h3 id="isserver">isServer</h3>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> isServer <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span></span></span></code></pre></div><p>Zmienna przechowująca która z instancji gry jest hostem.</p>
+<h2 id="opis-metod">Opis Metod</h2>
 <h3 id="enable_dean_change">enable_dean_change</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">enable_dean_change</span>()</span></span></code></pre></div><p>funkcja która przekazuje pozwolenie na zmianę gracza, który otrzyma rolę dziekana</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">enable_dean_change</span>()</span></span></code></pre></div><p>Funkcja która przekazuje pozwolenie na zmianę gracza, który ma otrzymać rolę dziekana.</p>
 <h3 id="makeasdean">makeAsDean</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">makeAsDean</span>(id)</span></span></code></pre></div><p>funkcja przysłająca informacje o wybranym dziekanie</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">makeAsDean</span>(id)</span></span></code></pre></div><p>Funkcja przysłająca informacje o nowo wybranym dziekanie.</p>
 <h3 id="finddeanid">findDeanId</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">findDeanId</span>() <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">int</span></span></span></code></pre></div><p>Return: int funkcja która szuka osoby, która ma ustawioną rolę dziekan</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">findDeanId</span>() <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">int</span></span></span></code></pre></div><p>Funkcja która szuka gracza, która ma ustawioną rolę dziekana.</p>
 <h3 id="refresh_table">refresh_table</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">refresh_table</span>()</span></span></code></pre></div><p>funckcja odświeża tabelę z graczami - ich nazwą i ich rolą w grze</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">refresh_table</span>()</span></span></code></pre></div><p>Funckcja odświeża tabelę z graczami - ich nazwą oraz rolą w grze.</p>
 <h3 id="on_current_player">on_current_player</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">on_current_player</span>(id)</span></span></code></pre></div><p>funkcja wysyłająca informajce o graczu, który obecnie jest wpisywany do tabeli</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">on_current_player</span>(id)</span></span></code></pre></div><p>Funkcja wysyłająca informajce o graczu, który obecnie jest wpisywany do tabeli.</p>
 <h2 id="sygnały">Sygnały</h2>
 <ul>
 <li>signal button_pressed(node):</li>
@@ -176,11 +184,11 @@ findDeanId func findDeanId() -&gt; intReturn: int funkcja która szuka osoby, kt
         <script>
           var contentLangs=[];
         </script>
-        <script src="../js/auto-complete.js?1704985151" defer></script>
-        <script src="../js/lunr/lunr.min.js?1704985151" defer></script>
-        <script src="../js/lunr/lunr.stemmer.support.min.js?1704985151" defer></script>
-        <script src="../js/lunr/lunr.multi.min.js?1704985151" defer></script>
-        <script src="../js/search.js?1704985151" defer></script>
+        <script src="../js/auto-complete.js?1704986426" defer></script>
+        <script src="../js/lunr/lunr.min.js?1704986426" defer></script>
+        <script src="../js/lunr/lunr.stemmer.support.min.js?1704986426" defer></script>
+        <script src="../js/lunr/lunr.multi.min.js?1704986426" defer></script>
+        <script src="../js/search.js?1704986426" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -272,8 +280,8 @@ findDeanId func findDeanId() -&gt; intReturn: int funkcja która szuka osoby, kt
         </div>
       </div>
     </aside>
-    <script src="../js/clipboard.min.js?1704985151" defer></script>
-    <script src="../js/perfect-scrollbar.min.js?1704985151" defer></script>
-    <script src="../js/theme.js?1704985151" defer></script>
+    <script src="../js/clipboard.min.js?1704986426" defer></script>
+    <script src="../js/perfect-scrollbar.min.js?1704986426" defer></script>
+    <script src="../js/theme.js?1704986426" defer></script>
   </body>
 </html>

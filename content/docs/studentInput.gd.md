@@ -18,7 +18,6 @@ Skrypt odpowiadający za sterowanie studentem przez gracza.
 ```gdscript
 var dig_info_instance
 ```
-
 Gotowa zmienna przechowująca instancję sceny dig_and_dean_catch_info, która będzie używana do wyświetlania informacji o kopaniu i złapaniu przez dziekana.
 
 ### current\_task\_area
@@ -26,7 +25,6 @@ Gotowa zmienna przechowująca instancję sceny dig_and_dean_catch_info, która b
 ```gdscript
 var current_task_area = ""
 ```
-
 Zmienna przechowująca aktualną strefę zadania gracza. Pusty string, jeśli gracz nie wykonuje zadania.
 
 ### fourthFloor
@@ -34,7 +32,6 @@ Zmienna przechowująca aktualną strefę zadania gracza. Pusty string, jeśli gr
 ```gdscript
 var fourthFloor
 ```
-
 Gotowa zmienna przechowująca scenę czwartego piętra.
 
 ### thirdFloor
@@ -42,7 +39,6 @@ Gotowa zmienna przechowująca scenę czwartego piętra.
 ```gdscript
 var thirdFloor
 ```
-
 Gotowa zmienna przechowująca scenę trzeciego piętra.
 
 ### dangerScene
@@ -50,15 +46,13 @@ Gotowa zmienna przechowująca scenę trzeciego piętra.
 ```gdscript
 var dangerScene = "<PackedScene#-9223367941569842968>"
 ```
-
-Gotowa zmienna przechowująca scenę informującą o wyjściu z zadania.
+Gotowa zmienna przechowująca scenę informującą o wyjściu przez gracza poza obszar zadania.
 
 ### danger\_instance
 
 ```gdscript
 var danger_instance
 ```
-
 Zmienna do przypisania instancji sceny dangerScene.
 
 ### task\_finished
@@ -66,7 +60,6 @@ Zmienna do przypisania instancji sceny dangerScene.
 ```gdscript
 var task_finished = true
 ```
-
 Flaga określająca, czy zadanie gracza zostało zakończone.
 
 ### catchable
@@ -74,7 +67,6 @@ Flaga określająca, czy zadanie gracza zostało zakończone.
 ```gdscript
 var catchable: bool = false
 ```
-
 Flaga określająca, czy student może zostać złapany przez dziekana.
 
 ### is\_catched
@@ -82,7 +74,6 @@ Flaga określająca, czy student może zostać złapany przez dziekana.
 ```gdscript
 var is_catched: bool = false
 ```
-
 Flaga określająca, czy student został już złapany.
 
 ### can\_use\_alarm
@@ -90,7 +81,6 @@ Flaga określająca, czy student został już złapany.
 ```gdscript
 var can_use_alarm: bool = false
 ```
-
 Flaga określająca, czy gracz znajduje się w strefie, gdzie można aktywować alarm.
 
 ### multiplayerId
@@ -98,7 +88,6 @@ Flaga określająca, czy gracz znajduje się w strefie, gdzie można aktywować 
 ```gdscript
 var multiplayerId
 ```
-
 Identyfikator wieloosobowy gracza.
 
 ### can\_use\_server
@@ -106,7 +95,6 @@ Identyfikator wieloosobowy gracza.
 ```gdscript
 var can_use_server: bool = false
 ```
-
 Flaga określająca, czy gracz znajduje się w strefie, gdzie można użyć serwera.
 
 ### can\_use\_server\_again
@@ -114,7 +102,6 @@ Flaga określająca, czy gracz znajduje się w strefie, gdzie można użyć serw
 ```gdscript
 var can_use_server_again: bool = true
 ```
-
 Flaga określająca, czy gracz może ponownie użyć serwera.
 
 ### level
@@ -122,15 +109,13 @@ Flaga określająca, czy gracz może ponownie użyć serwera.
 ```gdscript
 var level: int = 3
 ```
-
-Zmienna przechowująca poziom gracza.
+Zmienna przechowująca numer piętra na którym gracz się znajduje.
 
 ### can\_use\_elevator
 
 ```gdscript
 var can_use_elevator: bool = false
 ```
-
 Flaga określająca, czy gracz znajduje się w strefie, gdzie można użyć windy.
 
 ### can\_use\_booster
@@ -138,7 +123,6 @@ Flaga określająca, czy gracz znajduje się w strefie, gdzie można użyć wind
 ```gdscript
 var can_use_booster: bool = false
 ```
-
 Flaga określająca, czy gracz znajduje się w strefie, gdzie można użyć boostera.
 
 ### has\_booster
@@ -146,7 +130,6 @@ Flaga określająca, czy gracz znajduje się w strefie, gdzie można użyć boos
 ```gdscript
 var has_booster: bool = false
 ```
-
 Flaga określająca, czy student posiada boostera.
 
 ### can\_use\_terminal
@@ -162,15 +145,13 @@ Flaga określająca, czy gracz znajduje się w strefie, gdzie można użyć term
 ```gdscript
 var terminal_address
 ```
-
-Adres terminalu, który gracz może użyć.
+Adres terminala, którego gracz potencjalnie może użyć.
 
 ### fire\_alarm\_reference
 
 ```gdscript
 var fire_alarm_reference
 ```
-
 Referencja do obiektu obsługującego alarm przeciwpożarowy.
 
 ### temp\_speed
@@ -178,16 +159,14 @@ Referencja do obiektu obsługującego alarm przeciwpożarowy.
 ```gdscript
 var temp_speed
 ```
-
-Zmienna przechowująca tymczasową prędkość.
+Zmienna przechowująca tymczasową prędkość ruchu.
 
 ### body
 
 ```gdscript
 var body: CharacterBody2D
 ```
-
-Referencja do ciała postaci (CharacterBody2D).
+Referencja do ciała postaci (CharacterBody2D) - potrzebna do poruszania się oraz kolizji.
 
 ## Opis Metod
 
@@ -205,7 +184,7 @@ Ta funkcja obsługuje włączanie alarmu przeciwpożarowego.
 func removeBooster()
 ```
 
-Ta funkcja usuwa boostera z gry, jeśli istnieje.
+Ta funkcja usuwa boostera z mapy, jeśli istnieje.
 
 ### sabotage\_alarm
 
@@ -213,39 +192,35 @@ Ta funkcja usuwa boostera z gry, jeśli istnieje.
 func sabotage_alarm()
 ```
 
-funkcja do sabotowania alarmu przez studenta, zatrzymuje na chwile ruch gracza
+Funkcja do sabotowania alarmu przez studenta, zatrzymuje na chwile ruch gracza.
 
 ### task\_execution
 
 ```gdscript
 func task_execution()
 ```
-
-Funkcja do wykonywania taska przez studenta, wysyła sygnał w jakiej area znajduje sie gracz.
+Funkcja do wykonywania taska przez studenta, wysyła sygnał w jakiej strefie znajduje sie gracz.
 
 ### catch\_student
 
 ```gdscript
 func catch_student()
 ```
-
-Fukcja służąca do łapania studenta, jeśli da się złapać studenta łapie go i zatrzymuje mu ruch.
+Funkcja wywołuje podfunkcje, które razem z nią tworzą pełną logikę łapania studenta przez dziekana.
 
 ### use\_server
 
 ```gdscript
 func use_server()
 ```
-
-Funkcja do uzywania serwera przez studenta, sprawdza czy wpisany kod jest poprawny.
+Funkcja do używania serwera przez studenta, sprawdza czy wpisany kod jest poprawny.
 
 ### use\_elevator
 
 ```gdscript
 func use_elevator(side)
 ```
-
-Funkcja do używania windy, przenosi gracza na odpowiednie piętro, bierze pod uwagę z której strony gracz wsiada do windy.
+Funkcja do korzystania z windy, przenosi gracza na odpowiednie piętro, bierze pod uwagę z której strony gracz wsiada do windy.
 
 ### acquire\_booster
 
@@ -253,30 +228,27 @@ Funkcja do używania windy, przenosi gracza na odpowiednie piętro, bierze pod u
 func acquire_booster()
 ```
 
-Funkcja nadajaca booster dla studenta.
+Funkcja nadająca booster studentowi.
 
 ### teleport
 
 ```gdscript
 func teleport(ammount)
 ```
-
-Teleportuje gracza o wybrane położenie w zmiennej ammount
+Teleportuje gracza o wektor podany w parametrze ammount.
 
 ### dig
 
 ```gdscript
 func dig()
 ```
-
-Wyszukuje przeszkody w pobliżu i uruchamia kopanie, jeśli gracz jest skierowany w stronę przeszkody i nie naciśnięto przycisku spacji.
+Wyszukuje przeszkody w pobliżu i uruchamia kopanie, jeśli gracz jest skierowany w stronę przeszkody i naciśnięto przycisku spacji.
 
 ### stop\_dig
 
 ```gdscript
 func stop_dig()
 ```
-
 Zatrzymuje proces kopania i wyłącza związany z nim timer.
 
 ### change\_catchable
@@ -284,36 +256,45 @@ Zatrzymuje proces kopania i wyłącza związany z nim timer.
 ```gdscript
 func change_catchable(boolean)
 ```
-
-funkcja zdalna zmieniająca stan zmiennej catchable.
+Funkcja zmienia flagę: czy student może zostać złapany.
 
 ### change\_is\_catched
 
 ```gdscript
 func change_is_catched()
 ```
-
-funkcja zdalna zmieniająca stan zmiennej is_catched na true.
+Funkcja zmieniająca stan zmiennej is_catched na true. Określa gracza jako złapanego przez dziekana.
 
 ### stop\_player\_movement
 
 ```gdscript
 func stop_player_movement()
 ```
-
-funkcja  do zatrzymania movementu studenta, zbiera aktualna predkosc i przechowuje ja w temp_speed
+Funkcja do zatrzymania ruchu studenta, pobiera aktualną predkość i przechowuje ja w temp_speed.
 
 ### remove\_obstacle
 
 ```gdscript
 func remove_obstacle(_obstacle_to_destroy)
 ```
-
-jesli przekazany obiekt istnieje to funkcja go usuwa
+Funkcja usuwa obiekt na podstawie przekazanej referencji do tego obiektu.
 
 ## Sygnały
 
-- signal player_task(task_type): Sygnał emitowany, gdy gracz otrzymuje nowe zadanie. Parametr task_type określa typ zadania.
-- signal disable_player_movement_for_duration(duration): Sygnał emitowany w celu wyłączenia ruchu gracza na określony czas. Parametr duration określa długość wyłączenia.
-- signal use_chat(name): Sygnał używany do uruchomienia czatu. Parametr name określa nazwę czatu.
-- signal exit_chat(name): Sygnał używany do wyjścia z czatu. Parametr name określa nazwę czatu.
+```gdscript
+signal player_task(task_type)
+```
+Sygnał emitowany, gdy gracz otrzymuje nowe zadanie. Parametr task_type określa typ zadania.
+```gdscript
+signal disable_player_movement_for_duration(duration)
+```
+Sygnał emitowany w celu wyłączenia ruchu gracza na określony czas. 
+Parametr duration określa długość wyłączenia.
+```gdscript
+signal use_chat(name)
+```
+Sygnał używany do uruchomienia czatu. Parametr name określa nazwę czatu.
+```gdscript
+signal exit_chat(name)
+```
+Sygnał używany do wyjścia z czatu. Parametr name określa nazwę czatu.

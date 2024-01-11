@@ -273,7 +273,7 @@ Opis Właściwości dig_info_instance var dig_info_instanceGotowa zmienna przech
 current_task_area var current_task_area = &amp;#34;&amp;#34;Zmienna przechowująca aktualną strefę zadania gracza. Pusty string, jeśli gracz nie wykonuje zadania.
 fourthFloor var fourthFloorGotowa zmienna przechowująca scenę czwartego piętra.
 thirdFloor var thirdFloorGotowa zmienna przechowująca scenę trzeciego piętra.
-dangerScene var dangerScene = &amp;#34;&amp;lt;PackedScene#-9223367941569842968&amp;gt;&amp;#34;Gotowa zmienna przechowująca scenę informującą o wyjściu z zadania.</description>
+dangerScene var dangerScene = &amp;#34;&amp;lt;PackedScene#-9223367941569842968&amp;gt;&amp;#34;Gotowa zmienna przechowująca scenę informującą o wyjściu przez gracza poza obszar zadania.</description>
     </item>
     <item>
       <title>tablet_single_student.gd</title>
@@ -316,9 +316,11 @@ use_terminal func use_terminal()Gdy gracz chce wejść w interakcje z terminalem
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/waiting_room.gd.html</guid>
       <description>Opis Skrypt odpowiadający za wyświetlanie i edycje informacji o rolach jakie otrzymuje każdy z graczy.
-Opis Właściwości serverInfo @export var serverInfo: PackedScenecurrent var current: intdean var dean: intisServer var isServer = falseOpis Metod enable_dean_change func enable_dean_change()funkcja która przekazuje pozwolenie na zmianę gracza, który otrzyma rolę dziekana
-makeAsDean func makeAsDean(id)funkcja przysłająca informacje o wybranym dziekanie
-findDeanId func findDeanId() -&amp;gt; intReturn: int funkcja która szuka osoby, która ma ustawioną rolę dziekan</description>
+Opis Właściwości serverInfo @export var serverInfo: PackedSceneZmienna przechowująca scenę zawierającą informacje o serwerze.
+current var current: intZmienna przechowująca który z graczy pochodzi z tej instancji gry.
+dean var dean: intIdentyfikator gracza będącego dziekanem.
+isServer var isServer = falseZmienna przechowująca która z instancji gry jest hostem.
+Opis Metod enable_dean_change func enable_dean_change()Funkcja która przekazuje pozwolenie na zmianę gracza, który ma otrzymać rolę dziekana.</description>
     </item>
   </channel>
 </rss>
