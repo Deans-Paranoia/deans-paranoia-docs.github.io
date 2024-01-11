@@ -1,14 +1,14 @@
 [
   {
     "breadcrumb": "",
-    "content": "Dokumentacja Jest to dokumentacja do gry 2D inspirowanej grą The Matriarch stworzonej w Godot Engine w tematyce WZIM SGGW.\nPodsumowanie Dokumentacji Dokumentacja skryptówDokmentacja plików gd Strony w tym rozdziale zawierają opis plików z logiką Dean’s Paranoia areaNotifiers.gd booster.gd chat.gd deanInput.gd deans_tablet.gd endgame.gd FireAlarm.gd fireAlarmSetup.gd global.gd kickScript.gd lecture_hall.gd main_menu.gd main.gd map.gd movementInput.gd npc_animation_tree.gd npcMovementInput.gd PlayerInfo.gd server.gd ServerBrowser.gd ServerInfo.gd single_ip_info.gd start_menu.gd student_animation_tree.gd studentInput.gd tablet_single_student.gd task.gd terminal.gd waiting_room.gd areaNotifiers.gd Opis Skrypt przekazujacy informacje czy dany obszar znajduje się na ekranie. Opis Właściwości map var mapReferencja do obiektu mapy. Sygnały signal noteTask(isVisible): Sygnał informujący o widoczności zadania z notatkami signal computerTask(isVisible): Sygnał informujący o widoczności zadania z komputerem signal walkingTask(isVisible): Sygnał informujący o widoczności zadania z chodzeniem booster.gdOpis Skrypt odpowiada za usuniecie boostera z mapy po użyciu go przez gracza. Opis Metod on_boost_requested func on_boost_requested()Funkcja usuwająca booster po jego zebraniu.\nchat.gd Opis Skrypt odpowiadający za wygląd i funkcjonalność chatu podczas rozgrywki. Opis Właściwości new_message @export var new_message: PackedSceneZmienna przechowująca scenę dla nowej wiadomości na chacie. line_edit var line_editReferencja do pola tekstowego chatu. message_panel var message_panelReferencja do panelu wiadomości. chat_in_use var chat_in_use: bool = falseFlaga określająca, czy czat jest aktualnie używany. Opis Metod add_message_to_chat func add_message_to_chat(message_content, name)Funkcja dodająca wiadomość do czatu. Sygnały signal chat_opened(is_opened): Sygnał informujący o otwarciu lub zamknięciu czatu. deanInput.gdOpis Skrypt odpowiadający za czynności wykonywane przez gracza sterującego dziekanem. Opis Właściwości catch_info_instance var catch_info_instanceInstancja widżetu odpowiadającego za informacje o złapaniu studenta. is_tablet_open var is_tablet_open: bool = falseFlaga określająca, czy tablet dziekana jest otwarty. scene var sceneGotowy widget sceny tabletu. tablet_scene var tablet_sceneScena tabletu. is_task_area var is_task_areaZmienna określająca, czy dziekan znajduje się w obszarze zadania. body var body: CharacterBody2DReferencja do ciała postaci. can_use_alarm var can_use_alarm: bool = falseFlaga określająca, czy Dean może aktywować alarm przeciwpożarowy.\ndeans_tablet.gdOpis Skrypt odpowiadający za obsługe tabletu dziekana. Opis Właściwości single_scene var single_sceneReferencja do sceny pojedynczego studenta\nendgame.gdOpis Skrypt odpowiadający za obsługę przycisku do zamknięcia gry po wyświetleniu wyników rozgrywki.\nFireAlarm.gdOpis Skrypt odpowiadający za zmiane tekstury alarmu gdy zostanie on sabotowany. Opis Właściwości textureAfterUsage var textureAfterUsage = \"\u003cCompressedTexture2D#-9223367935513261906\u003e\"Opis Metod change_texture func change_texture()Zmienia teksture.\nfireAlarmSetup.gd Opis Odpowiada za rozpoczęcie spotkanie kryzysowego i wywoływanie sceny FireAlarm. Opis Właściwości useable var useable: bool = trueOpis Metod use_alarm func use_alarm(isSabotaged)Używa alarmu. set_lecture_hall func set_lecture_hall()Sygnały signal change_texture(): global.gdOpis Skrypt zawierający globalne zmienne całej gry, takie jak nazwy graczy, lokalizacje i typy zadan. Opis Właściwości Players var PlayersSłownik przechowujący informacje o graczach. deanId var deanId: intIdentyfikator dziekana. studentsNames var studentsNamesLista dostępnych nazw studentów. usedNames var usedNamesLista użytych nazw studentów. Tasks var Tasks: ArrayLista dostępnych zadań. UsedTasks var UsedTasks: ArrayLista już przydzielonych zadań. Opis Metod remove_name func remove_name(nameNumber: int)Funkcja dodająca zwolnioną nazwę studenta do listy dostępnych nazw. resetTasks func resetTasks()Funkcja resetująca listę zadań, przenosząca zadania z UsedTasks z powrotem do Tasks.\nkickScript.gd Opis Skrypt odpowiadający za wykreślenie z listy studentów wybranego przez dziakana studenta. Opis Właściwości on_lecture_hall var on_lecture_hall = falseFlaga określająca, czy postać studenta znajduje się w sali wykładowej. Sygnały signal on_student_hovered(name): Sygnał informujący o najechaniu myszką na studenta. lecture_hall.gdOpis Skrypt odpowiadający za odbycie spotaknia porządkowego, podczas którego dziekan może dokonać wykreślenia gracza z listy studentów. Opis Właściwości npcScene var npcSceneŁaduje scenę postaci NPC. deanScene var deanSceneŁaduje scenę postaci Deana. rng var rngTworzy nowy generator liczb losowych. available_spots var available_spotsLista dostępnych miejsc. clicked var clicked = 0Licznik kliknięć. kicked_player_number var kicked_player_number = 1Numer gracza do wyrzucenia. maximum_ammount_to_kick var maximum_ammount_to_kick = 1Maksymalna liczba graczy do wyrzucenia. hovered_student var hovered_studentZmienna przechowująca informację o studencie, nad którym gracz będący dziekanem wskazuje kursorem w danej chwili.\nmain_menu.gdOpis Skrypt odpowiadający za główne menu, wyświetlające się po uruchomieniu gry. Opis Metod tweening_up func tweening_up(node)Parametry: node - element GUI Funkcja animująca przyciski GUI. tweening_down func tweening_down(node)Parametry: node - element GUI Funkcja animująca przyciski GUI.\nmain.gdOpis Główny skrypt odpowiedzialny za funkcjonalności sieciowe. Opis Właściwości Address @export var Address = \"\"Address IP serwera Port @export var Port = 8909Port przez który komunukują się host z innymi instancjami gry. single_ip_info var single_ip_infoZmienna, która przechowuje informacje o pojedyńczym urządzeniu sieciowym, na którym można utworzyć grę. peer var peerZmienna przechowująca dane o łączącej się z hostem instancji gry. Opis Metod peer_connected func peer_connected(id: int)Parametry: id - unikalny numer generowany losowo podczas nawiązywania połączenia z seweren.\nmap.gdOpis Skrypt odpowiadający za wygląd oraz fukcjonalność mapy. Opis Właściwości studentScene @export var studentScene: PackedSceneDeklaracja zmiennych przechowujących trzy sceny: studentScene, deanScene, npcScene. deanScene @export var deanScene: PackedSceneScena zawierająca wszelkie obiekty związane z dziekanem, tworzące go. npcScene @export var npcScene: PackedSceneScena zawierająca wszelkie obiekty związane z npc, tworzące go. textures var texturesInicjalizacja pustej listy ’textures'. timeUi var timeUiŁadowanie sceny ’time.tscn’ z katalogu ‘ui’ i tworzenie instancji tej sceny. Odpowiada ona za mechanikę czasu rundy.\nmovementInput.gdOpis Skrypt odpowiadający za możliwość i kierunek poruszania sie gracza. Opis Właściwości player_name var player_name: StringNazwa gracza. can_move var can_move: bool = trueFlaga określająca możliwość ruchu postaci. last_direction var last_direction = \"(0, 0)\"Zmienna określająca ostatni kierunek ruchu gracza przed zatrzymaniem. temp_speed var temp_speedTymczasowa prędkość, używana do zatrzymywania i przywracania ruchu. speed var speed: int = 250Prędkość ruchu gracza. canMove var canMove = trueFlaga określająca, czy gracz może się poruszać.\nnpc_animation_tree.gdOpis Skrypt odpowiadający za animacje npc. Opis Właściwości taskVector var taskVector = \"(0, 0)\"Wektor wskazujący bieżące zadanie NPC. sprite_to_back_to var sprite_to_back_to: Sprite2DSprite, który zostanie przywrócony po zakończeniu wykonywania zadania. Opis Metod taking_notes_loop func taking_notes_loop()Funkcja obsługująca animacje zadania “takingNotes”. computer_loop func computer_loop()Funkcja obsługująca animacje zadania “computer”. vending_machine_loop func vending_machine_loop()Funkcja obsługująca animacje zadania “vendingMachine”. rotate_npc func rotate_npc(direction)Funkcja obsługująca obrót NPC. set_vector_and_sprite func set_vector_and_sprite(sprite, vector)Funkcja ustawiająca wektor i sprite postaci NPC. run_animation func run_animation(taskVector)Funkcja uruchamiająca odpowiednią animację postaci NPC.\nnpcMovementInput.gdOpis Skrypt odpowiadający za ruch botów przy wykonywanych taskach. Opis Właściwości speed var speed = 400Prędkość ruchu postaci NPC. destination var destination = \"(0, 0)\"Wektor docelowy dla ruchu postaci NPC. point_A var point_A: Vector2Punkt A na trasie ruchu postaci NPC. point_B var point_B: Vector2Punkt B na trasie ruchu postaci NPC. move_direction var move_direction = \"(1, 0)\"Wektor kierunku ruchu postaci NPC. can_move var can_move: boolFlaga określająca możliwość ruchu postaci NPC.\nPlayerInfo.gd Opis Skrypt odpowiadający za informacje o graczu. Sygnały signal makeAsDean(playerId): Przekazuje informacje, że dany gracz ma otrzymać rolę dziekana. server.gdOpis Skrypt odpowiadający za logike związaną z terminalami oraz kodem do serwera z odpowiedziemi do testów dziekana, ten skrypt ma możliwość zakończenia gry zwycięstwem dla studentów. Opis Właściwości endgame var endgameZmienna przechowująca końcową scenę. rng var rngGenerator liczb losowych. green_terminal var green_terminalZielony terminal - scena. violet_terminal var violet_terminalFioletowy terminal - scena. yellow_terminal var yellow_terminalŻółty terminal scena. terminal1 var terminal1Pierwszy wybrany terminal. terminal2 var terminal2Drugi wybrany terminal. terminal3 var terminal3Trzeci wybrany terminal.\nServerBrowser.gdOpis Skrypt odpowiadający za wyświetlanie serwera z którym obecnie można sie połaczyć oraz informacje o nim. Opis Właściwości listenPort @export var listenPort: int = 8911broadcastPort @export var broadcastPort: int = 8912broadcastAddress @export var broadcastAddress: String = \"\"serverInfo @export var serverInfo: PackedScenebroadcastTimer var broadcastTimer: TimerRoomInfo var RoomInfoplayerCount var playerCount = 0broadcaster var broadcaster: PacketPeerUDPlistener var listener: PacketPeerUDPis_host var is_host = falseOpis Metod setBroadcastAddress func setBroadcastAddress(address: String)Parametry: address - ciąg znaków z adresem IP hostującego Return: bool Funckja ustawiająca adres strumieniowanie informacji związanych z aktualnym serwerem gry\nServerInfo.gd Opis Skrypt odpowiadający za informacje o dostepnych do wyboru serwerach. Sygnały signal joinGame(ip): single_ip_info.gd Opis Skrypt obsługujący interfejs który umożliwia utworzenie servera na danym systemie sieciowym. Sygnały signal host_down(ip): Sygnał informujący o wyłączeniu hosta z podanym adresem IP start_menu.gdOpis Skrypt odpowiadający za menu startowe gry oraz wybór formy dołączenia do rozgrywki.\nstudent_animation_tree.gd Opis Skrypt, który odpowiada za uruchamianie wszystkich animacji dla studenta. Opis Metod run_animation func run_animation(velocity)task_animation func task_animation(task_type)\nstudentInput.gdOpis Skrypt odpowiadający za sterowanie studentem przez gracza. Opis Właściwości dig_info_instance var dig_info_instanceGotowa zmienna przechowująca instancję sceny dig_and_dean_catch_info, która będzie używana do wyświetlania informacji o kopaniu i złapaniu przez dziekana. current_task_area var current_task_area = \"\"Zmienna przechowująca aktualną strefę zadania gracza. Pusty string, jeśli gracz nie wykonuje zadania. fourthFloor var fourthFloorGotowa zmienna przechowująca scenę czwartego piętra. thirdFloor var thirdFloorGotowa zmienna przechowująca scenę trzeciego piętra. dangerScene var dangerScene = \"\u003cPackedScene#-9223367941569842968\u003e\"Gotowa zmienna przechowująca scenę informującą o wyjściu z zadania.\ntablet_single_student.gdOpis Skrypt odpowiadający za informacje o zaznaczeniu studenta w tablecie dziekana. Opis Właściwości isChecked var isCheckedZmienna przechowująca stan zaznaczenia checkmark var checkmarkReferencja do ikony checkmark cross var crossReferencja do ikony krzyżyka\ntask.gdOpis Skrypt odpowiadający, za uruchamianie animacji wykonywania zadania przez daną postać. Opis Metod on_npc_task_type_emitted func on_npc_task_type_emitted(task_type)Parametry: task_type - typ tasku Funkcja do odtwarzania konkretnego zadania przez gracza run_task func run_task(task_type)Parametry: task_type - typ tasku Funkcja dobiera odpowiednią funkcje zależnie od zmiennej task_type task_computer func task_computer()Funkcja emitująca sygnał o task_type = computer task_taking_notes func task_taking_notes()Funkcja emitująca sygnał o task_type = takingNotes task_walking func task_walking()Funkcja emitująca sygnał o task_type = walking\nterminal.gd Opis Skrypt odpowiadający za informacje wyświetlane na terminalach. Opis Właściwości actual_value var actual_value = 0textures var texturescan_update_value var can_update_value: bool = falseOpis Metod load_textures func load_textures()Funkcja ładowania tekstur update_texture func update_texture()Funkcja aktualizująca teksturę terminala use_terminal func use_terminal()show_terminal func show_terminal(name)Sygnały signal change_number(name, value): waiting_room.gdOpis Skrypt odpowiadający za wyświetlanie i edycje informacji o rolach jakie otrzymuje każdy z graczy. Opis Właściwości serverInfo @export var serverInfo: PackedScenecurrent var current: intdean var dean: intisServer var isServer = falseOpis Metod enable_dean_change func enable_dean_change()funkcja która przekazuje pozwolenie na zmianę gracza, który otrzyma rolę dziekana makeAsDean func makeAsDean(id)funkcja przysłająca informacje o wybranym dziekanie findDeanId func findDeanId() -\u003e intReturn: int funkcja która szuka osoby, która ma ustawioną rolę dziekan\n",
+    "content": "Dokumentacja Jest to dokumentacja do gry 2D inspirowanej grą The Matriarch stworzonej w Godot Engine w tematyce WZIM SGGW.\nRozdziały: Dokumentacja skryptów ",
     "description": "",
     "tags": null,
-    "title": "Strona glowna",
+    "title": "Dean's Paranoia",
     "uri": "/index.html"
   },
   {
-    "breadcrumb": "Strona glowna",
+    "breadcrumb": "Dean's Paranoia",
     "content": "Dokmentacja plików gd Strony w tym rozdziale zawierają opis plików z logiką Dean’s Paranoia areaNotifiers.gd booster.gd chat.gd deanInput.gd deans_tablet.gd endgame.gd FireAlarm.gd fireAlarmSetup.gd global.gd kickScript.gd lecture_hall.gd main_menu.gd main.gd map.gd movementInput.gd npc_animation_tree.gd npcMovementInput.gd PlayerInfo.gd server.gd ServerBrowser.gd ServerInfo.gd single_ip_info.gd start_menu.gd student_animation_tree.gd studentInput.gd tablet_single_student.gd task.gd terminal.gd waiting_room.gd ",
     "description": "",
     "tags": null,
@@ -16,7 +16,7 @@
     "uri": "/docs.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt przekazujacy informacje czy dany obszar znajduje się na ekranie.\nOpis Właściwości map var mapReferencja do obiektu mapy.\nSygnały signal noteTask(isVisible): Sygnał informujący o widoczności zadania z notatkami signal computerTask(isVisible): Sygnał informujący o widoczności zadania z komputerem signal walkingTask(isVisible): Sygnał informujący o widoczności zadania z chodzeniem ",
     "description": "",
     "tags": null,
@@ -24,7 +24,7 @@
     "uri": "/docs/areanotifiers.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiada za usuniecie boostera z mapy po użyciu go przez gracza.\nOpis Metod on_boost_requested func on_boost_requested()Funkcja usuwająca booster po jego zebraniu.\n",
     "description": "",
     "tags": null,
@@ -32,7 +32,7 @@
     "uri": "/docs/booster.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiadający za wygląd i funkcjonalność chatu podczas rozgrywki.\nOpis Właściwości new_message @export var new_message: PackedSceneZmienna przechowująca scenę dla nowej wiadomości na chacie.\nline_edit var line_editReferencja do pola tekstowego chatu.\nmessage_panel var message_panelReferencja do panelu wiadomości.\nchat_in_use var chat_in_use: bool = falseFlaga określająca, czy czat jest aktualnie używany.\nOpis Metod add_message_to_chat func add_message_to_chat(message_content, name)Funkcja dodająca wiadomość do czatu.\nSygnały signal chat_opened(is_opened): Sygnał informujący o otwarciu lub zamknięciu czatu. ",
     "description": "",
     "tags": null,
@@ -40,7 +40,7 @@
     "uri": "/docs/chat.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiadający za czynności wykonywane przez gracza sterującego dziekanem.\nOpis Właściwości catch_info_instance var catch_info_instanceInstancja widżetu odpowiadającego za informacje o złapaniu studenta.\nis_tablet_open var is_tablet_open: bool = falseFlaga określająca, czy tablet dziekana jest otwarty.\nscene var sceneGotowy widget sceny tabletu.\ntablet_scene var tablet_sceneScena tabletu.\nis_task_area var is_task_areaZmienna określająca, czy dziekan znajduje się w obszarze zadania.\nbody var body: CharacterBody2DReferencja do ciała postaci.\ncan_use_alarm var can_use_alarm: bool = falseFlaga określająca, czy Dean może aktywować alarm przeciwpożarowy.\nOpis Metod change_alarm_state func change_alarm_state()Funkcja obsługująca zmianę stanu alarmu przeciwpożarowego.\nmanage_deans_tablet func manage_deans_tablet()Funkcja zarządzająca widżetem tabletu dziekana.\nSygnały signal student_picked(): Sygnał informujący o wybraniu studenta. signal student_catched(name): Sygnał informujący o złapaniu studenta. Przekazuje nazwę złapanego studenta. ",
     "description": "",
     "tags": null,
@@ -48,7 +48,7 @@
     "uri": "/docs/deaninput.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiadający za obsługe tabletu dziekana.\nOpis Właściwości single_scene var single_sceneReferencja do sceny pojedynczego studenta\n",
     "description": "",
     "tags": null,
@@ -56,7 +56,7 @@
     "uri": "/docs/deans_tablet.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiadający za obsługę przycisku do zamknięcia gry po wyświetleniu wyników rozgrywki.\n",
     "description": "",
     "tags": null,
@@ -64,7 +64,7 @@
     "uri": "/docs/endgame.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiadający za zmiane tekstury alarmu gdy zostanie on sabotowany.\nOpis Właściwości textureAfterUsage var textureAfterUsage = \"\u003cCompressedTexture2D#-9223367935513261906\u003e\"Opis Metod change_texture func change_texture()Zmienia teksture.\n",
     "description": "",
     "tags": null,
@@ -72,7 +72,7 @@
     "uri": "/docs/firealarm.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Odpowiada za rozpoczęcie spotkanie kryzysowego i wywoływanie sceny FireAlarm.\nOpis Właściwości useable var useable: bool = trueOpis Metod use_alarm func use_alarm(isSabotaged)Używa alarmu.\nset_lecture_hall func set_lecture_hall()Sygnały signal change_texture(): ",
     "description": "",
     "tags": null,
@@ -80,7 +80,7 @@
     "uri": "/docs/firealarmsetup.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt zawierający globalne zmienne całej gry, takie jak nazwy graczy, lokalizacje i typy zadan.\nOpis Właściwości Players var PlayersSłownik przechowujący informacje o graczach.\ndeanId var deanId: intIdentyfikator dziekana.\nstudentsNames var studentsNamesLista dostępnych nazw studentów.\nusedNames var usedNamesLista użytych nazw studentów.\nTasks var Tasks: ArrayLista dostępnych zadań.\nUsedTasks var UsedTasks: ArrayLista już przydzielonych zadań.\nOpis Metod remove_name func remove_name(nameNumber: int)Funkcja dodająca zwolnioną nazwę studenta do listy dostępnych nazw.\nresetTasks func resetTasks()Funkcja resetująca listę zadań, przenosząca zadania z UsedTasks z powrotem do Tasks.\nget_task_data func get_task_data(task_number: int) -\u003e TaskFunkcja zwracająca dane o zadaniu o określonym numerze.\nmanage_task func manage_task(task_number: int)Funkcja zarządzająca zadaniem o określonym numerze.\nremove_task func remove_task(task_number: int)Funkcja usuwająca zadanie o określonym numerze z listy dostępnych zadań.\nPodklasy Task Opis Właściwości positionX var positionX: floatPozycja na osi X danego zadania.\npositionY var positionY: floatPozycja na osi Y danego zadania.\ntaskType var taskType: StringSłowny opis typu zadania.\nOpis Metod _init func _init(positionX, positionY, taskType) -\u003e TaskInicjalizator klasy Task.\n",
     "description": "",
     "tags": null,
@@ -88,7 +88,7 @@
     "uri": "/docs/global.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiadający za wykreślenie z listy studentów wybranego przez dziakana studenta.\nOpis Właściwości on_lecture_hall var on_lecture_hall = falseFlaga określająca, czy postać studenta znajduje się w sali wykładowej.\nSygnały signal on_student_hovered(name): Sygnał informujący o najechaniu myszką na studenta. ",
     "description": "",
     "tags": null,
@@ -96,7 +96,7 @@
     "uri": "/docs/kickscript.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiadający za odbycie spotaknia porządkowego, podczas którego dziekan może dokonać wykreślenia gracza z listy studentów.\nOpis Właściwości npcScene var npcSceneŁaduje scenę postaci NPC.\ndeanScene var deanSceneŁaduje scenę postaci Deana.\nrng var rngTworzy nowy generator liczb losowych.\navailable_spots var available_spotsLista dostępnych miejsc.\nclicked var clicked = 0Licznik kliknięć.\nkicked_player_number var kicked_player_number = 1Numer gracza do wyrzucenia.\nmaximum_ammount_to_kick var maximum_ammount_to_kick = 1Maksymalna liczba graczy do wyrzucenia.\nhovered_student var hovered_studentZmienna przechowująca informację o studencie, nad którym gracz będący dziekanem wskazuje kursorem w danej chwili.\nstudents_to_kick var students_to_kickLista studentów do wyrzucenia.\nplayersCount var playersCount = 0Licznik graczy.\nendgame var endgameŁaduje scenę zakończenia gry.\nkicked_notification var kicked_notificationŁaduje scenę powiadamiającą o wyrzuceniu.\nOpis Metod on_npc_spawn func on_npc_spawn()Funkcja wykonująca się przy dodawaniu npc do mapy.\nset_student func set_student(name, spot)Ustawia rolę podanego gracza na studenta i jego miejsce na auli.\nset_dean func set_dean()Ustawia rolę podanego gracza na dziekana.\non_student_moved func on_student_moved()Funkcja wykonuje się kiedy dziekan wybierze studenta, aby go wykreślić z listy.\non_student_catched func on_student_catched(name)Funkcja wywołuje się gdy dziekan próbuje złapać studenta.\nquit_game func quit_game()Funkcja zamykająca grę i uruchamijąca scene pokazującą zwycięzcęrozgrywki.\nchange_players_count func change_players_count()Zmienia licznik pozostałych studentów (nie botów) pozostałych w grze.\nshow_end_screen func show_end_screen()Przełącza widok gracza na scene informującąo zakończeniu i zwycięzcy rozgrywki.\nsend_restart_task_call func send_restart_task_call()Przygotowuje mapę do kolendej rundy.\nremove_student_from_hall func remove_student_from_hall(i)Usuwa studenta z auli.\nback_to_game func back_to_game(to_kick)Uruchamia funkcje usuwającą graczy z rozgrywki, którzy są na liście do usunięcia. Ponadto Usuwa wszystkie npc, aby można było je na nowo przypisać.\nrestart_map func restart_map()Przypisuje studentów odpowiednich piętr. Ustawia kamerę gracza, czas rundy, oddaje graczom możliwość poruszania się.\nmove_student func move_student(name)Wizualnie przesuwa postać wybranego przez dziekana studenta.\nset_hovered_student func set_hovered_student(name)Ustawanie imię wybranego przez dziekana studenta do odpoweidniej zmiennej.\ncheck_if_was_player func check_if_was_player(name)Sprawdzanie czy wybrany przez dziekana student był graczem czy botem.\n",
     "description": "",
     "tags": null,
@@ -104,7 +104,7 @@
     "uri": "/docs/lecture_hall.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiadający za główne menu, wyświetlające się po uruchomieniu gry.\nOpis Metod tweening_up func tweening_up(node)Parametry: node - element GUI Funkcja animująca przyciski GUI.\ntweening_down func tweening_down(node)Parametry: node - element GUI Funkcja animująca przyciski GUI.\n",
     "description": "",
     "tags": null,
@@ -112,7 +112,7 @@
     "uri": "/docs/main_menu.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Główny skrypt odpowiedzialny za funkcjonalności sieciowe.\nOpis Właściwości Address @export var Address = \"\"Address IP serwera\nPort @export var Port = 8909Port przez który komunukują się host z innymi instancjami gry.\nsingle_ip_info var single_ip_infoZmienna, która przechowuje informacje o pojedyńczym urządzeniu sieciowym, na którym można utworzyć grę.\npeer var peerZmienna przechowująca dane o łączącej się z hostem instancji gry.\nOpis Metod peer_connected func peer_connected(id: int)Parametry: id - unikalny numer generowany losowo podczas nawiązywania połączenia z seweren. Funkcja informująca o nowym graczu, który dołączył jako peer, wywołuje się gdy jest emitowany sygnał wbudowany ‘peer_connected’.\npeer_disconnected func peer_disconnected(id: int)Parametry: id - unikalny numer generowany losowo podczas nawiązywania połączenia z serwerem. Funkcja informująca o graczu, który rozłączył się jako peer, wywołuje się gdy jest emitowany sygnał wbudowany ‘peer_disconnected’.\nconnected_to_server func connected_to_server()Funkcja informująca o graczu, który połączył się do serwera klikając przycisk dołączenia do gry, wywołuje się gdy jest emitowany sygnał wbudowany ‘connected_to_server’.\nconnection_failed func connection_failed()Funkcja informująca o graczu, któremu nie udało się dołączyć do gry. Wywołuje się gdy jest emitowany sygnał wbudowany ‘connection_failed’.\nSendPlayerInformation func SendPlayerInformation(name, id)Parametry: name - nazwa gracza który dołączył do gry, id - unikalny numer generowany losowo podczas nawiązywania połączenia z seweren. Funkcja wysyłająca informacje o graczu, który połączył się do serwera. Funkcja zapisuje informacje o graczu w skrypcie globalnym\nStartGame func StartGame()Funkcja wywoływana w momencie rozpoczęcia gry, wyświetla mapę na ekranach graczy.\nhostGame func hostGame() -\u003e boolReturn: bool funkcja wywołująca wbudowane metody multiplayer API, funkcja ta sprawia, że inni użytkownicy mogą zobaczyć serwer.\nupdate_dean_id func update_dean_id(id)Funkcja zapisuje informacje o nowo wybranym dziekanie do skryptu globalnego.\non_update_id func on_update_id(id)Funkcja wywoływana w momencie wybrania innej osoby, która ma otrzymać rolę dziekana.\njoinByIp func joinByIp(ip)Funkcja sprawdzająca czy można dołączyć do serwera, jeśli to możliwe, to takoż czyni.\non_start_game func on_start_game()Funkcja wywoływana po kliknięciu przycisku rozpoczęcia gry. Rozpoczyna grę.\nsignName func signName(name_number, i)Funkcja przypisująca graczowi imię spośród wszystkich dostępnych imion studentów.\nSygnały signal current_player(id): signal isServer(): signal gameStart(): ",
     "description": "",
     "tags": null,
@@ -120,7 +120,7 @@
     "uri": "/docs/main.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiadający za wygląd oraz fukcjonalność mapy.\nOpis Właściwości studentScene @export var studentScene: PackedSceneDeklaracja zmiennych przechowujących trzy sceny: studentScene, deanScene, npcScene.\ndeanScene @export var deanScene: PackedSceneScena zawierająca wszelkie obiekty związane z dziekanem, tworzące go.\nnpcScene @export var npcScene: PackedSceneScena zawierająca wszelkie obiekty związane z npc, tworzące go.\ntextures var texturesInicjalizacja pustej listy ’textures'.\ntimeUi var timeUiŁadowanie sceny ’time.tscn’ z katalogu ‘ui’ i tworzenie instancji tej sceny. Odpowiada ona za mechanikę czasu rundy.\nisVotingProcess var isVotingProcess = falseInicjalizacja zmiennej ‘isVotingProcess’ jako logicznej wartości ‘False’. Informuje ona, czy dziekan jest w trakcie wybierania studenta do wykreślenia podczas spotakania porządkowego na auli.\nday var day = 1Inicjalizacja zmiennej ‘day’ liczbą całkowitą równą 1. Wskazuje ona na numer rundy gry.\nrand var randInicjalizacja generatora liczb losowych.\nOpis Metod restart_tasks func restart_tasks()Resetuje zadania przypisane npc.\nset_dean_position func set_dean_position(deanId, vector)zmienia pozycje dziekana na mapie.\nrestart_npc Usuwa każdego npc z grup danego zadania. Losuje każdemu nowe.\nfunc restart_npc(name, task_number)set_time_ui func set_time_ui(time)Ustawia czas rundy.\nsetNpc func setNpc(name, task_number, has_name)Ustawia obiekt jako npc.\nsetPlayer func setPlayer(i, task_number)Ustawia obiekt jako gracz.\nset_code_number func set_code_number(random, day)Losuje tablicę do wyświetlenia jednej z 3 cyfr kodu do serwera w zależności od numeru rundy.\nchange_code func change_code()Zmienia kod na tablicy.\nset_npc_for_host func set_npc_for_host(name, task_number, has_name)Analogicznie do set_npc, ale tym razem dla oczu hosta. Parametry: name - imię studenta, task_number - numer taska, które robi student has_name - zmienna bool, mówiąca czy npc już posiada imię Ustawia npc dla hosta.\nchange_view func change_view()Zmienia widok dla graczy na aulę.\nSygnały signal taskType(taskType): Sygnał ’taskType’ Emitowany z argumentem ’taskType’. Niesie informacje o typie zadania. ",
     "description": "",
     "tags": null,
@@ -128,7 +128,7 @@
     "uri": "/docs/map.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiadający za możliwość i kierunek poruszania sie gracza.\nOpis Właściwości player_name var player_name: StringNazwa gracza.\ncan_move var can_move: bool = trueFlaga określająca możliwość ruchu postaci.\nlast_direction var last_direction = \"(0, 0)\"Zmienna określająca ostatni kierunek ruchu gracza przed zatrzymaniem.\ntemp_speed var temp_speedTymczasowa prędkość, używana do zatrzymywania i przywracania ruchu.\nspeed var speed: int = 250Prędkość ruchu gracza.\ncanMove var canMove = trueFlaga określająca, czy gracz może się poruszać.\nOpis Metod apply_physics func apply_physics()Funkcja aplikująca fizykę ruchu gracza.\ncalculate_velocity func calculate_velocity()Funkcja obliczająca wektor prędkości gracza na podstawie kierunku wynikającego z wciśnietych przez niego klawiszy..\ntake_current_speed_value func take_current_speed_value() -\u003e intFunkcja zwracająca aktualną wartość prędkości gracza.\nstop_player_movement func stop_player_movement()Funkcja zatrzymująca ruch gracza.\nrestore_player_movement func restore_player_movement(tempspeed)Przywraca graczowi jego prędkość poruszania się.\nemit_direction_signal func emit_direction_signal(velocity)Funkcja emitująca sygnał informujący o kierunku ruchu gracza.\nstop_walking_animation func stop_walking_animation()Funkcja obsługująca zatrzymanie animacji chodzenia gracza.\nSygnały signal direction(direction_vector): Sygnał informujący o kierunku ruchu postaci. ",
     "description": "",
     "tags": null,
@@ -136,7 +136,7 @@
     "uri": "/docs/movementinput.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiadający za animacje npc.\nOpis Właściwości taskVector var taskVector = \"(0, 0)\"Wektor wskazujący bieżące zadanie NPC.\nsprite_to_back_to var sprite_to_back_to: Sprite2DSprite, który zostanie przywrócony po zakończeniu wykonywania zadania.\nOpis Metod taking_notes_loop func taking_notes_loop()Funkcja obsługująca animacje zadania “takingNotes”.\ncomputer_loop func computer_loop()Funkcja obsługująca animacje zadania “computer”.\nvending_machine_loop func vending_machine_loop()Funkcja obsługująca animacje zadania “vendingMachine”.\nrotate_npc func rotate_npc(direction)Funkcja obsługująca obrót NPC.\nset_vector_and_sprite func set_vector_and_sprite(sprite, vector)Funkcja ustawiająca wektor i sprite postaci NPC.\nrun_animation func run_animation(taskVector)Funkcja uruchamiająca odpowiednią animację postaci NPC.\n",
     "description": "",
     "tags": null,
@@ -144,7 +144,7 @@
     "uri": "/docs/npc_animation_tree.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiadający za ruch botów przy wykonywanych taskach.\nOpis Właściwości speed var speed = 400Prędkość ruchu postaci NPC.\ndestination var destination = \"(0, 0)\"Wektor docelowy dla ruchu postaci NPC.\npoint_A var point_A: Vector2Punkt A na trasie ruchu postaci NPC.\npoint_B var point_B: Vector2Punkt B na trasie ruchu postaci NPC.\nmove_direction var move_direction = \"(1, 0)\"Wektor kierunku ruchu postaci NPC.\ncan_move var can_move: boolFlaga określająca możliwość ruchu postaci NPC.\nwalking_task var walking_task = falseFlaga określająca, czy postać NPC jest w trakcie zadania polegającego na poruszaniu się.\nrng var rngGenerator liczb losowych.\nOpis Metod wait func wait()Funkcja zatrzymująca NPC.\nSygnały signal rotate(direction): Sygnał informujący o zmianie kierunku obrotu postaci NPC. ",
     "description": "",
     "tags": null,
@@ -152,7 +152,7 @@
     "uri": "/docs/npcmovementinput.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiadający za informacje o graczu.\nSygnały signal makeAsDean(playerId): Przekazuje informacje, że dany gracz ma otrzymać rolę dziekana. ",
     "description": "",
     "tags": null,
@@ -160,7 +160,7 @@
     "uri": "/docs/playerinfo.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiadający za logike związaną z terminalami oraz kodem do serwera z odpowiedziemi do testów dziekana, ten skrypt ma możliwość zakończenia gry zwycięstwem dla studentów.\nOpis Właściwości endgame var endgameZmienna przechowująca końcową scenę.\nrng var rngGenerator liczb losowych.\ngreen_terminal var green_terminalZielony terminal - scena.\nviolet_terminal var violet_terminalFioletowy terminal - scena.\nyellow_terminal var yellow_terminalŻółty terminal scena.\nterminal1 var terminal1Pierwszy wybrany terminal.\nterminal2 var terminal2Drugi wybrany terminal.\nterminal3 var terminal3Trzeci wybrany terminal.\nserverValue var serverValuePrzechowuje poprawny kod do serwera dziekana.\ndigits_sprites var digits_spritesPrzechowuje obrazki 10 cyfr do wyświetlenia na terminalach.\nOpis Metod set_server_value func set_server_value(value)Funkcja ustawiająca wartość poprawnego kodu do serwera dziekana.\ncalculate_value func calculate_value()Funkcja sprawdzająca poprawność wprowadzonych wartości do 3 terminali.\nrun_server_error func run_server_error()Wyświetla animacje na serwerze, informującą od niepoprawnym kodzie.\nset_terminals_position_for_host func set_terminals_position_for_host()Funkcja ustawiająca pozycję terminali dla hosta.\nset_terminals_position func set_terminals_position(position1, position2, position3)Funkcja ustawiająca pozycję terminali dla graczy.\nshow_end_screen func show_end_screen()Wyświetla ekran końcowy, informujący o zwycięzcy\non_number_changed func on_number_changed(name, value)Parametry: name - nazwa terminala, value - cyfra Funkcja zmieniająca teksturę cyfr na ekranie w zależności od wartości wprowadzonej do terminali.\n",
     "description": "",
     "tags": null,
@@ -168,7 +168,7 @@
     "uri": "/docs/server.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiadający za wyświetlanie serwera z którym obecnie można sie połaczyć oraz informacje o nim.\nOpis Właściwości listenPort @export var listenPort: int = 8911broadcastPort @export var broadcastPort: int = 8912broadcastAddress @export var broadcastAddress: String = \"\"serverInfo @export var serverInfo: PackedScenebroadcastTimer var broadcastTimer: TimerRoomInfo var RoomInfoplayerCount var playerCount = 0broadcaster var broadcaster: PacketPeerUDPlistener var listener: PacketPeerUDPis_host var is_host = falseOpis Metod setBroadcastAddress func setBroadcastAddress(address: String)Parametry: address - ciąg znaków z adresem IP hostującego Return: bool Funckja ustawiająca adres strumieniowanie informacji związanych z aktualnym serwerem gry\nsetUp func setUp()funkcja ustawiająca port dla użytkownika, który planuje dołączyć do gry\nsetupBroadcast func setupBroadcast(name)funkcja ustawiająca strumieniowanie informacji z serwera do graczy\nexit_tree func exit_tree()funkcja wywoływana w momencie zamknięcia serwera\ncleanUp func cleanUp()funkcja czyszcząca informacje związane z serwerem\njoinByIp func joinByIp(ip)funckja wysyłająca sygnał w momencie dołąćzenia do gry\nSygnały signal joinGame(ip): ",
     "description": "",
     "tags": null,
@@ -176,7 +176,7 @@
     "uri": "/docs/serverbrowser.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiadający za informacje o dostepnych do wyboru serwerach.\nSygnały signal joinGame(ip): ",
     "description": "",
     "tags": null,
@@ -184,7 +184,7 @@
     "uri": "/docs/serverinfo.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt obsługujący interfejs który umożliwia utworzenie servera na danym systemie sieciowym.\nSygnały signal host_down(ip): Sygnał informujący o wyłączeniu hosta z podanym adresem IP ",
     "description": "",
     "tags": null,
@@ -192,7 +192,7 @@
     "uri": "/docs/single_ip_info.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiadający za menu startowe gry oraz wybór formy dołączenia do rozgrywki.\n",
     "description": "",
     "tags": null,
@@ -200,7 +200,7 @@
     "uri": "/docs/start_menu.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt, który odpowiada za uruchamianie wszystkich animacji dla studenta.\nOpis Metod run_animation func run_animation(velocity)task_animation func task_animation(task_type)",
     "description": "",
     "tags": null,
@@ -208,7 +208,7 @@
     "uri": "/docs/student_animation_tree.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiadający za sterowanie studentem przez gracza.\nOpis Właściwości dig_info_instance var dig_info_instanceGotowa zmienna przechowująca instancję sceny dig_and_dean_catch_info, która będzie używana do wyświetlania informacji o kopaniu i złapaniu przez dziekana.\ncurrent_task_area var current_task_area = \"\"Zmienna przechowująca aktualną strefę zadania gracza. Pusty string, jeśli gracz nie wykonuje zadania.\nfourthFloor var fourthFloorGotowa zmienna przechowująca scenę czwartego piętra.\nthirdFloor var thirdFloorGotowa zmienna przechowująca scenę trzeciego piętra.\ndangerScene var dangerScene = \"\u003cPackedScene#-9223367941569842968\u003e\"Gotowa zmienna przechowująca scenę informującą o wyjściu z zadania.\ndanger_instance var danger_instanceZmienna do przypisania instancji sceny dangerScene.\ntask_finished var task_finished = trueFlaga określająca, czy zadanie gracza zostało zakończone.\ncatchable var catchable: bool = falseFlaga określająca, czy student może zostać złapany przez dziekana.\nis_catched var is_catched: bool = falseFlaga określająca, czy student został już złapany.\ncan_use_alarm var can_use_alarm: bool = falseFlaga określająca, czy gracz znajduje się w strefie, gdzie można aktywować alarm.\nmultiplayerId var multiplayerIdIdentyfikator wieloosobowy gracza.\ncan_use_server var can_use_server: bool = falseFlaga określająca, czy gracz znajduje się w strefie, gdzie można użyć serwera.\ncan_use_server_again var can_use_server_again: bool = trueFlaga określająca, czy gracz może ponownie użyć serwera.\nlevel var level: int = 3Zmienna przechowująca poziom gracza.\ncan_use_elevator var can_use_elevator: bool = falseFlaga określająca, czy gracz znajduje się w strefie, gdzie można użyć windy.\ncan_use_booster var can_use_booster: bool = falseFlaga określająca, czy gracz znajduje się w strefie, gdzie można użyć boostera.\nhas_booster var has_booster: bool = falseFlaga określająca, czy student posiada boostera.\ncan_use_terminal var can_use_terminal: bool = falseFlaga określająca, czy gracz znajduje się w strefie, gdzie można użyć terminalu.\nterminal_address var terminal_addressAdres terminalu, który gracz może użyć.\nfire_alarm_reference var fire_alarm_referenceReferencja do obiektu obsługującego alarm przeciwpożarowy.\ntemp_speed var temp_speedZmienna przechowująca tymczasową prędkość.\nbody var body: CharacterBody2DReferencja do ciała postaci (CharacterBody2D).\nOpis Metod change_alarm_state func change_alarm_state()Ta funkcja obsługuje włączanie alarmu przeciwpożarowego.\nremoveBooster func removeBooster()Ta funkcja usuwa boostera z gry, jeśli istnieje.\nsabotage_alarm func sabotage_alarm()funkcja do sabotowania alarmu przez studenta, zatrzymuje na chwile ruch gracza\ntask_execution func task_execution()Funkcja do wykonywania taska przez studenta, wysyła sygnał w jakiej area znajduje sie gracz.\ncatch_student func catch_student()Fukcja służąca do łapania studenta, jeśli da się złapać studenta łapie go i zatrzymuje mu ruch.\nuse_server func use_server()Funkcja do uzywania serwera przez studenta, sprawdza czy wpisany kod jest poprawny.\nuse_elevator func use_elevator(side)Funkcja do używania windy, przenosi gracza na odpowiednie piętro, bierze pod uwagę z której strony gracz wsiada do windy.\nacquire_booster func acquire_booster()Funkcja nadajaca booster dla studenta.\nteleport func teleport(ammount)Teleportuje gracza o wybrane położenie w zmiennej ammount\ndig func dig()Wyszukuje przeszkody w pobliżu i uruchamia kopanie, jeśli gracz jest skierowany w stronę przeszkody i nie naciśnięto przycisku spacji.\nstop_dig func stop_dig()Zatrzymuje proces kopania i wyłącza związany z nim timer.\nchange_catchable func change_catchable(boolean)funkcja zdalna zmieniająca stan zmiennej catchable.\nchange_is_catched func change_is_catched()funkcja zdalna zmieniająca stan zmiennej is_catched na true.\nstop_player_movement func stop_player_movement()funkcja do zatrzymania movementu studenta, zbiera aktualna predkosc i przechowuje ja w temp_speed\nremove_obstacle func remove_obstacle(_obstacle_to_destroy)jesli przekazany obiekt istnieje to funkcja go usuwa\nSygnały signal player_task(task_type): Sygnał emitowany, gdy gracz otrzymuje nowe zadanie. Parametr task_type określa typ zadania. signal disable_player_movement_for_duration(duration): Sygnał emitowany w celu wyłączenia ruchu gracza na określony czas. Parametr duration określa długość wyłączenia. signal use_chat(name): Sygnał używany do uruchomienia czatu. Parametr name określa nazwę czatu. signal exit_chat(name): Sygnał używany do wyjścia z czatu. Parametr name określa nazwę czatu. ",
     "description": "",
     "tags": null,
@@ -216,7 +216,7 @@
     "uri": "/docs/studentinput.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiadający za informacje o zaznaczeniu studenta w tablecie dziekana.\nOpis Właściwości isChecked var isCheckedZmienna przechowująca stan zaznaczenia\ncheckmark var checkmarkReferencja do ikony checkmark\ncross var crossReferencja do ikony krzyżyka\n",
     "description": "",
     "tags": null,
@@ -224,7 +224,7 @@
     "uri": "/docs/tablet_single_student.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiadający, za uruchamianie animacji wykonywania zadania przez daną postać.\nOpis Metod on_npc_task_type_emitted func on_npc_task_type_emitted(task_type)Parametry: task_type - typ tasku Funkcja do odtwarzania konkretnego zadania przez gracza\nrun_task func run_task(task_type)Parametry: task_type - typ tasku Funkcja dobiera odpowiednią funkcje zależnie od zmiennej task_type\ntask_computer func task_computer()Funkcja emitująca sygnał o task_type = computer\ntask_taking_notes func task_taking_notes()Funkcja emitująca sygnał o task_type = takingNotes\ntask_walking func task_walking()Funkcja emitująca sygnał o task_type = walking\nvending_machine func vending_machine()Funkcja emitująca sygnał o task_type = vendingMachine\nSygnały signal npc_walking_task(): signal npc_sprite_task(task_type): ",
     "description": "",
     "tags": null,
@@ -232,7 +232,7 @@
     "uri": "/docs/task.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiadający za informacje wyświetlane na terminalach.\nOpis Właściwości actual_value var actual_value = 0textures var texturescan_update_value var can_update_value: bool = falseOpis Metod load_textures func load_textures()Funkcja ładowania tekstur\nupdate_texture func update_texture()Funkcja aktualizująca teksturę terminala\nuse_terminal func use_terminal()show_terminal func show_terminal(name)Sygnały signal change_number(name, value): ",
     "description": "",
     "tags": null,
@@ -240,7 +240,7 @@
     "uri": "/docs/terminal.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna \u003e Dokumentacja skryptów",
+    "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
     "content": " Opis Skrypt odpowiadający za wyświetlanie i edycje informacji o rolach jakie otrzymuje każdy z graczy.\nOpis Właściwości serverInfo @export var serverInfo: PackedScenecurrent var current: intdean var dean: intisServer var isServer = falseOpis Metod enable_dean_change func enable_dean_change()funkcja która przekazuje pozwolenie na zmianę gracza, który otrzyma rolę dziekana\nmakeAsDean func makeAsDean(id)funkcja przysłająca informacje o wybranym dziekanie\nfindDeanId func findDeanId() -\u003e intReturn: int funkcja która szuka osoby, która ma ustawioną rolę dziekan\nrefresh_table func refresh_table()funckcja odświeża tabelę z graczami - ich nazwą i ich rolą w grze\non_current_player func on_current_player(id)funkcja wysyłająca informajce o graczu, który obecnie jest wpisywany do tabeli\nSygnały signal button_pressed(node): signal dean_picked(deanId): ",
     "description": "",
     "tags": null,
@@ -248,7 +248,7 @@
     "uri": "/docs/waiting_room.gd.html"
   },
   {
-    "breadcrumb": "Strona glowna",
+    "breadcrumb": "Dean's Paranoia",
     "content": "",
     "description": "",
     "tags": null,
@@ -256,7 +256,7 @@
     "uri": "/categories.html"
   },
   {
-    "breadcrumb": "Strona glowna",
+    "breadcrumb": "Dean's Paranoia",
     "content": "",
     "description": "",
     "tags": null,
