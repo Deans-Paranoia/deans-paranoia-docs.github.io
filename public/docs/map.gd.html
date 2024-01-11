@@ -10,18 +10,18 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="map.gd :: Deans Paranois Documentation">
     <meta name="twitter:description" content="Opis Skrypt odpowiadający za wygląd oraz fukcjonalność mapy.
-Opis Właściwości studentScene @export var studentScene: PackedSceneDeklaracja zmiennych przechowujących trzy sceny: studentScene, deanScene, npcScene
-deanScene @export var deanScene: PackedScenenpcScene @export var npcScene: PackedScenetextures var texturesInicjalizacja pustej listy &rsquo;textures&#39;
-timeUi var timeUiŁadowanie sceny &rsquo;time.tscn&rsquo; z katalogu &lsquo;ui&rsquo; i tworzenie instancji tej sceny
-isVotingProcess var isVotingProcess = falseInicjalizacja zmiennej &lsquo;isVotingProcess&rsquo; jako logicznej wartości &lsquo;False&rsquo;
-day var day = 1Inicjalizacja zmiennej &lsquo;day&rsquo; jako liczby całkowitej równą 1">
+Opis Właściwości studentScene @export var studentScene: PackedSceneDeklaracja zmiennych przechowujących trzy sceny: studentScene, deanScene, npcScene.
+deanScene @export var deanScene: PackedSceneScena zawierająca wszelkie obiekty związane z dziekanem, tworzące go.
+npcScene @export var npcScene: PackedSceneScena zawierająca wszelkie obiekty związane z npc, tworzące go.
+textures var texturesInicjalizacja pustej listy &rsquo;textures&#39;.
+timeUi var timeUiŁadowanie sceny &rsquo;time.tscn&rsquo; z katalogu &lsquo;ui&rsquo; i tworzenie instancji tej sceny. Odpowiada ona za mechanikę czasu rundy.">
     <meta property="og:title" content="map.gd :: Deans Paranois Documentation">
     <meta property="og:description" content="Opis Skrypt odpowiadający za wygląd oraz fukcjonalność mapy.
-Opis Właściwości studentScene @export var studentScene: PackedSceneDeklaracja zmiennych przechowujących trzy sceny: studentScene, deanScene, npcScene
-deanScene @export var deanScene: PackedScenenpcScene @export var npcScene: PackedScenetextures var texturesInicjalizacja pustej listy &rsquo;textures&#39;
-timeUi var timeUiŁadowanie sceny &rsquo;time.tscn&rsquo; z katalogu &lsquo;ui&rsquo; i tworzenie instancji tej sceny
-isVotingProcess var isVotingProcess = falseInicjalizacja zmiennej &lsquo;isVotingProcess&rsquo; jako logicznej wartości &lsquo;False&rsquo;
-day var day = 1Inicjalizacja zmiennej &lsquo;day&rsquo; jako liczby całkowitej równą 1">
+Opis Właściwości studentScene @export var studentScene: PackedSceneDeklaracja zmiennych przechowujących trzy sceny: studentScene, deanScene, npcScene.
+deanScene @export var deanScene: PackedSceneScena zawierająca wszelkie obiekty związane z dziekanem, tworzące go.
+npcScene @export var npcScene: PackedSceneScena zawierająca wszelkie obiekty związane z npc, tworzące go.
+textures var texturesInicjalizacja pustej listy &rsquo;textures&#39;.
+timeUi var timeUiŁadowanie sceny &rsquo;time.tscn&rsquo; z katalogu &lsquo;ui&rsquo; i tworzenie instancji tej sceny. Odpowiada ona za mechanikę czasu rundy.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="/docs/map.gd.html">
     <meta property="article:section" content="Dokumentacja skryptów :: Deans Paranois Documentation">
@@ -30,19 +30,19 @@ day var day = 1Inicjalizacja zmiennej &lsquo;day&rsquo; jako liczby całkowitej 
     <meta property="og:site_name" content="Deans Paranois Documentation">
     <title>map.gd :: Deans Paranois Documentation</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="../css/fontawesome-all.min.css?1704929240" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fontawesome-all.min.css?1704929240" rel="stylesheet"></noscript>
-    <link href="../css/nucleus.css?1704929240" rel="stylesheet">
-    <link href="../css/auto-complete.css?1704929240" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/auto-complete.css?1704929240" rel="stylesheet"></noscript>
-    <link href="../css/perfect-scrollbar.min.css?1704929240" rel="stylesheet">
-    <link href="../css/fonts.css?1704929240" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fonts.css?1704929240" rel="stylesheet"></noscript>
-    <link href="../css/theme.css?1704929240" rel="stylesheet">
-    <link href="../css/theme-auto.css?1704929240" rel="stylesheet" id="R-variant-style">
-    <link href="../css/chroma-auto.css?1704929240" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="../css/variant.css?1704929240" rel="stylesheet">
-    <link href="../css/print.css?1704929240" rel="stylesheet" media="print">
-    <link href="../css/ie.css?1704929240" rel="stylesheet">
-    <script src="../js/url.js?1704929240"></script>
-    <script src="../js/variant.js?1704929240"></script>
+    <link href="../css/fontawesome-all.min.css?1704933276" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fontawesome-all.min.css?1704933276" rel="stylesheet"></noscript>
+    <link href="../css/nucleus.css?1704933276" rel="stylesheet">
+    <link href="../css/auto-complete.css?1704933276" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/auto-complete.css?1704933276" rel="stylesheet"></noscript>
+    <link href="../css/perfect-scrollbar.min.css?1704933276" rel="stylesheet">
+    <link href="../css/fonts.css?1704933276" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fonts.css?1704933276" rel="stylesheet"></noscript>
+    <link href="../css/theme.css?1704933276" rel="stylesheet">
+    <link href="../css/theme-auto.css?1704933276" rel="stylesheet" id="R-variant-style">
+    <link href="../css/chroma-auto.css?1704933276" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../css/variant.css?1704933276" rel="stylesheet">
+    <link href="../css/print.css?1704933276" rel="stylesheet" media="print">
+    <link href="../css/ie.css?1704933276" rel="stylesheet">
+    <script src="../js/url.js?1704933276"></script>
+    <script src="../js/variant.js?1704933276"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72""
@@ -103,9 +103,6 @@ day var day = 1Inicjalizacja zmiennej &lsquo;day&rsquo; jako liczby całkowitej 
         <li><a href="#change_code">change_code</a></li>
         <li><a href="#set_npc_for_host">set_npc_for_host</a></li>
         <li><a href="#change_view">change_view</a></li>
-        <li><a href="#npcs_notes">npcs_notes</a></li>
-        <li><a href="#npcs_walking">npcs_walking</a></li>
-        <li><a href="#npcs_computer">npcs_computer</a></li>
       </ul>
     </li>
     <li><a href="#sygnały">Sygnały</a></li>
@@ -149,37 +146,47 @@ day var day = 1Inicjalizacja zmiennej &lsquo;day&rsquo; jako liczby całkowitej 
 <p>Skrypt odpowiadający za wygląd oraz fukcjonalność mapy.</p>
 <h2 id="opis-właściwości">Opis Właściwości</h2>
 <h3 id="studentscene">studentScene</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#a6e22e">@export</span> <span style="color:#66d9ef">var</span> studentScene: <span style="color:#a6e22e">PackedScene</span></span></span></code></pre></div><p>Deklaracja zmiennych przechowujących trzy sceny: studentScene, deanScene, npcScene</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#a6e22e">@export</span> <span style="color:#66d9ef">var</span> studentScene: <span style="color:#a6e22e">PackedScene</span></span></span></code></pre></div><p>Deklaracja zmiennych przechowujących trzy sceny: studentScene, deanScene, npcScene.</p>
 <h3 id="deanscene">deanScene</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#a6e22e">@export</span> <span style="color:#66d9ef">var</span> deanScene: <span style="color:#a6e22e">PackedScene</span></span></span></code></pre></div><h3 id="npcscene">npcScene</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#a6e22e">@export</span> <span style="color:#66d9ef">var</span> npcScene: <span style="color:#a6e22e">PackedScene</span></span></span></code></pre></div><h3 id="textures">textures</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> textures</span></span></code></pre></div><p>Inicjalizacja pustej listy &rsquo;textures'</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#a6e22e">@export</span> <span style="color:#66d9ef">var</span> deanScene: <span style="color:#a6e22e">PackedScene</span></span></span></code></pre></div><p>Scena zawierająca wszelkie obiekty związane z dziekanem, tworzące go.</p>
+<h3 id="npcscene">npcScene</h3>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#a6e22e">@export</span> <span style="color:#66d9ef">var</span> npcScene: <span style="color:#a6e22e">PackedScene</span></span></span></code></pre></div><p>Scena zawierająca wszelkie obiekty związane z npc, tworzące go.</p>
+<h3 id="textures">textures</h3>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> textures</span></span></code></pre></div><p>Inicjalizacja pustej listy &rsquo;textures'.</p>
 <h3 id="timeui">timeUi</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> timeUi</span></span></code></pre></div><p>Ładowanie sceny &rsquo;time.tscn&rsquo; z katalogu &lsquo;ui&rsquo; i tworzenie instancji tej sceny</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> timeUi</span></span></code></pre></div><p>Ładowanie sceny &rsquo;time.tscn&rsquo; z katalogu &lsquo;ui&rsquo; i tworzenie instancji tej sceny. Odpowiada ona za mechanikę czasu rundy.</p>
 <h3 id="isvotingprocess">isVotingProcess</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> isVotingProcess <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span></span></span></code></pre></div><p>Inicjalizacja zmiennej &lsquo;isVotingProcess&rsquo; jako logicznej wartości &lsquo;False&rsquo;</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> isVotingProcess <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span></span></span></code></pre></div><p>Inicjalizacja zmiennej &lsquo;isVotingProcess&rsquo; jako logicznej wartości &lsquo;False&rsquo;. Informuje ona, czy dziekan jest w trakcie wybierania studenta do wykreślenia podczas spotakania porządkowego na auli.</p>
 <h3 id="day">day</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> day <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span></span></span></code></pre></div><p>Inicjalizacja zmiennej &lsquo;day&rsquo; jako liczby całkowitej równą 1</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> day <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span></span></span></code></pre></div><p>Inicjalizacja zmiennej &lsquo;day&rsquo; liczbą całkowitą równą 1. Wskazuje ona na numer rundy gry.</p>
 <h3 id="rand">rand</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> rand</span></span></code></pre></div><p>Inicjalizacja generatora liczb losowych</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> rand</span></span></code></pre></div><p>Inicjalizacja generatora liczb losowych.</p>
 <h2 id="opis-metod">Opis Metod</h2>
 <h3 id="restart_tasks">restart_tasks</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">restart_tasks</span>()</span></span></code></pre></div><h3 id="set_dean_position">set_dean_position</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">set_dean_position</span>(deanId, vector)</span></span></code></pre></div><h3 id="restart_npc">restart_npc</h3>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">restart_tasks</span>()</span></span></code></pre></div><p>Resetuje zadania przypisane npc.</p>
+<h3 id="set_dean_position">set_dean_position</h3>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">set_dean_position</span>(deanId, vector)</span></span></code></pre></div><p>zmienia pozycje dziekana na mapie.</p>
+<h3 id="restart_npc">restart_npc</h3>
+<p>Usuwa każdego npc z grup danego zadania. Losuje każdemu nowe.</p>
 <div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">restart_npc</span>(name, task_number)</span></span></code></pre></div><h3 id="set_time_ui">set_time_ui</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">set_time_ui</span>(time)</span></span></code></pre></div><h3 id="setnpc">setNpc</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">setNpc</span>(name, task_number, has_name)</span></span></code></pre></div><h3 id="setplayer">setPlayer</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">setPlayer</span>(i, task_number)</span></span></code></pre></div><h3 id="set_code_number">set_code_number</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">set_code_number</span>(random, day)</span></span></code></pre></div><h3 id="change_code">change_code</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">change_code</span>()</span></span></code></pre></div><h3 id="set_npc_for_host">set_npc_for_host</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">set_npc_for_host</span>(name, task_number, has_name)</span></span></code></pre></div><p>Parametry: name - imię studenta, task_number - numer taska, które robi student has_name - zmienna bool, mówiąca czy npc już posiada imię Ustawia npc dla hosta.</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">set_time_ui</span>(time)</span></span></code></pre></div><p>Ustawia czas rundy.</p>
+<h3 id="setnpc">setNpc</h3>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">setNpc</span>(name, task_number, has_name)</span></span></code></pre></div><p>Ustawia obiekt jako npc.</p>
+<h3 id="setplayer">setPlayer</h3>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">setPlayer</span>(i, task_number)</span></span></code></pre></div><p>Ustawia obiekt jako gracz.</p>
+<h3 id="set_code_number">set_code_number</h3>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">set_code_number</span>(random, day)</span></span></code></pre></div><p>Losuje tablicę do wyświetlenia jednej z 3 cyfr kodu do serwera w zależności od numeru rundy.</p>
+<h3 id="change_code">change_code</h3>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">change_code</span>()</span></span></code></pre></div><p>Zmienia kod na tablicy.</p>
+<h3 id="set_npc_for_host">set_npc_for_host</h3>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">set_npc_for_host</span>(name, task_number, has_name)</span></span></code></pre></div><p>Analogicznie do set_npc, ale tym razem dla oczu hosta.
+Parametry: name - imię studenta, task_number - numer taska, które robi student has_name - zmienna bool, mówiąca czy npc już posiada imię Ustawia npc dla hosta.</p>
 <h3 id="change_view">change_view</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">change_view</span>()</span></span></code></pre></div><h3 id="npcs_notes">npcs_notes</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">npcs_notes</span>(isVisible)</span></span></code></pre></div><h3 id="npcs_walking">npcs_walking</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">npcs_walking</span>(isVisible)</span></span></code></pre></div><h3 id="npcs_computer">npcs_computer</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">npcs_computer</span>(isVisible)</span></span></code></pre></div><h2 id="sygnały">Sygnały</h2>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">change_view</span>()</span></span></code></pre></div><p>Zmienia widok dla graczy na aulę.</p>
+<h2 id="sygnały">Sygnały</h2>
 <ul>
-<li>signal taskType(taskType): Sygnał &rsquo;taskType&rsquo; emitowany z argumentem &rsquo;taskType&rsquo;</li>
+<li>signal taskType(taskType): Sygnał &rsquo;taskType&rsquo;
+Emitowany z argumentem &rsquo;taskType&rsquo;. Niesie informacje o typie zadania.</li>
 </ul>
 
             <footer class="footline">
@@ -270,11 +277,11 @@ day var day = 1Inicjalizacja zmiennej &lsquo;day&rsquo; jako liczby całkowitej 
         <script>
           var contentLangs=[];
         </script>
-        <script src="../js/auto-complete.js?1704929240" defer></script>
-        <script src="../js/lunr/lunr.min.js?1704929240" defer></script>
-        <script src="../js/lunr/lunr.stemmer.support.min.js?1704929240" defer></script>
-        <script src="../js/lunr/lunr.multi.min.js?1704929240" defer></script>
-        <script src="../js/search.js?1704929240" defer></script>
+        <script src="../js/auto-complete.js?1704933277" defer></script>
+        <script src="../js/lunr/lunr.min.js?1704933277" defer></script>
+        <script src="../js/lunr/lunr.stemmer.support.min.js?1704933277" defer></script>
+        <script src="../js/lunr/lunr.multi.min.js?1704933277" defer></script>
+        <script src="../js/search.js?1704933277" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -291,7 +298,6 @@ day var day = 1Inicjalizacja zmiennej &lsquo;day&rsquo; jako liczby całkowitej 
           <li data-nav-id="/docs/chat.gd.html" class=""><a class="padding" href="../docs/chat.gd.html">chat.gd</a></li>
           <li data-nav-id="/docs/deaninput.gd.html" class=""><a class="padding" href="../docs/deaninput.gd.html">deanInput.gd</a></li>
           <li data-nav-id="/docs/deans_tablet.gd.html" class=""><a class="padding" href="../docs/deans_tablet.gd.html">deans_tablet.gd</a></li>
-          <li data-nav-id="/docs/elevatorsetup.gd.html" class=""><a class="padding" href="../docs/elevatorsetup.gd.html">elevatorSetup.gd</a></li>
           <li data-nav-id="/docs/endgame.gd.html" class=""><a class="padding" href="../docs/endgame.gd.html">endgame.gd</a></li>
           <li data-nav-id="/docs/firealarm.gd.html" class=""><a class="padding" href="../docs/firealarm.gd.html">FireAlarm.gd</a></li>
           <li data-nav-id="/docs/firealarmsetup.gd.html" class=""><a class="padding" href="../docs/firealarmsetup.gd.html">fireAlarmSetup.gd</a></li>
@@ -367,8 +373,8 @@ day var day = 1Inicjalizacja zmiennej &lsquo;day&rsquo; jako liczby całkowitej 
         </div>
       </div>
     </aside>
-    <script src="../js/clipboard.min.js?1704929240" defer></script>
-    <script src="../js/perfect-scrollbar.min.js?1704929240" defer></script>
-    <script src="../js/theme.js?1704929240" defer></script>
+    <script src="../js/clipboard.min.js?1704933277" defer></script>
+    <script src="../js/perfect-scrollbar.min.js?1704933277" defer></script>
+    <script src="../js/theme.js?1704933277" defer></script>
   </body>
 </html>

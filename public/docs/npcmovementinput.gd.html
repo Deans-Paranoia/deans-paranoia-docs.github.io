@@ -32,19 +32,19 @@ can_move var can_move: boolFlaga określająca możliwość ruchu postaci NPC.">
     <meta property="og:site_name" content="Deans Paranois Documentation">
     <title>npcMovementInput.gd :: Deans Paranois Documentation</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="../css/fontawesome-all.min.css?1704929240" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fontawesome-all.min.css?1704929240" rel="stylesheet"></noscript>
-    <link href="../css/nucleus.css?1704929240" rel="stylesheet">
-    <link href="../css/auto-complete.css?1704929240" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/auto-complete.css?1704929240" rel="stylesheet"></noscript>
-    <link href="../css/perfect-scrollbar.min.css?1704929240" rel="stylesheet">
-    <link href="../css/fonts.css?1704929240" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fonts.css?1704929240" rel="stylesheet"></noscript>
-    <link href="../css/theme.css?1704929240" rel="stylesheet">
-    <link href="../css/theme-auto.css?1704929240" rel="stylesheet" id="R-variant-style">
-    <link href="../css/chroma-auto.css?1704929240" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="../css/variant.css?1704929240" rel="stylesheet">
-    <link href="../css/print.css?1704929240" rel="stylesheet" media="print">
-    <link href="../css/ie.css?1704929240" rel="stylesheet">
-    <script src="../js/url.js?1704929240"></script>
-    <script src="../js/variant.js?1704929240"></script>
+    <link href="../css/fontawesome-all.min.css?1704933276" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fontawesome-all.min.css?1704933276" rel="stylesheet"></noscript>
+    <link href="../css/nucleus.css?1704933276" rel="stylesheet">
+    <link href="../css/auto-complete.css?1704933276" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/auto-complete.css?1704933276" rel="stylesheet"></noscript>
+    <link href="../css/perfect-scrollbar.min.css?1704933276" rel="stylesheet">
+    <link href="../css/fonts.css?1704933276" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fonts.css?1704933276" rel="stylesheet"></noscript>
+    <link href="../css/theme.css?1704933276" rel="stylesheet">
+    <link href="../css/theme-auto.css?1704933276" rel="stylesheet" id="R-variant-style">
+    <link href="../css/chroma-auto.css?1704933276" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../css/variant.css?1704933276" rel="stylesheet">
+    <link href="../css/print.css?1704933276" rel="stylesheet" media="print">
+    <link href="../css/ie.css?1704933276" rel="stylesheet">
+    <script src="../js/url.js?1704933276"></script>
+    <script src="../js/variant.js?1704933276"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72""
@@ -151,7 +151,7 @@ can_move var can_move: boolFlaga określająca możliwość ruchu postaci NPC.">
 <h3 id="can_move">can_move</h3>
 <div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> can_move: <span style="color:#66d9ef">bool</span></span></span></code></pre></div><p>Flaga określająca możliwość ruchu postaci NPC.</p>
 <h3 id="walking_task">walking_task</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> walking_task <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span></span></span></code></pre></div><p>Flaga określająca, czy postać NPC jest w trakcie zadania poruszania się.</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> walking_task <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span></span></span></code></pre></div><p>Flaga określająca, czy postać NPC jest w trakcie zadania polegającego na poruszaniu się.</p>
 <h3 id="rng">rng</h3>
 <div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> rng</span></span></code></pre></div><p>Generator liczb losowych.</p>
 <h2 id="opis-metod">Opis Metod</h2>
@@ -250,11 +250,11 @@ can_move var can_move: boolFlaga określająca możliwość ruchu postaci NPC.">
         <script>
           var contentLangs=[];
         </script>
-        <script src="../js/auto-complete.js?1704929240" defer></script>
-        <script src="../js/lunr/lunr.min.js?1704929240" defer></script>
-        <script src="../js/lunr/lunr.stemmer.support.min.js?1704929240" defer></script>
-        <script src="../js/lunr/lunr.multi.min.js?1704929240" defer></script>
-        <script src="../js/search.js?1704929240" defer></script>
+        <script src="../js/auto-complete.js?1704933277" defer></script>
+        <script src="../js/lunr/lunr.min.js?1704933277" defer></script>
+        <script src="../js/lunr/lunr.stemmer.support.min.js?1704933277" defer></script>
+        <script src="../js/lunr/lunr.multi.min.js?1704933277" defer></script>
+        <script src="../js/search.js?1704933277" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -271,7 +271,6 @@ can_move var can_move: boolFlaga określająca możliwość ruchu postaci NPC.">
           <li data-nav-id="/docs/chat.gd.html" class=""><a class="padding" href="../docs/chat.gd.html">chat.gd</a></li>
           <li data-nav-id="/docs/deaninput.gd.html" class=""><a class="padding" href="../docs/deaninput.gd.html">deanInput.gd</a></li>
           <li data-nav-id="/docs/deans_tablet.gd.html" class=""><a class="padding" href="../docs/deans_tablet.gd.html">deans_tablet.gd</a></li>
-          <li data-nav-id="/docs/elevatorsetup.gd.html" class=""><a class="padding" href="../docs/elevatorsetup.gd.html">elevatorSetup.gd</a></li>
           <li data-nav-id="/docs/endgame.gd.html" class=""><a class="padding" href="../docs/endgame.gd.html">endgame.gd</a></li>
           <li data-nav-id="/docs/firealarm.gd.html" class=""><a class="padding" href="../docs/firealarm.gd.html">FireAlarm.gd</a></li>
           <li data-nav-id="/docs/firealarmsetup.gd.html" class=""><a class="padding" href="../docs/firealarmsetup.gd.html">fireAlarmSetup.gd</a></li>
@@ -347,8 +346,8 @@ can_move var can_move: boolFlaga określająca możliwość ruchu postaci NPC.">
         </div>
       </div>
     </aside>
-    <script src="../js/clipboard.min.js?1704929240" defer></script>
-    <script src="../js/perfect-scrollbar.min.js?1704929240" defer></script>
-    <script src="../js/theme.js?1704929240" defer></script>
+    <script src="../js/clipboard.min.js?1704933277" defer></script>
+    <script src="../js/perfect-scrollbar.min.js?1704933277" defer></script>
+    <script src="../js/theme.js?1704933277" defer></script>
   </body>
 </html>

@@ -9,21 +9,21 @@
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="chat.gd :: Deans Paranois Documentation">
-    <meta name="twitter:description" content=" Opis Skrypt odpowiadający za widok i fukcjonalność chatu podczas rozgrywki.
-Opis Właściwości new_message @export var new_message: PackedSceneZmienna przechowująca scenę dla nowej wiadomości
-line_edit var line_editReferencja do kontrolki wprowadzania tekstu
-message_panel var message_panelReferencja do panelu wiadomości
-chat_in_use var chat_in_use: bool = falseFlaga określająca, czy czat jest aktualnie używany
-Opis Metod add_message_to_chat func add_message_to_chat(message_content, name)Funkcja dodająca wiadomość do czatu (zdalnie wywoływana)
-Sygnały signal chat_opened(is_opened): Sygnał informujący o otwarciu lub zamknięciu czatu ">
+    <meta name="twitter:description" content=" Opis Skrypt odpowiadający za wygląd i funkcjonalność chatu podczas rozgrywki.
+Opis Właściwości new_message @export var new_message: PackedSceneZmienna przechowująca scenę dla nowej wiadomości na chacie.
+line_edit var line_editReferencja do pola tekstowego chatu.
+message_panel var message_panelReferencja do panelu wiadomości.
+chat_in_use var chat_in_use: bool = falseFlaga określająca, czy czat jest aktualnie używany.
+Opis Metod add_message_to_chat func add_message_to_chat(message_content, name)Funkcja dodająca wiadomość do czatu.
+Sygnały signal chat_opened(is_opened): Sygnał informujący o otwarciu lub zamknięciu czatu. ">
     <meta property="og:title" content="chat.gd :: Deans Paranois Documentation">
-    <meta property="og:description" content=" Opis Skrypt odpowiadający za widok i fukcjonalność chatu podczas rozgrywki.
-Opis Właściwości new_message @export var new_message: PackedSceneZmienna przechowująca scenę dla nowej wiadomości
-line_edit var line_editReferencja do kontrolki wprowadzania tekstu
-message_panel var message_panelReferencja do panelu wiadomości
-chat_in_use var chat_in_use: bool = falseFlaga określająca, czy czat jest aktualnie używany
-Opis Metod add_message_to_chat func add_message_to_chat(message_content, name)Funkcja dodająca wiadomość do czatu (zdalnie wywoływana)
-Sygnały signal chat_opened(is_opened): Sygnał informujący o otwarciu lub zamknięciu czatu ">
+    <meta property="og:description" content=" Opis Skrypt odpowiadający za wygląd i funkcjonalność chatu podczas rozgrywki.
+Opis Właściwości new_message @export var new_message: PackedSceneZmienna przechowująca scenę dla nowej wiadomości na chacie.
+line_edit var line_editReferencja do pola tekstowego chatu.
+message_panel var message_panelReferencja do panelu wiadomości.
+chat_in_use var chat_in_use: bool = falseFlaga określająca, czy czat jest aktualnie używany.
+Opis Metod add_message_to_chat func add_message_to_chat(message_content, name)Funkcja dodająca wiadomość do czatu.
+Sygnały signal chat_opened(is_opened): Sygnał informujący o otwarciu lub zamknięciu czatu. ">
     <meta property="og:type" content="article">
     <meta property="og:url" content="/docs/chat.gd.html">
     <meta property="article:section" content="Dokumentacja skryptów :: Deans Paranois Documentation">
@@ -32,19 +32,19 @@ Sygnały signal chat_opened(is_opened): Sygnał informujący o otwarciu lub zamk
     <meta property="og:site_name" content="Deans Paranois Documentation">
     <title>chat.gd :: Deans Paranois Documentation</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="../css/fontawesome-all.min.css?1704929240" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fontawesome-all.min.css?1704929240" rel="stylesheet"></noscript>
-    <link href="../css/nucleus.css?1704929240" rel="stylesheet">
-    <link href="../css/auto-complete.css?1704929240" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/auto-complete.css?1704929240" rel="stylesheet"></noscript>
-    <link href="../css/perfect-scrollbar.min.css?1704929240" rel="stylesheet">
-    <link href="../css/fonts.css?1704929240" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fonts.css?1704929240" rel="stylesheet"></noscript>
-    <link href="../css/theme.css?1704929240" rel="stylesheet">
-    <link href="../css/theme-auto.css?1704929240" rel="stylesheet" id="R-variant-style">
-    <link href="../css/chroma-auto.css?1704929240" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="../css/variant.css?1704929240" rel="stylesheet">
-    <link href="../css/print.css?1704929240" rel="stylesheet" media="print">
-    <link href="../css/ie.css?1704929240" rel="stylesheet">
-    <script src="../js/url.js?1704929240"></script>
-    <script src="../js/variant.js?1704929240"></script>
+    <link href="../css/fontawesome-all.min.css?1704933276" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fontawesome-all.min.css?1704933276" rel="stylesheet"></noscript>
+    <link href="../css/nucleus.css?1704933276" rel="stylesheet">
+    <link href="../css/auto-complete.css?1704933276" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/auto-complete.css?1704933276" rel="stylesheet"></noscript>
+    <link href="../css/perfect-scrollbar.min.css?1704933276" rel="stylesheet">
+    <link href="../css/fonts.css?1704933276" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fonts.css?1704933276" rel="stylesheet"></noscript>
+    <link href="../css/theme.css?1704933276" rel="stylesheet">
+    <link href="../css/theme-auto.css?1704933276" rel="stylesheet" id="R-variant-style">
+    <link href="../css/chroma-auto.css?1704933276" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../css/variant.css?1704933276" rel="stylesheet">
+    <link href="../css/print.css?1704933276" rel="stylesheet" media="print">
+    <link href="../css/ie.css?1704933276" rel="stylesheet">
+    <script src="../js/url.js?1704933276"></script>
+    <script src="../js/variant.js?1704933276"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72""
@@ -132,22 +132,22 @@ Sygnały signal chat_opened(is_opened): Sygnał informujący o otwarciu lub zamk
 
 <!-- raw HTML omitted -->
 <h2 id="opis">Opis</h2>
-<p>Skrypt odpowiadający za widok i fukcjonalność chatu podczas rozgrywki.</p>
+<p>Skrypt odpowiadający za wygląd i funkcjonalność chatu podczas rozgrywki.</p>
 <h2 id="opis-właściwości">Opis Właściwości</h2>
 <h3 id="new_message">new_message</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#a6e22e">@export</span> <span style="color:#66d9ef">var</span> new_message: <span style="color:#a6e22e">PackedScene</span></span></span></code></pre></div><p>Zmienna przechowująca scenę dla nowej wiadomości</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#a6e22e">@export</span> <span style="color:#66d9ef">var</span> new_message: <span style="color:#a6e22e">PackedScene</span></span></span></code></pre></div><p>Zmienna przechowująca scenę dla nowej wiadomości na chacie.</p>
 <h3 id="line_edit">line_edit</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> line_edit</span></span></code></pre></div><p>Referencja do kontrolki wprowadzania tekstu</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> line_edit</span></span></code></pre></div><p>Referencja do pola tekstowego chatu.</p>
 <h3 id="message_panel">message_panel</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> message_panel</span></span></code></pre></div><p>Referencja do panelu wiadomości</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> message_panel</span></span></code></pre></div><p>Referencja do panelu wiadomości.</p>
 <h3 id="chat_in_use">chat_in_use</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> chat_in_use: <span style="color:#66d9ef">bool</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span></span></span></code></pre></div><p>Flaga określająca, czy czat jest aktualnie używany</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> chat_in_use: <span style="color:#66d9ef">bool</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span></span></span></code></pre></div><p>Flaga określająca, czy czat jest aktualnie używany.</p>
 <h2 id="opis-metod">Opis Metod</h2>
 <h3 id="add_message_to_chat">add_message_to_chat</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">add_message_to_chat</span>(message_content, name)</span></span></code></pre></div><p>Funkcja dodająca wiadomość do czatu (zdalnie wywoływana)</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">add_message_to_chat</span>(message_content, name)</span></span></code></pre></div><p>Funkcja dodająca wiadomość do czatu.</p>
 <h2 id="sygnały">Sygnały</h2>
 <ul>
-<li>signal chat_opened(is_opened): Sygnał informujący o otwarciu lub zamknięciu czatu</li>
+<li>signal chat_opened(is_opened): Sygnał informujący o otwarciu lub zamknięciu czatu.</li>
 </ul>
 
             <footer class="footline">
@@ -238,11 +238,11 @@ Sygnały signal chat_opened(is_opened): Sygnał informujący o otwarciu lub zamk
         <script>
           var contentLangs=[];
         </script>
-        <script src="../js/auto-complete.js?1704929240" defer></script>
-        <script src="../js/lunr/lunr.min.js?1704929240" defer></script>
-        <script src="../js/lunr/lunr.stemmer.support.min.js?1704929240" defer></script>
-        <script src="../js/lunr/lunr.multi.min.js?1704929240" defer></script>
-        <script src="../js/search.js?1704929240" defer></script>
+        <script src="../js/auto-complete.js?1704933276" defer></script>
+        <script src="../js/lunr/lunr.min.js?1704933276" defer></script>
+        <script src="../js/lunr/lunr.stemmer.support.min.js?1704933276" defer></script>
+        <script src="../js/lunr/lunr.multi.min.js?1704933276" defer></script>
+        <script src="../js/search.js?1704933276" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -259,7 +259,6 @@ Sygnały signal chat_opened(is_opened): Sygnał informujący o otwarciu lub zamk
           <li data-nav-id="/docs/chat.gd.html" class="active"><a class="padding" href="../docs/chat.gd.html">chat.gd</a></li>
           <li data-nav-id="/docs/deaninput.gd.html" class=""><a class="padding" href="../docs/deaninput.gd.html">deanInput.gd</a></li>
           <li data-nav-id="/docs/deans_tablet.gd.html" class=""><a class="padding" href="../docs/deans_tablet.gd.html">deans_tablet.gd</a></li>
-          <li data-nav-id="/docs/elevatorsetup.gd.html" class=""><a class="padding" href="../docs/elevatorsetup.gd.html">elevatorSetup.gd</a></li>
           <li data-nav-id="/docs/endgame.gd.html" class=""><a class="padding" href="../docs/endgame.gd.html">endgame.gd</a></li>
           <li data-nav-id="/docs/firealarm.gd.html" class=""><a class="padding" href="../docs/firealarm.gd.html">FireAlarm.gd</a></li>
           <li data-nav-id="/docs/firealarmsetup.gd.html" class=""><a class="padding" href="../docs/firealarmsetup.gd.html">fireAlarmSetup.gd</a></li>
@@ -335,8 +334,8 @@ Sygnały signal chat_opened(is_opened): Sygnał informujący o otwarciu lub zamk
         </div>
       </div>
     </aside>
-    <script src="../js/clipboard.min.js?1704929240" defer></script>
-    <script src="../js/perfect-scrollbar.min.js?1704929240" defer></script>
-    <script src="../js/theme.js?1704929240" defer></script>
+    <script src="../js/clipboard.min.js?1704933276" defer></script>
+    <script src="../js/perfect-scrollbar.min.js?1704933276" defer></script>
+    <script src="../js/theme.js?1704933276" defer></script>
   </body>
 </html>
