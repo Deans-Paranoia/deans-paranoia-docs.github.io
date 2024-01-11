@@ -19,7 +19,7 @@ Skrypt przekazujacy informacje czy dany obszar znajduje się na ekranie.
 var map
 ```
 
-Referencja do obiektu mapy
+Referencja do obiektu mapy.
 
 ## Sygnały
 

@@ -10,7 +10,7 @@ date = "2024-01-10"
 
 
 ## Opis
-Skrypt odpowiadający za widok i fukcjonalność chatu podczas rozgrywki.
+Skrypt odpowiadający za wygląd i funkcjonalność chatu podczas rozgrywki.
 ## Opis Właściwości
 
 ### new\_message
@@ -19,7 +19,7 @@ Skrypt odpowiadający za widok i fukcjonalność chatu podczas rozgrywki.
 @export var new_message: PackedScene
 ```
 
-Zmienna przechowująca scenę dla nowej wiadomości
+Zmienna przechowująca scenę dla nowej wiadomości na chacie.
 
 ### line\_edit
 
@@ -27,7 +27,7 @@ Zmienna przechowująca scenę dla nowej wiadomości
 var line_edit
 ```
 
-Referencja do kontrolki wprowadzania tekstu
+Referencja do pola tekstowego chatu.
 
 ### message\_panel
 
@@ -35,7 +35,7 @@ Referencja do kontrolki wprowadzania tekstu
 var message_panel
 ```
 
-Referencja do panelu wiadomości
+Referencja do panelu wiadomości.
 
 ### chat\_in\_use
 
@@ -43,7 +43,7 @@ Referencja do panelu wiadomości
 var chat_in_use: bool = false
 ```
 
-Flaga określająca, czy czat jest aktualnie używany
+Flaga określająca, czy czat jest aktualnie używany.
 
 ## Opis Metod
 
@@ -53,8 +53,8 @@ Flaga określająca, czy czat jest aktualnie używany
 func add_message_to_chat(message_content, name)
 ```
 
-Funkcja dodająca wiadomość do czatu (zdalnie wywoływana)
+Funkcja dodająca wiadomość do czatu.
 
 ## Sygnały
 
-- signal chat_opened(is_opened): Sygnał informujący o otwarciu lub zamknięciu czatu
+- signal chat_opened(is_opened): Sygnał informujący o otwarciu lub zamknięciu czatu.

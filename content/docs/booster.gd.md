@@ -19,4 +19,4 @@ Skrypt odpowiada za usuniecie boostera z mapy po użyciu go przez gracza.
 func on_boost_requested()
 ```
 
-Funkcja usuwajaca booster po jego zebraniu
+Funkcja usuwająca booster po jego zebraniu.

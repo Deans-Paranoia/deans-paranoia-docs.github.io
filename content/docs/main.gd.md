@@ -18,25 +18,25 @@ Główny skrypt odpowiedzialny za funkcjonalności sieciowe.
 ```gdscript
 @export var Address = ""
 ```
-
+Address IP serwera
 ### Port
 
 ```gdscript
 @export var Port = 8909
 ```
-
+Port przez który komunukują się host z innymi instancjami gry.
 ### single\_ip\_info
 
 ```gdscript
 var single_ip_info
 ```
-
+Zmienna, która przechowuje informacje o pojedyńczym urządzeniu sieciowym, na którym można utworzyć grę.
 ### peer
 
 ```gdscript
 var peer
 ```
-
+Zmienna przechowująca dane o łączącej się z hostem instancji gry.
 ## Opis Metod
 
 ### peer\_connected
@@ -45,7 +45,8 @@ var peer
 func peer_connected(id: int)
 ```
 
-Parametry: id - unikalny numer generowany losowo podczas nawiązywania połączenia z seweren Return: None Funkcja informująca o nowym graczu, który dołączył do jako peer, wywołuje się gdy jest emitowany sygnał wbudowany 'peer_connected'
+Parametry: id - unikalny numer generowany losowo podczas nawiązywania połączenia z seweren. 
+Funkcja informująca o nowym graczu, który dołączył jako peer, wywołuje się gdy jest emitowany sygnał wbudowany 'peer_connected'.
 
 ### peer\_disconnected
 
@@ -53,7 +54,8 @@ Parametry: id - unikalny numer generowany losowo podczas nawiązywania połącze
 func peer_disconnected(id: int)
 ```
 
-Parametry: id - unikalny numer generowany losowo podczas nawiązywania połączenia z seweren Return: None Funkcja informująca o graczu, który rozłączył się jako peer, wywołuje się gdy jest emitowany sygnał wbudowany 'peer_connected'
+Parametry: id - unikalny numer generowany losowo podczas nawiązywania połączenia z serwerem.
+Funkcja informująca o graczu, który rozłączył się jako peer, wywołuje się gdy jest emitowany sygnał wbudowany 'peer_disconnected'.
 
 ### connected\_to\_server
 
@@ -61,7 +63,7 @@ Parametry: id - unikalny numer generowany losowo podczas nawiązywania połącze
 func connected_to_server()
 ```
 
-Funkcja informująca o graczu, który połączył się do serwera klikając przycisk dołączenia do gry, wywołuje się gdy jest emitowany sygnał wbudowany 'connected_to_server'
+Funkcja informująca o graczu, który połączył się do serwera klikając przycisk dołączenia do gry, wywołuje się gdy jest emitowany sygnał wbudowany 'connected_to_server'.
 
 ### connection\_failed
 
@@ -69,7 +71,7 @@ Funkcja informująca o graczu, który połączył się do serwera klikając przy
 func connection_failed()
 ```
 
-Funkcja informująca o graczu, któremu nie udało się dołączyć do gry. Wywołuje się gdy jest emitowany sygnał wbudowany 'connection_failed
+Funkcja informująca o graczu, któremu nie udało się dołączyć do gry. Wywołuje się gdy jest emitowany sygnał wbudowany 'connection_failed'.
 
 ### SendPlayerInformation
 
@@ -77,63 +79,57 @@ Funkcja informująca o graczu, któremu nie udało się dołączyć do gry. Wywo
 func SendPlayerInformation(name, id)
 ```
 
-Parametry: name - nazwa gracza który dołączył do gry, id - unikalny numer generowany losowo podczas nawiązywania połączenia z seweren Return: None Funkcja wysyłająca informacje o graczu, który połączył się do serwera. Funkcja zapisuje informacje o graczu w skrypcie globalnym
+Parametry: name - nazwa gracza który dołączył do gry, id - unikalny numer generowany losowo podczas nawiązywania połączenia z seweren.
+Funkcja wysyłająca informacje o graczu, który połączył się do serwera. Funkcja zapisuje informacje o graczu w skrypcie globalnym
 
 ### StartGame
 
 ```gdscript
 func StartGame()
 ```
-
-funkcja wywoływana w momencie rozpoczęcia gry, wyświetla mapę na ekranach graczy
+Funkcja wywoływana w momencie rozpoczęcia gry, wyświetla mapę na ekranach graczy.
 
 ### hostGame
 
 ```gdscript
 func hostGame() -> bool
 ```
-
-Return: bool funkcja wywołująca wbudowane metody multiplayer API, funkcja ta sprawia, że inni użytkownicy mogą zobaczyć serwer
+Return: bool funkcja wywołująca wbudowane metody multiplayer API, funkcja ta sprawia, że inni użytkownicy mogą zobaczyć serwer.
 
 ### update\_dean\_id
 
 ```gdscript
 func update_dean_id(id)
 ```
-
-funkcja zapisuje informacje o nowo wybranym dziekanie do skryptu globalnego
+Funkcja zapisuje informacje o nowo wybranym dziekanie do skryptu globalnego.
 
 ### on\_update\_id
 
 ```gdscript
 func on_update_id(id)
 ```
-
-funkcja wywoływana w momencie wybrania innej osoby, która ma mieć rolę dziekana
+Funkcja wywoływana w momencie wybrania innej osoby, która ma otrzymać rolę dziekana.
 
 ### joinByIp
 
 ```gdscript
 func joinByIp(ip)
 ```
-
-funkcja sprawdzająca czy można dołąćzyć do serwera, jeśli można, to dołącza
+Funkcja sprawdzająca czy można dołączyć do serwera, jeśli to możliwe, to takoż czyni.
 
 ### on\_start\_game
 
 ```gdscript
 func on_start_game()
 ```
-
-funkcja wywoływana po kliknięciu przycisku rozpoczęcia gry
-
+Funkcja wywoływana po kliknięciu przycisku rozpoczęcia gry.
+Rozpoczyna grę.
 ### signName
 
 ```gdscript
 func signName(name_number, i)
 ```
-
-funkcja przypisująca graczowi imię z pośród wszystkich dostępnych imion studentów
+Funkcja przypisująca graczowi imię spośród wszystkich dostępnych imion studentów.
 
 ## Sygnały
 

@@ -19,7 +19,8 @@ Skrypt odpowiadający za główne menu, wyświetlające się po uruchomieniu gry
 func tweening_up(node)
 ```
 
-Parametry: node - element GUI Return: None Funkcja animująca wznoszenie elementu GUI.
+Parametry: node - element GUI 
+Funkcja animująca przyciski GUI.
 
 ### tweening\_down
 
@@ -27,4 +28,5 @@ Parametry: node - element GUI Return: None Funkcja animująca wznoszenie element
 func tweening_down(node)
 ```
 
-Parametry: node - element GUI Return: None Funkcja animująca opadanie elementu GUI.
+Parametry: node - element GUI 
+Funkcja animująca przyciski GUI.

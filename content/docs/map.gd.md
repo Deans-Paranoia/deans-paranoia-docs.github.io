@@ -19,59 +19,55 @@ Skrypt odpowiadający za wygląd oraz fukcjonalność mapy.
 @export var studentScene: PackedScene
 ```
 
-Deklaracja zmiennych przechowujących trzy sceny: studentScene, deanScene, npcScene
+Deklaracja zmiennych przechowujących trzy sceny: studentScene, deanScene, npcScene.
 
 ### deanScene
 
 ```gdscript
 @export var deanScene: PackedScene
 ```
-
+Scena zawierająca wszelkie obiekty związane z dziekanem, tworzące go.
 ### npcScene
 
 ```gdscript
 @export var npcScene: PackedScene
 ```
-
+Scena zawierająca wszelkie obiekty związane z npc, tworzące go.
 ### textures
 
 ```gdscript
 var textures
 ```
 
-Inicjalizacja pustej listy 'textures'
+Inicjalizacja pustej listy 'textures'.
 
 ### timeUi
 
 ```gdscript
 var timeUi
 ```
-
-Ładowanie sceny 'time.tscn' z katalogu 'ui' i tworzenie instancji tej sceny
+Ładowanie sceny 'time.tscn' z katalogu 'ui' i tworzenie instancji tej sceny. Odpowiada ona za mechanikę czasu rundy.
 
 ### isVotingProcess
 
 ```gdscript
 var isVotingProcess = false
 ```
-
-Inicjalizacja zmiennej 'isVotingProcess' jako logicznej wartości 'False'
+Inicjalizacja zmiennej 'isVotingProcess' jako logicznej wartości 'False'. Informuje ona, czy dziekan jest w trakcie wybierania studenta do wykreślenia podczas spotakania porządkowego na auli.
 
 ### day
 
 ```gdscript
 var day = 1
 ```
-
-Inicjalizacja zmiennej 'day' jako liczby całkowitej równą 1
+Inicjalizacja zmiennej 'day' liczbą całkowitą równą 1. Wskazuje ona na numer rundy gry.
 
 ### rand
 
 ```gdscript
 var rand
 ```
-
-Inicjalizacja generatora liczb losowych
+Inicjalizacja generatora liczb losowych.
 
 ## Opis Metod
 
@@ -80,15 +76,15 @@ Inicjalizacja generatora liczb losowych
 ```gdscript
 func restart_tasks()
 ```
-
+Resetuje zadania przypisane npc.
 ### set\_dean\_position
 
 ```gdscript
 func set_dean_position(deanId, vector)
 ```
-
+zmienia pozycje dziekana na mapie.
 ### restart\_npc
-
+Usuwa każdego npc z grup danego zadania. Losuje każdemu nowe.
 ```gdscript
 func restart_npc(name, task_number)
 ```
@@ -98,37 +94,37 @@ func restart_npc(name, task_number)
 ```gdscript
 func set_time_ui(time)
 ```
-
+Ustawia czas rundy.
 ### setNpc
 
 ```gdscript
 func setNpc(name, task_number, has_name)
 ```
-
+Ustawia obiekt jako npc.
 ### setPlayer
 
 ```gdscript
 func setPlayer(i, task_number)
 ```
-
+Ustawia obiekt jako gracz.
 ### set\_code\_number
 
 ```gdscript
 func set_code_number(random, day)
 ```
-
+Losuje tablicę do wyświetlenia jednej z 3 cyfr kodu do serwera w zależności od numeru rundy.
 ### change\_code
 
 ```gdscript
 func change_code()
 ```
-
+Zmienia kod na tablicy.
 ### set\_npc\_for\_host
 
 ```gdscript
 func set_npc_for_host(name, task_number, has_name)
 ```
-
+Analogicznie do set\_npc, ale tym razem dla oczu hosta.
 Parametry: name - imię studenta, task_number - numer taska, które robi student has_name - zmienna bool, mówiąca czy npc już posiada imię Ustawia npc dla hosta.
 
 ### change\_view
@@ -136,25 +132,9 @@ Parametry: name - imię studenta, task_number - numer taska, które robi student
 ```gdscript
 func change_view()
 ```
-
-### npcs\_notes
-
-```gdscript
-func npcs_notes(isVisible)
-```
-
-### npcs\_walking
-
-```gdscript
-func npcs_walking(isVisible)
-```
-
-### npcs\_computer
-
-```gdscript
-func npcs_computer(isVisible)
-```
+Zmienia widok dla graczy na aulę.
 
 ## Sygnały
 
-- signal taskType(taskType): Sygnał 'taskType' emitowany z argumentem 'taskType'
+- signal taskType(taskType): Sygnał 'taskType' 
+Emitowany z argumentem 'taskType'. Niesie informacje o typie zadania.

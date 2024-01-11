@@ -67,14 +67,13 @@ Flaga określająca możliwość ruchu postaci NPC.
 var walking_task = false
 ```
 
-Flaga określająca, czy postać NPC jest w trakcie zadania poruszania się.
+Flaga określająca, czy postać NPC jest w trakcie zadania polegającego na poruszaniu się.
 
 ### rng
 
 ```gdscript
 var rng
 ```
-
 Generator liczb losowych.
 
 ## Opis Metod

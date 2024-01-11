@@ -10,4 +10,4 @@ date = "2024-01-10"
 
 
 ## Opis
-Skrypt odpowiadający za zakończenie gry i wyświetlenie wyników rozgrywki.
+Skrypt odpowiadający za obsługę przycisku do zamknięcia gry po wyświetleniu wyników rozgrywki.

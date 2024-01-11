@@ -10,7 +10,7 @@ date = "2024-01-10"
 
 
 ## Opis
-
+Skrypt odpowiadający za zmiane tekstury alarmu gdy zostanie on sabotowany.
 ## Opis Właściwości
 
 ### textureAfterUsage
@@ -20,11 +20,10 @@ var textureAfterUsage = "<CompressedTexture2D#-9223367935513261906>"
 ```
 
 ## Opis Metod
-Skrypt odpowiadający za zmiane tekstury alarmu gdy zostanie on sabotowany.
 ### change\_texture
 
 ```gdscript
 func change_texture()
 ```
 
-Zmienia teksture
+Zmienia teksture.

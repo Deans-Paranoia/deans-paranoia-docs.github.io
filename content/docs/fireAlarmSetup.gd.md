@@ -27,7 +27,7 @@ var useable: bool = true
 func use_alarm(isSabotaged)
 ```
 
-Używa alarm
+Używa alarmu.
 
 ### set\_lecture\_hall
 

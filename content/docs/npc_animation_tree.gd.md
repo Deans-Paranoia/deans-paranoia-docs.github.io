@@ -10,7 +10,7 @@ date = "2024-01-10"
 
 
 ## Opis
-Skrypt odpowiadający za animacje tasków.
+Skrypt odpowiadający za animacje npc.
 ## Opis Właściwości
 
 ### taskVector
@@ -19,7 +19,7 @@ Skrypt odpowiadający za animacje tasków.
 var taskVector = "(0, 0)"
 ```
 
-Wektor związany z bieżącym zadaniem postaci NPC.
+Wektor wskazujący bieżące zadanie NPC.
 
 ### sprite\_to\_back\_to
 
@@ -27,7 +27,7 @@ Wektor związany z bieżącym zadaniem postaci NPC.
 var sprite_to_back_to: Sprite2D
 ```
 
-Sprite, do którego zostanie przywrócony animowany sprite po zakończeniu zadania.
+Sprite, który zostanie przywrócony po zakończeniu wykonywania zadania.
 
 ## Opis Metod
 
@@ -37,7 +37,7 @@ Sprite, do którego zostanie przywrócony animowany sprite po zakończeniu zadan
 func taking_notes_loop()
 ```
 
-Metoda obsługująca animacje zadania "takingNotes".
+Funkcja obsługująca animacje zadania "takingNotes".
 
 ### computer\_loop
 
@@ -45,7 +45,7 @@ Metoda obsługująca animacje zadania "takingNotes".
 func computer_loop()
 ```
 
-Metoda obsługująca animacje zadania "computer".
+Funkcja obsługująca animacje zadania "computer".
 
 ### vending\_machine\_loop
 
@@ -53,7 +53,7 @@ Metoda obsługująca animacje zadania "computer".
 func vending_machine_loop()
 ```
 
-Metoda obsługująca animacje zadania "vendingMachine".
+Funkcja obsługująca animacje zadania "vendingMachine".
 
 ### rotate\_npc
 
@@ -61,7 +61,7 @@ Metoda obsługująca animacje zadania "vendingMachine".
 func rotate_npc(direction)
 ```
 
-Parametry: direction Metoda zdalna obsługująca obrót postaci NPC.
+Funkcja obsługująca obrót NPC.
 
 ### set\_vector\_and\_sprite
 
@@ -69,7 +69,7 @@ Parametry: direction Metoda zdalna obsługująca obrót postaci NPC.
 func set_vector_and_sprite(sprite, vector)
 ```
 
-Parametry: sprite, vector Metoda zdalna ustawiająca wektor i sprite postaci NPC.
+Funkcja ustawiająca wektor i sprite postaci NPC.
 
 ### run\_animation
 
@@ -77,4 +77,4 @@ Parametry: sprite, vector Metoda zdalna ustawiająca wektor i sprite postaci NPC
 func run_animation(taskVector)
 ```
 
-Parametry: taskVector Metoda zdalna uruchamiająca odpowiednią animację postaci NPC.
+Funkcja uruchamiająca odpowiednią animację postaci NPC.

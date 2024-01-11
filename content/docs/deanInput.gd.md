@@ -10,7 +10,7 @@ date = "2024-01-10"
 
 
 ## Opis
-Skrypt odpowiadający za czynności wykonywane przez dziekana.
+Skrypt odpowiadający za czynności wykonywane przez gracza sterującego dziekanem.
 ## Opis Właściwości
 
 ### catch\_info\_instance
@@ -77,7 +77,7 @@ Flaga określająca, czy Dean może aktywować alarm przeciwpożarowy.
 func change_alarm_state()
 ```
 
-Funkcja zdalna obsługująca zmianę stanu alarmu przeciwpożarowego.
+Funkcja obsługująca zmianę stanu alarmu przeciwpożarowego.
 
 ### manage\_deans\_tablet
 
@@ -87,21 +87,6 @@ func manage_deans_tablet()
 
 Funkcja zarządzająca widżetem tabletu dziekana.
 
-### catch\_student
-
-```gdscript
-func catch_student()
-```
-
-Funkcja placeholder do obsługi złapanego studenta.
-
-### kick\_student
-
-```gdscript
-func kick_student()
-```
-
-Funkcja placeholder do obsługi kopnięcia studenta.
 
 ## Sygnały
 

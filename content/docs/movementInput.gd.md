@@ -69,7 +69,7 @@ Flaga określająca, czy gracz może się poruszać.
 func apply_physics()
 ```
 
-Metoda aplikująca fizykę ruchu gracza.
+Funkcja aplikująca fizykę ruchu gracza.
 
 ### calculate\_velocity
 
@@ -77,7 +77,7 @@ Metoda aplikująca fizykę ruchu gracza.
 func calculate_velocity()
 ```
 
-Parametry: None Return: Wektor prędkości gracza Metoda obliczająca wektor prędkości gracza na podstawie kierunku z wejścia.
+Funkcja obliczająca wektor prędkości gracza na podstawie kierunku wynikającego z wciśnietych przez niego klawiszy..
 
 ### take\_current\_speed\_value
 
@@ -85,7 +85,7 @@ Parametry: None Return: Wektor prędkości gracza Metoda obliczająca wektor pr�
 func take_current_speed_value() -> int
 ```
 
-Return: Prędkość gracza Metoda zwracająca aktualną wartość prędkości gracza.
+Funkcja zwracająca aktualną wartość prędkości gracza.
 
 ### stop\_player\_movement
 
@@ -93,15 +93,14 @@ Return: Prędkość gracza Metoda zwracająca aktualną wartość prędkości gr
 func stop_player_movement()
 ```
 
-Metoda zatrzymująca ruch gracza.
+Funkcja zatrzymująca ruch gracza.
 
 ### restore\_player\_movement
 
 ```gdscript
 func restore_player_movement(tempspeed)
 ```
-
-Parametry: tempspeed Metoda przywracająca ruch gracza.
+Przywraca graczowi jego prędkość poruszania się.
 
 ### emit\_direction\_signal
 
@@ -109,7 +108,7 @@ Parametry: tempspeed Metoda przywracająca ruch gracza.
 func emit_direction_signal(velocity)
 ```
 
-Parametry: velocity - wektor prędkości Funkcja emitująca sygnał informujący o kierunku ruchu.
+Funkcja emitująca sygnał informujący o kierunku ruchu gracza.
 
 ### stop\_walking\_animation
 
@@ -117,7 +116,7 @@ Parametry: velocity - wektor prędkości Funkcja emitująca sygnał informujący
 func stop_walking_animation()
 ```
 
-Metoda zdalna obsługująca zatrzymanie animacji chodzenia gracza.
+Funkcja obsługująca zatrzymanie animacji chodzenia gracza.
 
 ## Sygnały
 

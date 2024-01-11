@@ -12,5 +12,5 @@ date = "2024-01-10"
 ## Opis
 Skrypt odpowiadający za informacje o graczu.
 ## Sygnały
-
 - signal makeAsDean(playerId): 
+Przekazuje informacje, że dany gracz ma otrzymać rolę dziekana. 
