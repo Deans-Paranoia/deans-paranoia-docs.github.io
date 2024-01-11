@@ -9,15 +9,21 @@
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="terminal.gd :: Deans Paranois Documentation">
-    <meta name="twitter:description" content=" Opis Skrypt odpowiadający za informacje wyświetlane na terminalach.
-Opis Właściwości actual_value var actual_value = 0textures var texturescan_update_value var can_update_value: bool = falseOpis Metod load_textures func load_textures()Funkcja ładowania tekstur
-update_texture func update_texture()Funkcja aktualizująca teksturę terminala
-use_terminal func use_terminal()show_terminal func show_terminal(name)Sygnały signal change_number(name, value): ">
+    <meta name="twitter:description" content="Opis Skrypt odpowiadający za informacje wyświetlane na terminalach.
+Opis Właściwości actual_value var actual_value = 0Zmienna przechowująca aktualną wartość wyświetlaną na terminalu.
+textures var texturesZmienna przechowująca dostępne tekstury dla terminali (liczby i kolory).
+can_update_value var can_update_value: bool = falseFlaga określająca, czy gracz może zmienić cyfrę na terminalu.
+Opis Metod load_textures func load_textures()Funkcja ładująca teksturę.
+update_texture func update_texture()Funkcja aktualizująca teksturę terminala.
+use_terminal func use_terminal()Gdy gracz chce wejść w interakcje z terminalem, funkcja uruchamia odpowiednie fragmenty kodu, odpowiedzialne za zmianę cyfry na nim.">
     <meta property="og:title" content="terminal.gd :: Deans Paranois Documentation">
-    <meta property="og:description" content=" Opis Skrypt odpowiadający za informacje wyświetlane na terminalach.
-Opis Właściwości actual_value var actual_value = 0textures var texturescan_update_value var can_update_value: bool = falseOpis Metod load_textures func load_textures()Funkcja ładowania tekstur
-update_texture func update_texture()Funkcja aktualizująca teksturę terminala
-use_terminal func use_terminal()show_terminal func show_terminal(name)Sygnały signal change_number(name, value): ">
+    <meta property="og:description" content="Opis Skrypt odpowiadający za informacje wyświetlane na terminalach.
+Opis Właściwości actual_value var actual_value = 0Zmienna przechowująca aktualną wartość wyświetlaną na terminalu.
+textures var texturesZmienna przechowująca dostępne tekstury dla terminali (liczby i kolory).
+can_update_value var can_update_value: bool = falseFlaga określająca, czy gracz może zmienić cyfrę na terminalu.
+Opis Metod load_textures func load_textures()Funkcja ładująca teksturę.
+update_texture func update_texture()Funkcja aktualizująca teksturę terminala.
+use_terminal func use_terminal()Gdy gracz chce wejść w interakcje z terminalem, funkcja uruchamia odpowiednie fragmenty kodu, odpowiedzialne za zmianę cyfry na nim.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="/docs/terminal.gd.html">
     <meta property="article:section" content="Dokumentacja skryptów :: Deans Paranois Documentation">
@@ -26,19 +32,19 @@ use_terminal func use_terminal()show_terminal func show_terminal(name)Sygnały s
     <meta property="og:site_name" content="Deans Paranois Documentation">
     <title>terminal.gd :: Deans Paranois Documentation</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="../css/fontawesome-all.min.css?1704982479" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fontawesome-all.min.css?1704982479" rel="stylesheet"></noscript>
-    <link href="../css/nucleus.css?1704982479" rel="stylesheet">
-    <link href="../css/auto-complete.css?1704982479" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/auto-complete.css?1704982479" rel="stylesheet"></noscript>
-    <link href="../css/perfect-scrollbar.min.css?1704982479" rel="stylesheet">
-    <link href="../css/fonts.css?1704982479" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fonts.css?1704982479" rel="stylesheet"></noscript>
-    <link href="../css/theme.css?1704982479" rel="stylesheet">
-    <link href="../css/theme-auto.css?1704982479" rel="stylesheet" id="R-variant-style">
-    <link href="../css/chroma-auto.css?1704982479" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="../css/variant.css?1704982479" rel="stylesheet">
-    <link href="../css/print.css?1704982479" rel="stylesheet" media="print">
-    <link href="../css/ie.css?1704982479" rel="stylesheet">
-    <script src="../js/url.js?1704982479"></script>
-    <script src="../js/variant.js?1704982479"></script>
+    <link href="../css/fontawesome-all.min.css?1704985151" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fontawesome-all.min.css?1704985151" rel="stylesheet"></noscript>
+    <link href="../css/nucleus.css?1704985151" rel="stylesheet">
+    <link href="../css/auto-complete.css?1704985151" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/auto-complete.css?1704985151" rel="stylesheet"></noscript>
+    <link href="../css/perfect-scrollbar.min.css?1704985151" rel="stylesheet">
+    <link href="../css/fonts.css?1704985151" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fonts.css?1704985151" rel="stylesheet"></noscript>
+    <link href="../css/theme.css?1704985151" rel="stylesheet">
+    <link href="../css/theme-neon.css?1704985151" rel="stylesheet" id="R-variant-style">
+    <link href="../css/chroma-neon.css?1704985151" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../css/variant.css?1704985151" rel="stylesheet">
+    <link href="../css/print.css?1704985151" rel="stylesheet" media="print">
+    <link href="../css/ie.css?1704985151" rel="stylesheet">
+    <script src="../js/url.js?1704985151"></script>
+    <script src="../js/variant.js?1704985151"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72""
@@ -49,7 +55,7 @@ use_terminal func use_terminal()show_terminal func show_terminal(name)Sygnały s
       window.relearn.baseUriFull='/';
       // variant stuff
       window.relearn.themeVariantModifier='';
-      window.variants && variants.init( [ 'auto' ] );
+      window.variants && variants.init( [ 'neon' ] );
       // translations
       window.T_Copy_to_clipboard = `Copy to clipboard`;
       window.T_Copied_to_clipboard = `Copied to clipboard!`;
@@ -131,16 +137,21 @@ use_terminal func use_terminal()show_terminal func show_terminal(name)Sygnały s
 <p>Skrypt odpowiadający za informacje wyświetlane na terminalach.</p>
 <h2 id="opis-właściwości">Opis Właściwości</h2>
 <h3 id="actual_value">actual_value</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> actual_value <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span></span></span></code></pre></div><h3 id="textures">textures</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> textures</span></span></code></pre></div><h3 id="can_update_value">can_update_value</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> can_update_value: <span style="color:#66d9ef">bool</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span></span></span></code></pre></div><h2 id="opis-metod">Opis Metod</h2>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> actual_value <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span></span></span></code></pre></div><p>Zmienna przechowująca aktualną wartość wyświetlaną na terminalu.</p>
+<h3 id="textures">textures</h3>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> textures</span></span></code></pre></div><p>Zmienna przechowująca dostępne tekstury dla terminali (liczby i kolory).</p>
+<h3 id="can_update_value">can_update_value</h3>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> can_update_value: <span style="color:#66d9ef">bool</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span></span></span></code></pre></div><p>Flaga określająca, czy gracz może zmienić cyfrę na terminalu.</p>
+<h2 id="opis-metod">Opis Metod</h2>
 <h3 id="load_textures">load_textures</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">load_textures</span>()</span></span></code></pre></div><p>Funkcja ładowania tekstur</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">load_textures</span>()</span></span></code></pre></div><p>Funkcja ładująca teksturę.</p>
 <h3 id="update_texture">update_texture</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">update_texture</span>()</span></span></code></pre></div><p>Funkcja aktualizująca teksturę terminala</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">update_texture</span>()</span></span></code></pre></div><p>Funkcja aktualizująca teksturę terminala.</p>
 <h3 id="use_terminal">use_terminal</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">use_terminal</span>()</span></span></code></pre></div><h3 id="show_terminal">show_terminal</h3>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">show_terminal</span>(name)</span></span></code></pre></div><h2 id="sygnały">Sygnały</h2>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">use_terminal</span>()</span></span></code></pre></div><p>Gdy gracz chce wejść w interakcje z terminalem, funkcja uruchamia odpowiednie fragmenty kodu, odpowiedzialne za zmianę cyfry na nim.</p>
+<h3 id="show_terminal">show_terminal</h3>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">show_terminal</span>(name)</span></span></code></pre></div><p>Zmiennia widoczność teminala na mapie.</p>
+<h2 id="sygnały">Sygnały</h2>
 <ul>
 <li>signal change_number(name, value):</li>
 </ul>
@@ -168,11 +179,11 @@ use_terminal func use_terminal()show_terminal func show_terminal(name)Sygnały s
         <script>
           var contentLangs=[];
         </script>
-        <script src="../js/auto-complete.js?1704982479" defer></script>
-        <script src="../js/lunr/lunr.min.js?1704982479" defer></script>
-        <script src="../js/lunr/lunr.stemmer.support.min.js?1704982479" defer></script>
-        <script src="../js/lunr/lunr.multi.min.js?1704982479" defer></script>
-        <script src="../js/search.js?1704982479" defer></script>
+        <script src="../js/auto-complete.js?1704985151" defer></script>
+        <script src="../js/lunr/lunr.min.js?1704985151" defer></script>
+        <script src="../js/lunr/lunr.stemmer.support.min.js?1704985151" defer></script>
+        <script src="../js/lunr/lunr.multi.min.js?1704985151" defer></script>
+        <script src="../js/search.js?1704985151" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -239,7 +250,7 @@ use_terminal func use_terminal()show_terminal func show_terminal(name)Sygnały s
                   <div class="control-style">
                     <label class="a11y-only" for="R-select-variant">Theme</label>
                     <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
-                      <option id="R-auto" value="auto" selected>Auto</option>
+                      <option id="R-neon" value="neon" selected>Neon</option>
                     </select>
                   </div>
                   <div class="clear"></div>
@@ -264,8 +275,8 @@ use_terminal func use_terminal()show_terminal func show_terminal(name)Sygnały s
         </div>
       </div>
     </aside>
-    <script src="../js/clipboard.min.js?1704982479" defer></script>
-    <script src="../js/perfect-scrollbar.min.js?1704982479" defer></script>
-    <script src="../js/theme.js?1704982479" defer></script>
+    <script src="../js/clipboard.min.js?1704985151" defer></script>
+    <script src="../js/perfect-scrollbar.min.js?1704985151" defer></script>
+    <script src="../js/theme.js?1704985151" defer></script>
   </body>
 </html>

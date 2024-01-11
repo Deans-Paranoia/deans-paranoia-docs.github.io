@@ -41,3 +41,7 @@
   [params.relearn.dependencies.openapi]
     name = "OpenApi"
     location = "footer"
+
+[params]
+  # Change default color scheme with a variant one.
+  themeVariant = "neon"

@@ -169,7 +169,7 @@
   },
   {
     "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
-    "content": " Opis Skrypt odpowiadający za wyświetlanie serwera na liście dostępnych z którym obecnie można sie połaczyć oraz informacje o nim.\nOpis Właściwości listenPort @export var listenPort: int = 8911Port nasłuchiwania.\nbroadcastPort @export var broadcastPort: int = 8912Port nadawania\nbroadcastAddress @export var broadcastAddress: String = \"\"serverInfo @export var serverInfo: PackedScenebroadcastTimer var broadcastTimer: TimerRoomInfo var RoomInfoplayerCount var playerCount = 0broadcaster var broadcaster: PacketPeerUDPlistener var listener: PacketPeerUDPis_host var is_host = falseOpis Metod setBroadcastAddress func setBroadcastAddress(address: String)Parametry: address - ciąg znaków z adresem IP hostującego Return: bool Funckja ustawiająca adres strumieniowanie informacji związanych z aktualnym serwerem gry\nsetUp func setUp()funkcja ustawiająca port dla użytkownika, który planuje dołączyć do gry\nsetupBroadcast func setupBroadcast(name)funkcja ustawiająca strumieniowanie informacji z serwera do graczy\nexit_tree func exit_tree()funkcja wywoływana w momencie zamknięcia serwera\ncleanUp func cleanUp()funkcja czyszcząca informacje związane z serwerem\njoinByIp func joinByIp(ip)funckja wysyłająca sygnał w momencie dołąćzenia do gry\nSygnały signal joinGame(ip): ",
+    "content": " Opis Skrypt odpowiadający za wyświetlanie serwera na liście dostępnych z którym obecnie można sie połaczyć oraz informacje o nim.\nOpis Właściwości listenPort @export var listenPort: int = 8911Port nasłuchiwania.\nbroadcastPort @export var broadcastPort: int = 8912Port nadawania\nbroadcastAddress @export var broadcastAddress: String = \"\"Addres na IP którym jest tworzony serwer.\nserverInfo @export var serverInfo: PackedSceneInformacje o nazwie serwera, jego adresie, liczbie graczy i daje możliwość dołączenia do tego serwera.\nbroadcastTimer var broadcastTimer: TimerCzęstotliwość odświeżania informacji z serverInfo.\nRoomInfo var RoomInfoSpakowane informacje, które klienci orzymują od hosta i na ich podstawie tworzą serverInfo\nplayerCount var playerCount = 0Ilość graczy na serwerze.\nbroadcaster var broadcaster: PacketPeerUDPZmienna odpowiedzialna za komunikacje po protokole sieciowym UDP.\nlistener var listener: PacketPeerUDPOdpiera inforamcje po UDP.\nis_host var is_host = falseFlaga informująca czy dana instanacja gry jest hostem.\nOpis Metod setBroadcastAddress func setBroadcastAddress(address: String)Parametry: address - ciąg znaków z adresem IP hostującego Funkcja ustawiająca adres strumieniowanie informacji związanych z aktualnym serwerem gry.\nsetUp func setUp()Funkcja ustawiająca port dla użytkownika, który planuje dołączyć do gry.\nsetupBroadcast func setupBroadcast(name)Funkcja ustawiająca strumieniowanie informacji z serwera do graczy.\nexit_tree func exit_tree()Funkcja wywoływana w momencie zamknięcia serwera.\ncleanUp func cleanUp()Funkcja czyszcząca informacje związane z serwerem.\njoinByIp func joinByIp(ip)Funkcja wysyłająca sygnał w momencie dołączenia do gry.\nSygnały signal joinGame(ip): ",
     "description": "",
     "tags": null,
     "title": "ServerBrowser.gd",
@@ -177,7 +177,7 @@
   },
   {
     "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
-    "content": " Opis Skrypt odpowiadający za informacje o dostepnych do wyboru serwerach.\nSygnały signal joinGame(ip): ",
+    "content": " Opis Skrypt odpowiadający za informacje o dostepnych do wyboru serwerach.\nSygnały signal joinGame(ip) Rozpoczyna procedurę łączenia się do serwer o danym IP. ",
     "description": "",
     "tags": null,
     "title": "ServerInfo.gd",
@@ -185,7 +185,7 @@
   },
   {
     "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
-    "content": " Opis Skrypt obsługujący interfejs który umożliwia utworzenie servera na danym systemie sieciowym.\nSygnały signal host_down(ip): Sygnał informujący o wyłączeniu hosta z podanym adresem IP ",
+    "content": " Opis Skrypt obsługujący interfejs który umożliwia utworzenie servera na danej karcie sieciowej.\nSygnały signal host_down(ip): Sygnał informujący o wyłączeniu hosta z podanym adresem IP. ",
     "description": "",
     "tags": null,
     "title": "single_ip_info.gd",
@@ -201,7 +201,7 @@
   },
   {
     "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
-    "content": " Opis Skrypt, który odpowiada za uruchamianie wszystkich animacji dla studenta.\nOpis Metod run_animation func run_animation(velocity)task_animation func task_animation(task_type)",
+    "content": " Opis Skrypt, który odpowiada za uruchamianie wszystkich animacji dla studenta.\nOpis Metod run_animation func run_animation(velocity)Uruchamia odpowiednią animacje chodzenia.\ntask_animation func task_animation(task_type)Uruchamia odpowiednią animacje do udawania zadania.\n",
     "description": "",
     "tags": null,
     "title": "student_animation_tree.gd",
@@ -217,7 +217,7 @@
   },
   {
     "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
-    "content": " Opis Skrypt odpowiadający za informacje o zaznaczeniu studenta w tablecie dziekana.\nOpis Właściwości isChecked var isCheckedZmienna przechowująca stan zaznaczenia\ncheckmark var checkmarkReferencja do ikony checkmark\ncross var crossReferencja do ikony krzyżyka\n",
+    "content": " Opis Skrypt odpowiadający za informacje o zaznaczeniu studenta w tablecie dziekana.\nOpis Właściwości isChecked var isCheckedZmienna przechowująca stan zaznaczenia.\ncheckmark var checkmarkReferencja do ikony fajka.\ncross var crossReferencja do ikony krzyżyka.\n",
     "description": "",
     "tags": null,
     "title": "tablet_single_student.gd",
@@ -225,7 +225,7 @@
   },
   {
     "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
-    "content": " Opis Skrypt odpowiadający, za uruchamianie animacji wykonywania zadania przez daną postać.\nOpis Metod on_npc_task_type_emitted func on_npc_task_type_emitted(task_type)Parametry: task_type - typ tasku Funkcja do odtwarzania konkretnego zadania przez gracza\nrun_task func run_task(task_type)Parametry: task_type - typ tasku Funkcja dobiera odpowiednią funkcje zależnie od zmiennej task_type\ntask_computer func task_computer()Funkcja emitująca sygnał o task_type = computer\ntask_taking_notes func task_taking_notes()Funkcja emitująca sygnał o task_type = takingNotes\ntask_walking func task_walking()Funkcja emitująca sygnał o task_type = walking\nvending_machine func vending_machine()Funkcja emitująca sygnał o task_type = vendingMachine\nSygnały signal npc_walking_task(): signal npc_sprite_task(task_type): ",
+    "content": " Opis Skrypt odpowiadający, za uruchamianie animacji wykonywania zadania przez daną postać.\nOpis Metod on_npc_task_type_emitted func on_npc_task_type_emitted(task_type)Parametry: task_type - typ tasku Funkcja do odtwarzania konkretnego zadania przez gracza.\nrun_task func run_task(task_type)Parametry: task_type - typ tasku Funkcja dobiera odpowiednią funkcje zależnie od zmiennej task_type.\ntask_computer func task_computer()Funkcja emitująca sygnał o task_type = computer.\ntask_taking_notes func task_taking_notes()Funkcja emitująca sygnał o task_type = takingNotes.\ntask_walking func task_walking()Funkcja emitująca sygnał o task_type = walking.\nvending_machine func vending_machine()Funkcja emitująca sygnał o task_type = vendingMachine.\nSygnały signal npc_walking_task(): signal npc_sprite_task(task_type): ",
     "description": "",
     "tags": null,
     "title": "task.gd",
@@ -233,7 +233,7 @@
   },
   {
     "breadcrumb": "Dean's Paranoia \u003e Dokumentacja skryptów",
-    "content": " Opis Skrypt odpowiadający za informacje wyświetlane na terminalach.\nOpis Właściwości actual_value var actual_value = 0textures var texturescan_update_value var can_update_value: bool = falseOpis Metod load_textures func load_textures()Funkcja ładowania tekstur\nupdate_texture func update_texture()Funkcja aktualizująca teksturę terminala\nuse_terminal func use_terminal()show_terminal func show_terminal(name)Sygnały signal change_number(name, value): ",
+    "content": " Opis Skrypt odpowiadający za informacje wyświetlane na terminalach.\nOpis Właściwości actual_value var actual_value = 0Zmienna przechowująca aktualną wartość wyświetlaną na terminalu.\ntextures var texturesZmienna przechowująca dostępne tekstury dla terminali (liczby i kolory).\ncan_update_value var can_update_value: bool = falseFlaga określająca, czy gracz może zmienić cyfrę na terminalu.\nOpis Metod load_textures func load_textures()Funkcja ładująca teksturę.\nupdate_texture func update_texture()Funkcja aktualizująca teksturę terminala.\nuse_terminal func use_terminal()Gdy gracz chce wejść w interakcje z terminalem, funkcja uruchamia odpowiednie fragmenty kodu, odpowiedzialne za zmianę cyfry na nim.\nshow_terminal func show_terminal(name)Zmiennia widoczność teminala na mapie.\nSygnały signal change_number(name, value): ",
     "description": "",
     "tags": null,
     "title": "terminal.gd",

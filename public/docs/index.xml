@@ -228,7 +228,8 @@ terminal3 var terminal3Trzeci wybrany terminal.</description>
       <description>Opis Skrypt odpowiadający za wyświetlanie serwera na liście dostępnych z którym obecnie można sie połaczyć oraz informacje o nim.
 Opis Właściwości listenPort @export var listenPort: int = 8911Port nasłuchiwania.
 broadcastPort @export var broadcastPort: int = 8912Port nadawania
-broadcastAddress @export var broadcastAddress: String = &amp;#34;&amp;#34;serverInfo @export var serverInfo: PackedScenebroadcastTimer var broadcastTimer: TimerRoomInfo var RoomInfoplayerCount var playerCount = 0broadcaster var broadcaster: PacketPeerUDPlistener var listener: PacketPeerUDPis_host var is_host = falseOpis Metod setBroadcastAddress func setBroadcastAddress(address: String)Parametry: address - ciąg znaków z adresem IP hostującego Return: bool Funckja ustawiająca adres strumieniowanie informacji związanych z aktualnym serwerem gry</description>
+broadcastAddress @export var broadcastAddress: String = &amp;#34;&amp;#34;Addres na IP którym jest tworzony serwer.
+serverInfo @export var serverInfo: PackedSceneInformacje o nazwie serwera, jego adresie, liczbie graczy i daje możliwość dołączenia do tego serwera.</description>
     </item>
     <item>
       <title>ServerInfo.gd</title>
@@ -236,15 +237,15 @@ broadcastAddress @export var broadcastAddress: String = &amp;#34;&amp;#34;server
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/serverinfo.gd.html</guid>
       <description> Opis Skrypt odpowiadający za informacje o dostepnych do wyboru serwerach.
-Sygnały signal joinGame(ip): </description>
+Sygnały signal joinGame(ip) Rozpoczyna procedurę łączenia się do serwer o danym IP. </description>
     </item>
     <item>
       <title>single_ip_info.gd</title>
       <link>/docs/single_ip_info.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/single_ip_info.gd.html</guid>
-      <description> Opis Skrypt obsługujący interfejs który umożliwia utworzenie servera na danym systemie sieciowym.
-Sygnały signal host_down(ip): Sygnał informujący o wyłączeniu hosta z podanym adresem IP </description>
+      <description> Opis Skrypt obsługujący interfejs który umożliwia utworzenie servera na danej karcie sieciowej.
+Sygnały signal host_down(ip): Sygnał informujący o wyłączeniu hosta z podanym adresem IP. </description>
     </item>
     <item>
       <title>start_menu.gd</title>
@@ -258,8 +259,9 @@ Sygnały signal host_down(ip): Sygnał informujący o wyłączeniu hosta z podan
       <link>/docs/student_animation_tree.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/student_animation_tree.gd.html</guid>
-      <description> Opis Skrypt, który odpowiada za uruchamianie wszystkich animacji dla studenta.
-Opis Metod run_animation func run_animation(velocity)task_animation func task_animation(task_type)</description>
+      <description>Opis Skrypt, który odpowiada za uruchamianie wszystkich animacji dla studenta.
+Opis Metod run_animation func run_animation(velocity)Uruchamia odpowiednią animacje chodzenia.
+task_animation func task_animation(task_type)Uruchamia odpowiednią animacje do udawania zadania.</description>
     </item>
     <item>
       <title>studentInput.gd</title>
@@ -279,9 +281,9 @@ dangerScene var dangerScene = &amp;#34;&amp;lt;PackedScene#-9223367941569842968&
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/tablet_single_student.gd.html</guid>
       <description>Opis Skrypt odpowiadający za informacje o zaznaczeniu studenta w tablecie dziekana.
-Opis Właściwości isChecked var isCheckedZmienna przechowująca stan zaznaczenia
-checkmark var checkmarkReferencja do ikony checkmark
-cross var crossReferencja do ikony krzyżyka</description>
+Opis Właściwości isChecked var isCheckedZmienna przechowująca stan zaznaczenia.
+checkmark var checkmarkReferencja do ikony fajka.
+cross var crossReferencja do ikony krzyżyka.</description>
     </item>
     <item>
       <title>task.gd</title>
@@ -289,21 +291,24 @@ cross var crossReferencja do ikony krzyżyka</description>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/task.gd.html</guid>
       <description>Opis Skrypt odpowiadający, za uruchamianie animacji wykonywania zadania przez daną postać.
-Opis Metod on_npc_task_type_emitted func on_npc_task_type_emitted(task_type)Parametry: task_type - typ tasku Funkcja do odtwarzania konkretnego zadania przez gracza
-run_task func run_task(task_type)Parametry: task_type - typ tasku Funkcja dobiera odpowiednią funkcje zależnie od zmiennej task_type
-task_computer func task_computer()Funkcja emitująca sygnał o task_type = computer
-task_taking_notes func task_taking_notes()Funkcja emitująca sygnał o task_type = takingNotes
-task_walking func task_walking()Funkcja emitująca sygnał o task_type = walking</description>
+Opis Metod on_npc_task_type_emitted func on_npc_task_type_emitted(task_type)Parametry: task_type - typ tasku Funkcja do odtwarzania konkretnego zadania przez gracza.
+run_task func run_task(task_type)Parametry: task_type - typ tasku Funkcja dobiera odpowiednią funkcje zależnie od zmiennej task_type.
+task_computer func task_computer()Funkcja emitująca sygnał o task_type = computer.
+task_taking_notes func task_taking_notes()Funkcja emitująca sygnał o task_type = takingNotes.
+task_walking func task_walking()Funkcja emitująca sygnał o task_type = walking.</description>
     </item>
     <item>
       <title>terminal.gd</title>
       <link>/docs/terminal.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/terminal.gd.html</guid>
-      <description> Opis Skrypt odpowiadający za informacje wyświetlane na terminalach.
-Opis Właściwości actual_value var actual_value = 0textures var texturescan_update_value var can_update_value: bool = falseOpis Metod load_textures func load_textures()Funkcja ładowania tekstur
-update_texture func update_texture()Funkcja aktualizująca teksturę terminala
-use_terminal func use_terminal()show_terminal func show_terminal(name)Sygnały signal change_number(name, value): </description>
+      <description>Opis Skrypt odpowiadający za informacje wyświetlane na terminalach.
+Opis Właściwości actual_value var actual_value = 0Zmienna przechowująca aktualną wartość wyświetlaną na terminalu.
+textures var texturesZmienna przechowująca dostępne tekstury dla terminali (liczby i kolory).
+can_update_value var can_update_value: bool = falseFlaga określająca, czy gracz może zmienić cyfrę na terminalu.
+Opis Metod load_textures func load_textures()Funkcja ładująca teksturę.
+update_texture func update_texture()Funkcja aktualizująca teksturę terminala.
+use_terminal func use_terminal()Gdy gracz chce wejść w interakcje z terminalem, funkcja uruchamia odpowiednie fragmenty kodu, odpowiedzialne za zmianę cyfry na nim.</description>
     </item>
     <item>
       <title>waiting_room.gd</title>
