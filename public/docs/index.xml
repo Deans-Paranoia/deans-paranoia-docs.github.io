@@ -225,8 +225,10 @@ terminal3 var terminal3Trzeci wybrany terminal.</description>
       <link>/docs/serverbrowser.gd.html</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>/docs/serverbrowser.gd.html</guid>
-      <description>Opis Skrypt odpowiadający za wyświetlanie serwera z którym obecnie można sie połaczyć oraz informacje o nim.
-Opis Właściwości listenPort @export var listenPort: int = 8911broadcastPort @export var broadcastPort: int = 8912broadcastAddress @export var broadcastAddress: String = &amp;#34;&amp;#34;serverInfo @export var serverInfo: PackedScenebroadcastTimer var broadcastTimer: TimerRoomInfo var RoomInfoplayerCount var playerCount = 0broadcaster var broadcaster: PacketPeerUDPlistener var listener: PacketPeerUDPis_host var is_host = falseOpis Metod setBroadcastAddress func setBroadcastAddress(address: String)Parametry: address - ciąg znaków z adresem IP hostującego Return: bool Funckja ustawiająca adres strumieniowanie informacji związanych z aktualnym serwerem gry</description>
+      <description>Opis Skrypt odpowiadający za wyświetlanie serwera na liście dostępnych z którym obecnie można sie połaczyć oraz informacje o nim.
+Opis Właściwości listenPort @export var listenPort: int = 8911Port nasłuchiwania.
+broadcastPort @export var broadcastPort: int = 8912Port nadawania
+broadcastAddress @export var broadcastAddress: String = &amp;#34;&amp;#34;serverInfo @export var serverInfo: PackedScenebroadcastTimer var broadcastTimer: TimerRoomInfo var RoomInfoplayerCount var playerCount = 0broadcaster var broadcaster: PacketPeerUDPlistener var listener: PacketPeerUDPis_host var is_host = falseOpis Metod setBroadcastAddress func setBroadcastAddress(address: String)Parametry: address - ciąg znaków z adresem IP hostującego Return: bool Funckja ustawiająca adres strumieniowanie informacji związanych z aktualnym serwerem gry</description>
     </item>
     <item>
       <title>ServerInfo.gd</title>

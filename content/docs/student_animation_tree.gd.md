@@ -18,10 +18,11 @@ Skrypt, który odpowiada za uruchamianie wszystkich animacji dla studenta.
 ```gdscript
 func run_animation(velocity)
 ```
-
+Uruchamia odpowiednią animacje chodzenia.
 ### task\_animation
 
 ```gdscript
 func task_animation(task_type)
 ```
+Uruchamia odpowiednią animacje do udawania zadania.
 

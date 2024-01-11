@@ -87,7 +87,6 @@ func manage_deans_tablet()
 
 Funkcja zarządzająca widżetem tabletu dziekana.
 
-
 ## Sygnały
 
 - signal student_picked(): Sygnał informujący o wybraniu studenta.

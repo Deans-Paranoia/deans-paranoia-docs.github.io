@@ -19,7 +19,7 @@ Skrypt odpowiadający za informacje o zaznaczeniu studenta w tablecie dziekana.
 var isChecked
 ```
 
-Zmienna przechowująca stan zaznaczenia
+Zmienna przechowująca stan zaznaczenia.
 
 ### checkmark
 
@@ -27,7 +27,7 @@ Zmienna przechowująca stan zaznaczenia
 var checkmark
 ```
 
-Referencja do ikony checkmark
+Referencja do ikony fajka.
 
 ### cross
 
@@ -35,4 +35,4 @@ Referencja do ikony checkmark
 var cross
 ```
 
-Referencja do ikony krzyżyka
+Referencja do ikony krzyżyka.

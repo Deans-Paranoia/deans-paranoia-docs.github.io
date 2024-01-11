@@ -10,7 +10,7 @@ date = "2024-01-10"
 
 
 ## Opis
-Skrypt obsługujący interfejs który umożliwia utworzenie servera na danym systemie sieciowym.
+Skrypt obsługujący interfejs który umożliwia utworzenie servera na danej karcie sieciowej.
 ## Sygnały
 
-- signal host_down(ip): Sygnał informujący o wyłączeniu hosta z podanym adresem IP
+- signal host_down(ip): Sygnał informujący o wyłączeniu hosta z podanym adresem IP.

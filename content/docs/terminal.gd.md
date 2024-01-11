@@ -18,19 +18,19 @@ Skrypt odpowiadający za informacje wyświetlane na terminalach.
 ```gdscript
 var actual_value = 0
 ```
-
+Zmienna przechowująca aktualną wartość wyświetlaną na terminalu.
 ### textures
 
 ```gdscript
 var textures
 ```
-
+Zmienna przechowująca dostępne tekstury dla terminali (liczby i kolory).
 ### can\_update\_value
 
 ```gdscript
 var can_update_value: bool = false
 ```
-
+Flaga określająca, czy gracz może zmienić cyfrę na terminalu.
 ## Opis Metod
 
 ### load\_textures
@@ -39,7 +39,7 @@ var can_update_value: bool = false
 func load_textures()
 ```
 
-Funkcja ładowania tekstur
+Funkcja ładująca teksturę.
 
 ### update\_texture
 
@@ -47,20 +47,20 @@ Funkcja ładowania tekstur
 func update_texture()
 ```
 
-Funkcja aktualizująca teksturę terminala
+Funkcja aktualizująca teksturę terminala.
 
 ### use\_terminal
 
 ```gdscript
 func use_terminal()
 ```
-
+Gdy gracz chce wejść w interakcje z terminalem, funkcja uruchamia odpowiednie fragmenty kodu, odpowiedzialne za zmianę cyfry na nim.
 ### show\_terminal
 
 ```gdscript
 func show_terminal(name)
 ```
-
+Zmiennia widoczność teminala na mapie.
 ## Sygnały
 
 - signal change_number(name, value): 

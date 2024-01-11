@@ -19,7 +19,7 @@ Skrypt odpowiadający, za uruchamianie animacji wykonywania zadania przez daną 
 func on_npc_task_type_emitted(task_type)
 ```
 
-Parametry: task_type - typ tasku Funkcja do odtwarzania konkretnego zadania przez gracza
+Parametry: task_type - typ tasku Funkcja do odtwarzania konkretnego zadania przez gracza.
 
 ### run\_task
 
@@ -27,7 +27,7 @@ Parametry: task_type - typ tasku Funkcja do odtwarzania konkretnego zadania prze
 func run_task(task_type)
 ```
 
-Parametry: task_type - typ tasku Funkcja dobiera odpowiednią funkcje zależnie od zmiennej task_type
+Parametry: task_type - typ tasku Funkcja dobiera odpowiednią funkcje zależnie od zmiennej task_type.
 
 ### task\_computer
 
@@ -35,7 +35,7 @@ Parametry: task_type - typ tasku Funkcja dobiera odpowiednią funkcje zależnie 
 func task_computer()
 ```
 
-Funkcja emitująca sygnał o task_type = computer
+Funkcja emitująca sygnał o task_type = computer.
 
 ### task\_taking\_notes
 
@@ -43,7 +43,7 @@ Funkcja emitująca sygnał o task_type = computer
 func task_taking_notes()
 ```
 
-Funkcja emitująca sygnał o task_type = takingNotes
+Funkcja emitująca sygnał o task_type = takingNotes.
 
 ### task\_walking
 
@@ -51,7 +51,7 @@ Funkcja emitująca sygnał o task_type = takingNotes
 func task_walking()
 ```
 
-Funkcja emitująca sygnał o task_type = walking
+Funkcja emitująca sygnał o task_type = walking.
 
 ### vending\_machine
 
@@ -59,7 +59,7 @@ Funkcja emitująca sygnał o task_type = walking
 func vending_machine()
 ```
 
-Funkcja emitująca sygnał o task_type = vendingMachine
+Funkcja emitująca sygnał o task_type = vendingMachine.
 
 ## Sygnały
 

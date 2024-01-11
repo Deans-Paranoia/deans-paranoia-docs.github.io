@@ -13,4 +13,5 @@ date = "2024-01-10"
 Skrypt odpowiadający za informacje o dostepnych do wyboru serwerach.
 ## Sygnały
 
-- signal joinGame(ip): 
+- signal joinGame(ip)
+Rozpoczyna procedurę łączenia się do serwer o danym IP.
